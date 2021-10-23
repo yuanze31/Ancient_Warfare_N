@@ -1,0 +1,17 @@
+{
+    "Arena.Component.Namespace": "rwydh",
+    "FirstTabSetting": 0,
+    "ShortItemSettings": [
+        "awR\\ui",
+        "awB\\Presets",
+        "awB\\Parts",
+        "awB\\BoxData",
+        "awR\\effects",
+        "awR\\models",
+        "awR\\textures"
+    ],
+    "Uluru.autoLayerDict": {
+
+    },
+    "Uluru.checkSuspectOldUI": true
+}

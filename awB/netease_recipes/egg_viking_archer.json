@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_viking_archer"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " P ",
+            " QB",
+            "IR "
+        ],
+        "key": {
+            "B": {
+                "item": "minecraft:bow"
+            },
+            "D": {
+                "item": "minecraft:dirt"
+            },
+            "I": {
+                "item": "minecraft:dried_kelp"
+            },
+            "P": {
+                "item": "minecraft:leather_helmet"
+            },
+            "Q": {
+                "item": "minecraft:leather_chestplate"
+            },
+            "R": {
+                "item": "minecraft:leather_leggings"
+            }
+        },
+        "result": {
+            "item": "aw:egg_viking_archer"
+        }
+    }
+}

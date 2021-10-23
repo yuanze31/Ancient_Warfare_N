@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_desert_commander"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "ZGZ",
+            " UL",
+            "SV "
+        ],
+        "key": {
+            "G": {
+                "item": "minecraft:golden_helmet"
+            },
+            "L": {
+                "item": "aw:iron_command_baton"
+            },
+            "S": {
+                "item": "minecraft:sand"
+            },
+            "U": {
+                "item": "minecraft:iron_chestplate"
+            },
+            "V": {
+                "item": "minecraft:iron_leggings"
+            },
+            "Z": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "result": {
+            "item": "aw:egg_desert_commander"
+        }
+    }
+}

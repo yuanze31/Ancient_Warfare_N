@@ -1,0 +1,24 @@
+{
+    "category": [
+        {
+            "icon": "textures/tab/tab_awe",
+            "labelText": "itemCategory.name.awe",
+            "name": "awe"
+        },
+        {
+            "icon": "textures/tab/tab_awb",
+            "labelText": "itemCategory.name.awb",
+            "name": "awb"
+        },
+        {
+            "icon": "textures/tab/tab_awi",
+            "labelText": "itemCategory.name.awi",
+            "name": "awi"
+        },
+        {
+            "icon": "textures/tab/tab_awt",
+            "labelText": "itemCategory.name.awt",
+            "name": "awt"
+        }
+    ]
+}

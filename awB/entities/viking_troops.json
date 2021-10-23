@@ -1,0 +1,45 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "aw:viking_troops",
+            "scripts": {
+                "animate": [
+                    "troops"
+                ]
+            },
+            "animations": {
+                "troops": "controller.animation.viking_troops"
+            },
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:health": {
+                "value": 1,
+                "max": 1,
+                "min": 1
+            },
+            "minecraft:explode": {
+                "fuseLength": 1,
+                "fuseLit": true,
+                "power": 0,
+                "causesFire": false,
+                "breaks_blocks": false
+            },
+            "minecraft:damage_sensor": [
+                {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            ],
+            "minecraft:fire_immune": true,
+            "minecraft:collision_box": {
+                "width": 0,
+                "height": 0
+            },
+            "minecraft:physics": {}
+        }
+    }
+}

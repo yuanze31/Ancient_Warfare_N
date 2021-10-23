@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 2035,
+            "netease:armor": {
+                "armor_slot": 3,
+                "defense": 25,
+                "enchantment": 0
+            }
+        },
+        "description": {
+            "category": "awi",
+            "identifier": "aw:magic_netherite",
+            "register_to_create_menu": false
+        }
+    }
+}

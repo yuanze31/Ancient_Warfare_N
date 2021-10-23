@@ -1,0 +1,130 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "aw:spawn",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "aw:spawn"
+        },
+        "component_groups": {
+            "bandit": {
+                "minecraft:transformation": {
+                    "into": "aw:bandit_troops"
+                }
+            },
+            "desert": {
+                "minecraft:transformation": {
+                    "into": "aw:desert_troops"
+                }
+            },
+            "native": {
+                "minecraft:transformation": {
+                    "into": "aw:native_troops"
+                }
+            },
+            "pirate": {
+                "minecraft:transformation": {
+                    "into": "aw:pirate_troops"
+                }
+            },
+            "player": {
+                "minecraft:transformation": {
+                    "into": "aw:player_troops"
+                }
+            },
+            "viking": {
+                "minecraft:transformation": {
+                    "into": "aw:viking_troops"
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "spawn"
+                ]
+            },
+            "minecraft:health": {
+                "value": 20,
+                "max": 20,
+                "min": 20
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:breathable": {
+                "totalSupply": 15,
+                "suffocateTime": 0
+            },
+            "minecraft:physics": {},
+            "minecraft:collision_box": {
+                "width": 0,
+                "height": 0
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "add": {
+                            "component_groups": [
+                                "bandit"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "add": {
+                            "component_groups": [
+                                "desert"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "add": {
+                            "component_groups": [
+                                "native"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "add": {
+                            "component_groups": [
+                                "pirate"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "add": {
+                            "component_groups": [
+                                "player"
+                            ]
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "add": {
+                            "component_groups": [
+                                "viking"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

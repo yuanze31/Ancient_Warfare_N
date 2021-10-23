@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "aw:diamond_set"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:diamond_helmet"
+            },
+            {
+                "item": "minecraft:diamond_chestplate"
+            },
+            {
+                "item": "minecraft:diamond_leggings"
+            },
+            {
+                "item": "minecraft:diamond_boots"
+            }
+        ],
+        "result": {
+            "item": "aw:diamond_set",
+            "count": 1
+        }
+    }
+}

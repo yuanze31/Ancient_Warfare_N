@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_native_soldier_ride"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " T ",
+            " UJ",
+            "CVA"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:saddle"
+            },
+            "C": {
+                "item": "minecraft:cobblestone"
+            },
+            "J": {
+                "item": "minecraft:iron_sword"
+            },
+            "T": {
+                "item": "minecraft:iron_helmet"
+            },
+            "U": {
+                "item": "minecraft:iron_chestplate"
+            },
+            "V": {
+                "item": "minecraft:iron_leggings"
+            }
+        },
+        "result": {
+            "item": "aw:egg_native_soldier_ride"
+        }
+    }
+}

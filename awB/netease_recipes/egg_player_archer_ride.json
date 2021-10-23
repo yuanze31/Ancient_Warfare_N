@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_player_archer_ride"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " P ",
+            " UB",
+            "WVA"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:saddle"
+            },
+            "B": {
+                "item": "minecraft:bow"
+            },
+            "P": {
+                "item": "minecraft:leather_helmet"
+            },
+            "U": {
+                "item": "minecraft:iron_chestplate"
+            },
+            "V": {
+                "item": "minecraft:iron_leggings"
+            },
+            "W": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "aw:egg_player_archer_ride"
+        }
+    }
+}

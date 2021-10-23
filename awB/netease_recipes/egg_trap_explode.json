@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_trap_explode"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "   ",
+            " S ",
+            "GGG"
+        ],
+        "key": {
+            "G": {
+                "item": "minecraft:gunpowder"
+            },
+            "S": {
+                "item": "minecraft:stone_pressure_plate"
+            }
+        },
+        "result": {
+            "item": "aw:egg_trap_explode"
+        }
+    }
+}
