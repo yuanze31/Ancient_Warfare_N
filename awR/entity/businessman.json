@@ -1,0 +1,36 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:businessman",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/businessman"
+            },
+            "geometry": {
+                "default": "geometry.businessman"
+            },
+            "enable_attachables": true,
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move"
+                ],
+                "scale": "1"
+            },
+            "animations": {
+                "base": "animation.base.base",
+                "move": "animation.base.move"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "texture": "businessman",
+                "texture_index": 0
+            }
+        }
+    }
+}

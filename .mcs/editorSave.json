@@ -1,0 +1,994 @@
+{
+    "Addon": {
+        "PackResourceSortData": {
+            "1024_rwydh:tower_desert": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "1024_rwydh:tower_oak": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "16384_awe": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "16384_awi": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "16_businessman": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680950772.499388
+            },
+            "1_aw:bandit_archer": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939987.4445794
+            },
+            "1_aw:bandit_archer_horse": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939134.4476666
+            },
+            "1_aw:bandit_born": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680938891.0886412
+            },
+            "1_aw:bandit_commander": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939326.2622764
+            },
+            "1_aw:bandit_general": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939297.6953523
+            },
+            "1_aw:bandit_general_horse": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.6875021
+            },
+            "1_aw:bandit_soldier": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.7090902
+            },
+            "1_aw:bandit_soldier_horse": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.7012403
+            },
+            "1_aw:bandit_troops": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680938891.0886412
+            },
+            "1_aw:building_tower": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680938891.08766
+            },
+            "1_aw:businessman": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680938891.08766
+            },
+            "1_aw:cleaner": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680938891.08766
+            },
+            "1_aw:desert_archer": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.9665554
+            },
+            "1_aw:desert_archer_horse": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.7145069
+            },
+            "1_aw:desert_born": {
+                "createTime": 1680938891.0866945,
+                "modifyTime": 1680938891.0866945
+            },
+            "1_aw:desert_commander": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939336.3472538
+            },
+            "1_aw:desert_general": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939297.7302077
+            },
+            "1_aw:desert_general_horse": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939297.725302
+            },
+            "1_aw:desert_soldier": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.7410028
+            },
+            "1_aw:desert_soldier_horse": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.7360954
+            },
+            "1_aw:desert_troops": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680938891.08766
+            },
+            "1_aw:farmer": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680939297.9832377
+            },
+            "1_aw:native_archer": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939298.0352461
+            },
+            "1_aw:native_archer_horse": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.74689
+            },
+            "1_aw:native_born": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680938891.08766
+            },
+            "1_aw:native_commander": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939339.3794649
+            },
+            "1_aw:native_general": {
+                "createTime": 1680938891.0866945,
+                "modifyTime": 1680939298.025433
+            },
+            "1_aw:native_general_horse": {
+                "createTime": 1680938891.0866945,
+                "modifyTime": 1680939298.019545
+            },
+            "1_aw:native_soldier": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939297.757684
+            },
+            "1_aw:native_soldier_horse": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939297.7527783
+            },
+            "1_aw:native_troops": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680938891.0886412
+            },
+            "1_aw:pirate_archer": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939298.0470214
+            },
+            "1_aw:pirate_archer_horse": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.8831453
+            },
+            "1_aw:pirate_born": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680938891.0896237
+            },
+            "1_aw:pirate_commander": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939342.8204987
+            },
+            "1_aw:pirate_general": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939297.9989378
+            },
+            "1_aw:pirate_general_horse": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939298.0048254
+            },
+            "1_aw:pirate_soldier": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939298.009732
+            },
+            "1_aw:pirate_soldier_horse": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680939297.9930506
+            },
+            "1_aw:pirate_troops": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680938891.08766
+            },
+            "1_aw:player_archer": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939298.0421147
+            },
+            "1_aw:player_archer_horse": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.8900151
+            },
+            "1_aw:player_born": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680938891.0886412
+            },
+            "1_aw:player_commander": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939345.4545422
+            },
+            "1_aw:player_general": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.9606674
+            },
+            "1_aw:player_general_horse": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.955761
+            },
+            "1_aw:player_soldier": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.9488919
+            },
+            "1_aw:player_soldier_horse": {
+                "createTime": 1680938891.0866945,
+                "modifyTime": 1680939297.9410422
+            },
+            "1_aw:player_troops": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680938891.0896237
+            },
+            "1_aw:spawn": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680938891.0886412
+            },
+            "1_aw:trap_explode": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680940003.5808692
+            },
+            "1_aw:trap_shackles": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680938891.08766
+            },
+            "1_aw:trap_sleep": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680938891.0896237
+            },
+            "1_aw:trap_slow": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680938891.0896237
+            },
+            "1_aw:trap_vertigo": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680938891.0886412
+            },
+            "1_aw:viking_archer": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.934173
+            },
+            "1_aw:viking_archer_horse": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680939297.894921
+            },
+            "1_aw:viking_born": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680938891.0896237
+            },
+            "1_aw:viking_commander": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939348.1945922
+            },
+            "1_aw:viking_general": {
+                "createTime": 1680938891.0896237,
+                "modifyTime": 1680939297.9214153
+            },
+            "1_aw:viking_general_horse": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.9263227
+            },
+            "1_aw:viking_soldier": {
+                "createTime": 1680938891.08766,
+                "modifyTime": 1680939297.9066968
+            },
+            "1_aw:viking_soldier_horse": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680939297.900809
+            },
+            "1_aw:viking_troops": {
+                "createTime": 1680938891.0886412,
+                "modifyTime": 1680938891.0886412
+            },
+            "2_aw:bwc": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:chainmail_set": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:debug_sword": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:diamond_command_baton": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:diamond_set": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_bandit_archer": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_bandit_archer_ride": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:egg_bandit_commander": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_bandit_general": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_bandit_general_ride": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_bandit_soldier": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:egg_bandit_soldier_ride": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:egg_building_tower": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_desert_archer": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_desert_archer_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_desert_commander": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:egg_desert_general": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:egg_desert_general_ride": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_desert_soldier": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_desert_soldier_ride": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_native_archer": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_native_archer_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_native_commander": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_native_general": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_native_general_ride": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_native_soldier": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_native_soldier_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_pirate_archer": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_pirate_archer_ride": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:egg_pirate_commander": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_pirate_general": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_pirate_general_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_pirate_soldier": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_pirate_soldier_ride": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_player_archer": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_player_archer_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_player_commander": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_player_general": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_player_general_ride": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_player_soldier": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_player_soldier_ride": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_trap_explode": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_trap_shackles": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_trap_sleep": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_trap_slow": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_trap_vertigo": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_viking_archer": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_viking_archer_ride": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_viking_commander": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:egg_viking_general": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:egg_viking_general_ride": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:egg_viking_soldier": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:egg_viking_soldier_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:gold_command_baton": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:gold_set": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:iron_command_baton": {
+                "createTime": 1680938891.090605,
+                "modifyTime": 1680938891.090605
+            },
+            "2_aw:iron_set": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:leather_set": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:magic_chainmail": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680939758.037194
+            },
+            "2_aw:magic_diamond": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:magic_golden": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680939758.0401373
+            },
+            "2_aw:magic_iron": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680939758.0420997
+            },
+            "2_aw:magic_leather": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680939758.0450435
+            },
+            "2_aw:magic_netherite": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "2_aw:netherite_set": {
+                "createTime": 1680938891.0915864,
+                "modifyTime": 1680938891.0915864
+            },
+            "2_aw:stone_command_baton": {
+                "createTime": 1680938891.0925667,
+                "modifyTime": 1680938891.0925667
+            },
+            "2_aw:wooden_command_baton": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "32_entities/archer/archer_basic": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "32_entities/archer/archer_chainmail": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/archer/archer_diamond": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/archer/archer_golden": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/archer/archer_iron": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/archer/archer_leather": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/archer/archer_loot": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/archer/archer_netherite": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/archer_horse/archer_horse_basic": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/archer_horse/archer_horse_chainmail": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/archer_horse/archer_horse_diamond": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/archer_horse/archer_horse_golden": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/archer_horse/archer_horse_iron": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/archer_horse/archer_horse_leather": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/archer_horse/archer_horse_loot": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/archer_horse/archer_horse_netherite": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/general/general_basic": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/general/general_chainmail": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/general/general_diamond": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/general/general_golden": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/general/general_iron": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/general/general_leather": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/general/general_loot": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/general/general_netherite": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/general_horse/general_horse_basic": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/general_horse/general_horse_chainmail": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/general_horse/general_horse_diamond": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/general_horse/general_horse_golden": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/general_horse/general_horse_iron": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/general_horse/general_horse_leather": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/general_horse/general_horse_loot": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/general_horse/general_horse_netherite": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "32_entities/soldier/soldier_basic": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/soldier/soldier_chainmail": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/soldier/soldier_diamond": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/soldier/soldier_golden": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/soldier/soldier_iron": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/soldier/soldier_leather": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/soldier/soldier_loot": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/soldier/soldier_netherite": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/soldier_horse/soldier_horse_basic": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/soldier_horse/soldier_horse_chainmail": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/soldier_horse/soldier_horse_diamond": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/soldier_horse/soldier_horse_golden": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/soldier_horse/soldier_horse_iron": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "32_entities/soldier_horse/soldier_horse_leather": {
+                "createTime": 1680938891.097473,
+                "modifyTime": 1680938891.097473
+            },
+            "32_entities/soldier_horse/soldier_horse_loot": {
+                "createTime": 1680938891.0964918,
+                "modifyTime": 1680938891.0964918
+            },
+            "32_entities/soldier_horse/soldier_horse_netherite": {
+                "createTime": 1680938891.098454,
+                "modifyTime": 1680938891.098454
+            },
+            "512_rwydh:tower_desert": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "512_rwydh:tower_oak": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "64_businessman": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "64_cleaner": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "64_spawn": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "8192_default": {
+                "createTime": 1680938891.0994356,
+                "modifyTime": 1680938891.0994356
+            },
+            "8_aw:chainmail_set": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:diamond_command_baton": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:diamond_set": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:gold_command_baton": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "8_aw:gold_set": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:iron_command_baton": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "8_aw:iron_set": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:leather_set": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:netherite_set": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_bandit_archer": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_bandit_archer_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_bandit_commander": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_bandit_general": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_bandit_general_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_bandit_soldier": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_bandit_soldier_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_desert_archer": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_desert_archer_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_desert_commander": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_desert_general": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_desert_general_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_desert_soldier": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_desert_soldier_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_native_archer": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_native_archer_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_native_commander": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_native_general": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_native_general_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_native_soldier": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_native_soldier_ride": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_pirate_archer": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_pirate_archer_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_pirate_commander": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_pirate_general": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "8_aw:recipes_egg_pirate_general_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_pirate_soldier": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_pirate_soldier_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_player_archer": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_player_archer_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "8_aw:recipes_egg_player_commander": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_player_general": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_player_general_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_player_soldier": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_player_soldier_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_trap_explode": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_viking_archer": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_viking_archer_ride": {
+                "createTime": 1680938891.0935485,
+                "modifyTime": 1680938891.0935485
+            },
+            "8_aw:recipes_egg_viking_commander": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_viking_general": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_viking_general_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:recipes_egg_viking_soldier": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:recipes_egg_viking_soldier_ride": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            },
+            "8_aw:stone_command_baton": {
+                "createTime": 1680938891.0945294,
+                "modifyTime": 1680938891.0945294
+            },
+            "8_aw:wooden_command_baton": {
+                "createTime": 1680938891.0955102,
+                "modifyTime": 1680938891.0955102
+            }
+        },
+        "PlayerEffectSetting": {
+            "amplifier": 1,
+            "duration": 10
+        },
+        "PresetInstanceTreeData": [
+
+        ]
+    },
+    "UI": {
+        "customPrefabGroupExpand": [
+
+        ]
+    }
+}

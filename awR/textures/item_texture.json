@@ -1,0 +1,316 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "aw:iron_set": {
+            "textures": "textures/items/iron_set"
+        },
+        "aw:magic_chainmail": {
+            "textures": "textures/items/chainmail_set"
+        },
+        "aw:magic_diamond": {
+            "textures": "textures/items/diamond_set"
+        },
+        "aw:magic_golden": {
+            "textures": "textures/items/gold_set"
+        },
+        "aw:magic_iron": {
+            "textures": "textures/items/iron_set"
+        },
+        "aw:magic_leather": {
+            "textures": "textures/items/leather_set"
+        },
+        "aw:magic_netherite": {
+            "textures": "textures/items/netherite_set"
+        },
+        "aw:debug_sword": {
+            "textures": "textures/items/bwc"
+        },
+        "bandit_archer_ride": {
+            "textures": "textures/items/bandit_archer_ride"
+        },
+        "bandit_egg": {
+            "textures": [
+                "textures/items/bandit_soldier",
+                "textures/items/bandit_archer",
+                "textures/items/bandit_commander",
+                "textures/items/bandit_general"
+            ]
+        },
+        "bandit_general_ride": {
+            "textures": "textures/items/bandit_general_ride"
+        },
+        "bandit_soldier_ride": {
+            "textures": "textures/items/bandit_soldier_ride"
+        },
+        "bwc": {
+            "textures": "textures/items/bwc"
+        },
+        "chainmail_set": {
+            "textures": "textures/items/chainmail_set"
+        },
+        "desert_archer_ride": {
+            "textures": "textures/items/desert_archer_ride"
+        },
+        "desert_egg": {
+            "textures": [
+                "textures/items/desert_soldier",
+                "textures/items/desert_archer",
+                "textures/items/desert_commander",
+                "textures/items/desert_general"
+            ]
+        },
+        "desert_general_ride": {
+            "textures": "textures/items/desert_general_ride"
+        },
+        "desert_soldier_ride": {
+            "textures": "textures/items/desert_soldier_ride"
+        },
+        "diamond_command_baton": {
+            "textures": "textures/items/diamond_command_baton"
+        },
+        "diamond_set": {
+            "textures": "textures/items/diamond_set"
+        },
+        "egg_bandit_archer": {
+            "textures": "textures/items/egg_bandit_archer"
+        },
+        "egg_bandit_archer_ride": {
+            "textures": "textures/items/egg_bandit_archer_ride"
+        },
+        "egg_bandit_commander": {
+            "textures": "textures/items/egg_bandit_commander"
+        },
+        "egg_bandit_general": {
+            "textures": "textures/items/egg_bandit_general"
+        },
+        "egg_bandit_general_ride": {
+            "textures": "textures/items/egg_bandit_general_ride"
+        },
+        "egg_bandit_soldier": {
+            "textures": "textures/items/egg_bandit_soldier"
+        },
+        "egg_bandit_soldier_ride": {
+            "textures": "textures/items/egg_bandit_soldier_ride"
+        },
+        "egg_building_tower": {
+            "textures": "textures/items/egg_building_tower"
+        },
+        "egg_desert_archer": {
+            "textures": "textures/items/egg_desert_archer"
+        },
+        "egg_desert_archer_ride": {
+            "textures": "textures/items/egg_desert_archer_ride"
+        },
+        "egg_desert_commander": {
+            "textures": "textures/items/egg_desert_commander"
+        },
+        "egg_desert_general": {
+            "textures": "textures/items/egg_desert_general"
+        },
+        "egg_desert_general_ride": {
+            "textures": "textures/items/egg_desert_general_ride"
+        },
+        "egg_desert_soldier": {
+            "textures": "textures/items/egg_desert_soldier"
+        },
+        "egg_desert_soldier_ride": {
+            "textures": "textures/items/egg_desert_soldier_ride"
+        },
+        "egg_native_archer": {
+            "textures": "textures/items/egg_native_archer"
+        },
+        "egg_native_archer_ride": {
+            "textures": "textures/items/egg_native_archer_ride"
+        },
+        "egg_native_commander": {
+            "textures": "textures/items/egg_native_commander"
+        },
+        "egg_native_general": {
+            "textures": "textures/items/egg_native_general"
+        },
+        "egg_native_general_ride": {
+            "textures": "textures/items/egg_native_general_ride"
+        },
+        "egg_native_soldier": {
+            "textures": "textures/items/egg_native_soldier"
+        },
+        "egg_native_soldier_ride": {
+            "textures": "textures/items/egg_native_soldier_ride"
+        },
+        "egg_pirate_archer": {
+            "textures": "textures/items/egg_pirate_archer"
+        },
+        "egg_pirate_archer_ride": {
+            "textures": "textures/items/egg_pirate_archer_ride"
+        },
+        "egg_pirate_commander": {
+            "textures": "textures/items/egg_pirate_commander"
+        },
+        "egg_pirate_general": {
+            "textures": "textures/items/egg_pirate_general"
+        },
+        "egg_pirate_general_ride": {
+            "textures": "textures/items/egg_pirate_general_ride"
+        },
+        "egg_pirate_soldier": {
+            "textures": "textures/items/egg_pirate_soldier"
+        },
+        "egg_pirate_soldier_ride": {
+            "textures": "textures/items/egg_pirate_soldier_ride"
+        },
+        "egg_player_archer": {
+            "textures": "textures/items/egg_player_archer"
+        },
+        "egg_player_archer_ride": {
+            "textures": "textures/items/egg_player_archer_ride"
+        },
+        "egg_player_commander": {
+            "textures": "textures/items/egg_player_commander"
+        },
+        "egg_player_general": {
+            "textures": "textures/items/egg_player_general"
+        },
+        "egg_player_general_ride": {
+            "textures": "textures/items/egg_player_general_ride"
+        },
+        "egg_player_soldier": {
+            "textures": "textures/items/egg_player_soldier"
+        },
+        "egg_player_soldier_ride": {
+            "textures": "textures/items/egg_player_soldier_ride"
+        },
+        "egg_trap_explode": {
+            "textures": "textures/items/egg_trap_explode"
+        },
+        "egg_trap_shackles": {
+            "textures": "textures/items/egg_trap_shackles"
+        },
+        "egg_trap_sleep": {
+            "textures": "textures/items/egg_trap_sleep"
+        },
+        "egg_trap_slow": {
+            "textures": "textures/items/egg_trap_slow"
+        },
+        "egg_trap_vertigo": {
+            "textures": "textures/items/egg_trap_vertigo"
+        },
+        "egg_viking_archer": {
+            "textures": "textures/items/egg_viking_archer"
+        },
+        "egg_viking_archer_ride": {
+            "textures": "textures/items/egg_viking_archer_ride"
+        },
+        "egg_viking_commander": {
+            "textures": "textures/items/egg_viking_commander"
+        },
+        "egg_viking_general": {
+            "textures": "textures/items/egg_viking_general"
+        },
+        "egg_viking_general_ride": {
+            "textures": "textures/items/egg_viking_general_ride"
+        },
+        "egg_viking_soldier": {
+            "textures": "textures/items/egg_viking_soldier"
+        },
+        "egg_viking_soldier_ride": {
+            "textures": "textures/items/egg_viking_soldier_ride"
+        },
+        "gold_command_baton": {
+            "textures": "textures/items/gold_command_baton"
+        },
+        "gold_set": {
+            "textures": "textures/items/gold_set"
+        },
+        "iron_command_baton": {
+            "textures": "textures/items/iron_command_baton"
+        },
+        "iron_set": {
+            "textures": "textures/items/iron_set"
+        },
+        "leather_set": {
+            "textures": "textures/items/leather_set"
+        },
+        "native_archer_ride": {
+            "textures": "textures/items/native_archer_ride"
+        },
+        "native_egg": {
+            "textures": [
+                "textures/items/native_soldier",
+                "textures/items/native_archer",
+                "textures/items/native_commander",
+                "textures/items/native_general"
+            ]
+        },
+        "native_general_ride": {
+            "textures": "textures/items/native_general_ride"
+        },
+        "native_soldier_ride": {
+            "textures": "textures/items/native_soldier_ride"
+        },
+        "netherite_set": {
+            "textures": "textures/items/netherite_set"
+        },
+        "pirate_archer_ride": {
+            "textures": "textures/items/pirate_archer_ride"
+        },
+        "pirate_egg": {
+            "textures": [
+                "textures/items/pirate_soldier",
+                "textures/items/pirate_archer",
+                "textures/items/pirate_commander",
+                "textures/items/pirate_general"
+            ]
+        },
+        "pirate_general_ride": {
+            "textures": "textures/items/pirate_general_ride"
+        },
+        "pirate_soldier_ride": {
+            "textures": "textures/items/pirate_soldier_ride"
+        },
+        "player_archer_ride": {
+            "textures": "textures/items/player_archer_ride"
+        },
+        "player_egg": {
+            "textures": [
+                "textures/items/player_soldier",
+                "textures/items/player_archer",
+                "textures/items/player_commander",
+                "textures/items/player_general",
+                "textures/items/player_medic",
+                "textures/items/player_farmer",
+                "textures/items/player_lumberjack",
+                "textures/items/player_miner"
+            ]
+        },
+        "player_general_ride": {
+            "textures": "textures/items/player_general_ride"
+        },
+        "player_soldier_ride": {
+            "textures": "textures/items/player_soldier_ride"
+        },
+        "stone_command_baton": {
+            "textures": "textures/items/stone_command_baton"
+        },
+        "viking_archer_ride": {
+            "textures": "textures/items/viking_archer_ride"
+        },
+        "viking_egg": {
+            "textures": [
+                "textures/items/viking_soldier",
+                "textures/items/viking_archer",
+                "textures/items/viking_commander",
+                "textures/items/viking_general"
+            ]
+        },
+        "viking_general_ride": {
+            "textures": "textures/items/viking_general_ride"
+        },
+        "viking_soldier_ride": {
+            "textures": "textures/items/viking_soldier_ride"
+        },
+        "wooden_command_baton": {
+            "textures": "textures/items/wooden_command_baton"
+        }
+    },
+    "texture_name": "atlas.items"
+}

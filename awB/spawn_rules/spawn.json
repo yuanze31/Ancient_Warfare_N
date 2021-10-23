@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:spawn_rules": {
+        "conditions": [
+            {
+                "minecraft:density_limit": {
+                    "surface": 3
+                },
+                "minecraft:difficulty_filter": {
+                    "min": "easy"
+                },
+                "minecraft:spawns_on_surface": {
+
+                },
+                "minecraft:weight": {
+                    "default": 5
+                }
+            }
+        ],
+        "description": {
+            "identifier": "aw:spawn",
+            "population_control": "monster"
+        }
+    }
+}

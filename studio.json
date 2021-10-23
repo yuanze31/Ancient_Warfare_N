@@ -1,0 +1,52 @@
+{
+    "Account": "ct20051002@163.com",
+    "AssertCacheDir": "C:\\MCStudioDownload\\EngineAssert",
+    "BlockNums": [
+        20,
+        20
+    ],
+    "BornPoint": [
+        0,
+        0,
+        0
+    ],
+    "CodeEnable": false,
+    "CreateNew": true,
+    "CreateVersion": "2.5.0.312891",
+    "DCWebUrl": "https://x19apigatewayexpr.nie.netease.com",
+    "EditAddOnPaths": [
+
+    ],
+    "EditLogFilePath": "C:\\MCStudioDownload\\work\\editor\\edit.log",
+    "EditMaterialPaths": [
+
+    ],
+    "EditName": "AW",
+    "EditType": 2,
+    "EditVersion": "2.6.0.323897",
+    "EditorResourcePackPath": "C:\\Program Files (x86)\\Netease\\MCStudio\\data\\inner_res",
+    "ElkUrl": "https://x19mclexpr.nie.netease.com/client-log",
+    "GameType": 1,
+    "Id": "622cede7a4194b96977fc4d56777820b",
+    "IsMap": false,
+    "NewEditCount": 8,
+    "OldComponents": [
+
+    ],
+    "OldEditCount": 0,
+    "ResourceIds": [
+
+    ],
+    "SaveBackAddOnPath": "D:\\AAA_ZH\\dev\\AW",
+    "SaveBackMapPath": null,
+    "Seed": "",
+    "ServerName": "EXPR",
+    "ShowGpuDriverTips": false,
+    "ShowGuide": false,
+    "Source": "import",
+    "StudioPort": 11680,
+    "StudioTempPath": "C:\\MCStudioDownload\\temp\\editorTemp",
+    "UserId": "10411",
+    "UserName": "ZH资寒",
+    "WorldType": 1
+}

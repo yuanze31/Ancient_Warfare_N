@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "gold_set"
+        },
+        "description": {
+            "category": "Construction",
+            "identifier": "aw:gold_set"
+        }
+    }
+}

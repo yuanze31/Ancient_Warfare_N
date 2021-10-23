@@ -1,0 +1,36 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_viking_commander"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "ZGZ",
+            " QL",
+            "IR "
+        ],
+        "key": {
+            "I": {
+                "item": "minecraft:dried_kelp"
+            },
+            "G": {
+                "item": "minecraft:golden_helmet"
+            },
+            "Q": {
+                "item": "minecraft:leather_chestplate"
+            },
+            "R": {
+                "item": "minecraft:leather_leggings"
+            },
+            "Z": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "result": {
+            "item": "aw:egg_viking_commander"
+        }
+    }
+}
