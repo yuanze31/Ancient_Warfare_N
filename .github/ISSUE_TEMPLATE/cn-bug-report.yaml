@@ -14,7 +14,7 @@ body:
       - label: 我已查看最新版本的更新内容或游玩最新版本，并未提及该 bug 已被修复的情况
         required: true
       - label: 我上传的游戏画面截图是原图（不要拍屏）
-        required: false
+        required: true
   - type: textarea
     id: describe
     attributes:
