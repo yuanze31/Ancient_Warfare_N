@@ -1,0 +1,44 @@
+{
+    "tiers": [
+        {
+            "trades": [
+                {
+                    "wants": [
+                        {
+                            "item": "minecraft:gold_ingot",
+                            "quantity": 3
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "aw:egg_building_tower",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "num_to_select": 1,
+            "trades": [
+                {
+                    "wants": [
+                        {
+                            "item": "minecraft:iron_ingot",
+                            "quantity": {
+                                "min": 8,
+                                "max": 12
+                            }
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "aw:egg_player_archer",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

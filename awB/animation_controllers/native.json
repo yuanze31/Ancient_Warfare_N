@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.native_troops": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/summon aw:native_soldier 帝国士兵",
+                        "/summon aw:native_soldier 帝国士兵",
+                        "/summon aw:native_archer 帝国弓箭手",
+                        "/summon aw:native_soldier_horse 帝国骑兵",
+                        "/summon aw:native_archer_horse 帝国游骑兵",
+                        "/summon aw:native_commander 帝国指挥官",
+                        "/summon aw:native_general_horse 帝国首领"
+                    ]
+                }
+            }
+        }
+    }
+}

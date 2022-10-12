@@ -1,0 +1,21 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+    "controller.animation.viking_troops": {
+      "states": {
+        "default": {
+          "on_entry": [
+           "/summon aw:viking_soldier 纳维亚海盗士兵",
+           "/summon aw:viking_soldier 纳维亚海盗士兵",
+           "/summon aw:viking_archer 纳维亚海盗弓箭手",
+           "/summon aw:viking_soldier_horse 纳维亚海盗骑兵",
+           "/summon aw:viking_archer_horse 纳维亚海盗游骑兵",
+           "/summon aw:viking_commander 纳维亚海盗指挥官",
+           "/summon aw:viking_general_horse 纳维亚海盗首领"
+          ]
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,36 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_bandit_commander"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "ZGZ",
+            " QL",
+            "DR "
+        ],
+        "key": {
+            "D": {
+                "item": "minecraft:dirt"
+            },
+            "G": {
+                "item": "minecraft:golden_helmet"
+            },
+            "Q": {
+                "item": "minecraft:leather_chestplate"
+            },
+            "R": {
+                "item": "minecraft:leather_leggings"
+            },
+            "Z": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "result": {
+            "item": "aw:egg_bandit_commander"
+        }
+    }
+}

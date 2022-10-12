@@ -1,0 +1,24 @@
+{
+    "category": [
+        {
+            "name": "aws",
+            "labelText": "itemCategory.name.awe",
+            "icon": "textures/items/soldier/player_soldier"
+        },
+        {
+            "name": "awb",
+            "labelText": "itemCategory.name.awb",
+            "icon": "textures/items/egg/building/egg_building_tower"
+        },
+        {
+            "name": "awi",
+            "labelText": "itemCategory.name.awi",
+            "icon": "textures/items/diamond_command_baton"
+        },
+        {
+            "name": "awt",
+            "labelText": "itemCategory.name.awi",
+            "icon": "textures/items/egg/trap/egg_trap_explode"
+        }
+    ]
+}

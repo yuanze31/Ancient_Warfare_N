@@ -1,0 +1,39 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_native_commander"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "ZGZ",
+            " UL",
+            "CV "
+        ],
+        "key": {
+            "C": {
+                "item": "minecraft:cobblestone"
+            },
+            "G": {
+                "item": "minecraft:golden_helmet"
+            },
+            "L": {
+                "item": "minecraft:aw:iron_command_baton"
+            },
+            "U": {
+                "item": "minecraft:iron_chestplate"
+            },
+            "V": {
+                "item": "minecraft:iron_leggings"
+            },
+            "Z": {
+                "item": "minecraft:diamond"
+            }
+        },
+        "result": {
+            "item": "aw:egg_native_commander"
+        }
+    }
+}

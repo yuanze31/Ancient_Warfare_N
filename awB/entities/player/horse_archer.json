@@ -1,0 +1,773 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "aw:player_archer_horse",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:behavior.look_at_player": {
+                "priority": 6,
+                "look_distance": 8
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 6
+            },
+            "minecraft:nameable": {},
+            "minecraft:breathable": {
+                "totalSupply": 15,
+                "suffocateTime": 0,
+                "breathesWater": true
+            },
+            "minecraft:health": {
+                "value": 40,
+                "max": 40
+            },
+            "minecraft:collision_box": {
+                "width": 0.8,
+                "height": 3
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/entities/bow.json"
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/emerald.json"
+            },
+            "minecraft:knockback_resistance": {
+                "value": 0.5
+            },
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:navigation.walk": {
+                "is_amphibious": true,
+                "avoid_sun": false,
+                "avoid_water": true
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:tameable": {
+                "probability": 1,
+                "tameItems": "emerald",
+                "tame_event": {
+                    "event": "recruit",
+                    "target": "self"
+                }
+            },
+            "minecraft:healable": {
+                "items": [
+                    {
+                        "item": "porkchop",
+                        "heal_amount": 3
+                    },
+                    {
+                        "item": "cooked_porkchop",
+                        "heal_amount": 8
+                    },
+                    {
+                        "item": "fish",
+                        "heal_amount": 2
+                    },
+                    {
+                        "item": "salmon",
+                        "heal_amount": 2
+                    },
+                    {
+                        "item": "clownfish",
+                        "heal_amount": 1
+                    },
+                    {
+                        "item": "pufferfish",
+                        "heal_amount": 1
+                    },
+                    {
+                        "item": "cooked_fish",
+                        "heal_amount": 5
+                    },
+                    {
+                        "item": "cooked_salmon",
+                        "heal_amount": 6
+                    },
+                    {
+                        "item": "beef",
+                        "heal_amount": 3
+                    },
+                    {
+                        "item": "cooked_beef",
+                        "heal_amount": 8
+                    },
+                    {
+                        "item": "chicken",
+                        "heal_amount": 2
+                    },
+                    {
+                        "item": "cooked_chicken",
+                        "heal_amount": 6
+                    },
+                    {
+                        "item": "muttonRaw",
+                        "heal_amount": 2
+                    },
+                    {
+                        "item": "muttonCooked",
+                        "heal_amount": 6
+                    },
+                    {
+                        "item": "rotten_flesh",
+                        "heal_amount": 4
+                    },
+                    {
+                        "item": "rabbit",
+                        "heal_amount": 3
+                    },
+                    {
+                        "item": "cooked_rabbit",
+                        "heal_amount": 5
+                    },
+                    {
+                        "item": "rabbit_stew",
+                        "heal_amount": 10
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": [
+                {
+                    "on_damage": {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "farmer"
+                        }
+                    },
+                    "deals_damage": false
+                }
+            ],
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:fall_damage": {
+                "value": 0
+            },
+            "minecraft:follow_range": {
+                "value": 100,
+                "max": 100
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "reselect_targets": true,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "monster"
+                        },
+                        "max_dist": 60
+                    },
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "desert"
+                        },
+                        "max_dist": 60
+                    },
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "bandit"
+                        },
+                        "max_dist": 60
+                    },
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "native"
+                        },
+                        "max_dist": 60
+                    },
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "pirate"
+                        },
+                        "max_dist": 60
+                    },
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "viking"
+                        },
+                        "max_dist": 60
+                    }
+                ],
+                "must_see": true
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "player",
+                    "archer",
+                    "farmer"
+                ]
+            },
+            "minecraft:physics": {}
+        },
+        "component_groups": {
+            "attack": {
+                "minecraft:shooter": {
+                    "def": "minecraft:arrow"
+                },
+                "minecraft:behavior.ranged_attack": {
+                    "priority": 1,
+                    "attack_radius": 30,
+                    "attack_interval_min": 1,
+                    "attack_interval_max": 1
+                }
+            },
+            "基本属性": {},
+            "recruit_free": {
+                "minecraft:interact": [
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:leather"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "leather_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:gold"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "golden_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:chainmail"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "chainmail_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:iron"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "iron_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:diamond"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "diamond_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:iron_command_baton"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "start_follow"
+                        },
+                        "use_item": false,
+                        "interact_text": "跟随"
+                    }
+                ]
+            },
+            "recruit_follow": {
+                "minecraft:interact": [
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:leather"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "leather_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:gold"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "golden_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:chainmail"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "chainmail_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:iron"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "iron_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:diamond"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "diamond_suit"
+                        },
+                        "use_item": true,
+                        "interact_text": "添加"
+                    },
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "aw:iron_command_baton"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "stop_follow"
+                        },
+                        "use_item": false,
+                        "interact_text": "停止跟随"
+                    }
+                ],
+                "minecraft:behavior.follow_owner": {
+                    "priority": 2,
+                    "speed_multiplier": 1,
+                    "start_distance": 10,
+                    "stop_distance": 2
+                }
+            },
+            "leather_suit": {
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/archer/archer_leather.json"
+                }
+            },
+            "golden_suit": {
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/archer/archer_goldenn.json"
+                }
+            },
+            "chainmail_suit": {
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/archer/archer_chainmail.json"
+                }
+            },
+            "iron_suit": {
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/archer/archer_iron.json"
+                }
+            },
+            "diamond_suit": {
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/archer/archer_diamond.json"
+                }
+            },
+            "netherite_suit": {
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/archer/archer_netherite.json"
+                }
+            },
+            "recruit_normal": {
+                "minecraft:health": {
+                    "value": 35,
+                    "max": 35
+                },
+                "minecraft:behavior.owner_hurt_by_target": {
+                    "priority": 3
+                },
+                "minecraft:behavior.owner_hurt_target": {
+                    "priority": 2
+                },
+                "minecraft:behavior.tempt": {
+                    "priority": 1,
+                    "speed_multiplier": 1.31,
+                    "items": [
+                        "aw:stone_command_baton"
+                    ],
+                    "within_radius": 41
+                },
+                "minecraft:is_tamed": {},
+                "minecraft:on_target_acquired": {
+                    "event": "minecraft:become_aggro",
+                    "target": "self"
+                },
+                "minecraft:on_target_escape": {
+                    "event": "minecraft:stop_aggro",
+                    "target": "self"
+                },
+                "minecraft:damage_sensor": [
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            }
+                        },
+                        "deals_damage": false
+                    }
+                ],
+                "minecraft:behavior.ranged_attack": {
+                    "priority": 1,
+                    "attack_radius": 30,
+                    "attack_interval_min": 1,
+                    "attack_interval_max": 1
+                },
+                "minecraft:sittable": {},
+                "minecraft:leashable": {
+                    "soft_distance": 4,
+                    "hard_distance": 6,
+                    "max_distance": 10,
+                    "on_leash": {
+                        "event": "minecraft:on_leash",
+                        "target": "self"
+                    },
+                    "on_unleash": {
+                        "event": "minecraft:on_unleash",
+                        "target": "self"
+                    }
+                }
+            }
+        },
+        "events": {
+            "recruit": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "recruit_free",
+                                "recruit_normal"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "start_follow": {
+                "randomize": [
+                    {
+                        "remove": {
+                            "component_groups": [
+                                "recruit_free"
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "recruit_follow"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "stop_follow": {
+                "randomize": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "recruit_free"
+                            ]
+                        },
+                        "remove": {
+                            "component_groups": [
+                                "recruit_follow"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "leather_suit": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "leather_suit"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "golden_suit": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "golden_suit"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "chainmail_suit": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "chainmail_suit"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "iron_suit": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "iron_suit"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "diamond_suit": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "diamond_suit"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "进入作战状态": {
+                "randomize": [
+                    {
+                        "remove": {
+                            "component_groups": [
+                                "基本属性"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "取消作战状态": {
+                "randomize": [
+                    {
+                        "add": {
+                            "component_groups": []
+                        }
+                    }
+                ]
+            },
+            "minecraft:become_aggro": {
+                "randomize": [
+                    {
+                        "remove": {
+                            "component_groups": [
+                                "取消攻击"
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "准备攻击"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "minecraft:stop_aggro": {
+                "randomize": [
+                    {
+                        "remove": {
+                            "component_groups": [
+                                "准备攻击"
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "取消攻击"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "attack"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

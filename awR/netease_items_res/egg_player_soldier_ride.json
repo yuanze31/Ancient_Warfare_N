@@ -1,0 +1,11 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "aw:egg_player_soldier_ride"
+        },
+        "components": {
+            "minecraft:icon": "egg_player_soldier_ride"
+        }
+    }
+}
