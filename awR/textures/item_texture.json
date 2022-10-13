@@ -24,37 +24,37 @@
             "textures": "textures/items/bwc"
         },
         "leather_set": {
-            "textures": "textures/items/leather_set"
+            "textures": "textures/items/armour/leather_set"
         },
         "gold_set": {
-            "textures": "textures/items/gold_set"
+            "textures": "textures/items/armour/gold_set"
         },
         "chainmail_set": {
-            "textures": "textures/items/chainmail_set"
+            "textures": "textures/items/armour/chainmail_set"
         },
         "iron_set": {
-            "textures": "textures/items/iron_set"
+            "textures": "textures/items/armour/iron_set"
         },
         "diamond_set": {
-            "textures": "textures/items/diamond_set"
+            "textures": "textures/items/armour/diamond_set"
         },
         "netherite_set": {
-            "textures": "textures/items/netherite_set"
+            "textures": "textures/items/armour/netherite_set"
         },
         "wooden_command_baton": {
-            "textures": "textures/items/wooden_command_baton"
+            "textures": "textures/items/command_baton/wooden_command_baton"
         },
         "stone_command_baton": {
-            "textures": "textures/items/stone_command_baton"
+            "textures": "textures/items/command_baton/stone_command_baton"
         },
         "gold_command_baton": {
-            "textures": "textures/items/gold_command_baton"
+            "textures": "textures/items/command_baton/gold_command_baton"
         },
         "iron_command_baton": {
-            "textures": "textures/items/iron_command_baton"
+            "textures": "textures/items/command_baton/iron_command_baton"
         },
         "diamond_command_baton": {
-            "textures": "textures/items/diamond_command_baton"
+            "textures": "textures/items/command_baton/diamond_command_baton"
         },
         "bandit_soldier_ride": {
             "textures": "textures/items/bandit_soldier_ride"

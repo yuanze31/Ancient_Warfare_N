@@ -13,11 +13,11 @@
         {
             "name": "awi",
             "labelText": "itemCategory.name.awi",
-            "icon": "textures/items/diamond_command_baton"
+            "icon": "textures/items/command_baton/diamond_command_baton"
         },
         {
             "name": "awt",
-            "labelText": "itemCategory.name.awi",
+            "labelText": "itemCategory.name.awt",
             "icon": "textures/items/egg/trap/egg_trap_explode"
         }
     ]
