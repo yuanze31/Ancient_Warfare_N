@@ -1,0 +1,18 @@
+{
+    "simpleOutfitCreateModeCategory": "Equipment",
+    "simpleOutfitCreateModeVisible": false,
+    "simpleOutfitDefense": 20,
+    "simpleOutfitDurability": 0,
+    "simpleOutfitEmbeddedModelTexture": 4,
+    "simpleOutfitEnchantment": 0,
+    "simpleOutfitIcon": "pack_icon",
+    "simpleOutfitLabel": "magic_netherite",
+    "simpleOutfitMaxStackSize": 1,
+    "simpleOutfitModel": "",
+    "simpleOutfitModelTexture": "",
+    "simpleOutfitName": "magic_netherite",
+    "simpleOutfitType": 3,
+    "simpleOutfitUseEmbeddedModel": true,
+    "simpleOutfitUseEmbeddedModelTexture": true,
+    "uuid": "1733789d-51a7-4867-aee5-e206ca58ecd0"
+}

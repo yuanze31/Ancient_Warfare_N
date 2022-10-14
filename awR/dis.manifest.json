@@ -17,7 +17,7 @@
     },
     "modules": [
         {
-            "description": "古代战争",
+            "description": "古代战争debug",
             "type": "resources",
             "uuid": "1badd0dd-d314-55ec-d043-0a3d25bdf28b",
             "version": [
