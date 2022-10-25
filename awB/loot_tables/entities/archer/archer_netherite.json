@@ -1,50 +1,127 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "minecraft:bow",
-                    "weight": 1,
                     "functions": [
                         {
-                            "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 1
-                            }
+                                "max": 1,
+                                "min": 0
+                            },
+                            "function": "looting_enchant"
                         },
                         {
-                            "function": "enchant_random_gear",
-                            "chance": 0.68
+                            "chance": 0.68,
+                            "function": "enchant_random_gear"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:bow",
+                    "type": "item",
+                    "weight": 1
                 }
-            ]
+            ],
+            "rolls": 1
         },
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "minecraft:netherite_boots",
-                    "weight": 1,
                     "functions": [
                         {
-                            "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 1
-                            }
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
                         },
                         {
-                            "function": "enchant_random_gear",
-                            "chance": 0.68
+                            "data": 0,
+                            "function": "set_data"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:netherite_helmet",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:netherite_chestplate",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:netherite_leggings",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:netherite_boots",
+                    "type": "item",
+                    "weight": 1
                 }
-            ]
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 3,
+                                "min": 0
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:arrow",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
         }
     ]
 }

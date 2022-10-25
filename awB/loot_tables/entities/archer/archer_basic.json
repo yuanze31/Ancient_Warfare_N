@@ -1,27 +1,27 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "minecraft:bow",
-                    "weight": 1,
                     "functions": [
                         {
-                            "function": "looting_enchant",
                             "count": {
-                                "min": 0,
-                                "max": 1
-                            }
+                                "max": 1,
+                                "min": 0
+                            },
+                            "function": "looting_enchant"
                         },
                         {
-                            "function": "enchant_random_gear",
-                            "chance": 0.68
+                            "chance": 0.68,
+                            "function": "enchant_random_gear"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:bow",
+                    "type": "item",
+                    "weight": 1
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }
