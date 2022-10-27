@@ -1,7 +1,6 @@
 {
     "format_version": "1.10.0",
     "animation_controllers": {
-        "眩晕": {},
         "controller.animation.trap_vertigo": {
             "initial_state": "default",
             "states": {
@@ -15,7 +14,6 @@
                 }
             }
         },
-        "停顿": {},
         "controller.animation.trap_slow": {
             "initial_state": "default",
             "states": {
@@ -26,7 +24,6 @@
                 }
             }
         },
-        "束缚": {},
         "controller.animation.trap_shackles": {
             "initial_state": "default",
             "states": {
@@ -37,7 +34,6 @@
                 }
             }
         },
-        "沉睡": {},
         "controller.animation.trap_sleep": {
             "initial_state": "default",
             "states": {

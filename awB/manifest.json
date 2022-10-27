@@ -1,0 +1,25 @@
+{
+    "format_version": 1,
+    "modules": [
+        {
+            "description": "古代战争",
+            "type": "data",
+            "uuid": "fe0d88f3-b04b-9509-170d-e4005f5d3d11",
+            "version": [
+                1,
+                10,
+                1
+            ]
+        }
+    ],
+    "header": {
+        "description": "古代战争debug",
+        "name": "古代战争",
+        "uuid": "d9bdba7d-5323-df6c-84a7-ffd26d6ec092",
+        "version": [
+            1,
+            10,
+            1
+        ]
+    }
+}

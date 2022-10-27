@@ -12,10 +12,6 @@
                     "surface": 1,
                     "underground": 1
                 },
-                "minecraft:herd": {
-                    "max_size": 1,
-                    "min_size": 1
-                },
                 "minecraft:spawns_on_surface": {
 
                 },
@@ -29,7 +25,7 @@
         ],
         "description": {
             "identifier": "aw:cleaner",
-            "population_control": "ambient"
+            "population_control": "animal"
         }
     }
 }

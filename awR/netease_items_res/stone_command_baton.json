@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "stone_command_baton"
+        },
+        "description": {
+            "category": "Construction",
+            "identifier": "aw:stone_command_baton"
+        }
+    }
+}

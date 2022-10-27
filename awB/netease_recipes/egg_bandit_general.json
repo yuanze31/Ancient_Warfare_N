@@ -1,0 +1,45 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_bandit_general"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:iron_helmet"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:shield"
+            },
+            "C": {
+                "data": 0,
+                "item": "minecraft:leather_chestplate"
+            },
+            "D": {
+                "data": 0,
+                "item": "minecraft:iron_sword"
+            },
+            "E": {
+                "data": 0,
+                "item": "minecraft:dirt"
+            },
+            "F": {
+                "data": 0,
+                "item": "minecraft:leather_leggings"
+            }
+        },
+        "pattern": [
+            " A ",
+            "BCD",
+            "EF "
+        ],
+        "result": {
+            "item": "aw:egg_bandit_general"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

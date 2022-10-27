@@ -1,24 +1,24 @@
 {
     "category": [
         {
-            "name": "aws",
+            "icon": "textures/items/soldier/player_soldier",
             "labelText": "itemCategory.name.awe",
-            "icon": "textures/items/soldier/player_soldier"
+            "name": "aws"
         },
         {
-            "name": "awb",
+            "icon": "textures/items/egg/building/egg_building_tower",
             "labelText": "itemCategory.name.awb",
-            "icon": "textures/items/egg/building/egg_building_tower"
+            "name": "awb"
         },
         {
-            "name": "awi",
+            "icon": "textures/items/command_baton/diamond_command_baton",
             "labelText": "itemCategory.name.awi",
-            "icon": "textures/items/command_baton/diamond_command_baton"
+            "name": "awi"
         },
         {
-            "name": "awt",
+            "icon": "textures/items/egg/trap/egg_trap_explode",
             "labelText": "itemCategory.name.awt",
-            "icon": "textures/items/egg/trap/egg_trap_explode"
+            "name": "awt"
         }
     ]
 }

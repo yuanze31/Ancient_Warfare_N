@@ -2,7 +2,7 @@
     "groups": [
         {
             "group_name": "itemGroup.name.set",
-            "icon": "aw:iron_set",
+            "icon": "aw:netherite",
             "list": [
                 "aw:leather",
                 "aw:gold",
