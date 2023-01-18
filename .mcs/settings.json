@@ -8,9 +8,6 @@
     "FirstTabSetting": 1,
     "ShortItemSettings": [
         "awR\\ui",
-        "awB\\Presets",
-        "awB\\Parts",
-        "awB\\BoxData",
         "awR\\effects",
         "awR\\models",
         "awR\\textures"

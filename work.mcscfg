@@ -1,11 +1,11 @@
 {
-  "UID": "25a2bd77a21144a0af61369999cf46bc",
+  "UID": "f1a9ce50f3804c35a23286759194bc8b",
   "Language": 0,
   "Type": 7,
   "Versions": [],
   "JavaType": 8,
-  "Name": "AW dev local(1)",
-  "UpdateTime": "2022-10-14T11:58:05.5529254+08:00",
+  "Name": "AW dev local new",
+  "UpdateTime": "2023-01-18T21:07:22.8798184+08:00",
   "IconName": null,
   "Md5": null,
   "CloudMd5": null,
@@ -24,12 +24,12 @@
   "ImportHistoryList": [
     {
       "Name": "AW dev local",
-      "Date": "2022/10/14 11:58"
+      "Date": "2023/01/18 21:06"
     }
   ],
   "OpenEditType": 0,
   "EditMapUID": "",
-  "EditMapType": 1,
+  "EditMapType": 2,
   "TestMapUID": null,
   "TestJavaMapType": 0,
   "TestJavaGameVersion": "",

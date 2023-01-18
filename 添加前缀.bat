@@ -1,1 +1,0 @@
-for %%i in (*.json) do ren "%%i" viking_"%%i"

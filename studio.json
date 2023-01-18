@@ -22,27 +22,27 @@
     ],
     "EditName": "AW dev local",
     "EditType": 2,
-    "EditVersion": "2.3.0.160503",
+    "EditVersion": "2.5.0.248352",
     "EditorResourcePackPath": "C:\\Program Files (x86)\\Netease\\MCStudio\\data\\inner_res",
     "ElkUrl": "https://x19mclexpr.nie.netease.com/client-log",
     "GameType": 1,
-    "Id": "25a2bd77a21144a0af61369999cf46bc",
+    "Id": "f1a9ce50f3804c35a23286759194bc8b",
     "IsMap": false,
-    "NewEditCount": 1,
+    "NewEditCount": 2,
     "OldComponents": [
 
     ],
     "OldEditCount": 0,
-    "SaveBackAddOnPath": "C:\\MCStudioDownload\\work\\ct20051002@163.com\\Cpp\\AddOn\\25a2bd77a21144a0af61369999cf46bc",
+    "SaveBackAddOnPath": "C:\\MCStudioDownload\\work\\ct20051002@163.com\\Cpp\\AddOn\\f1a9ce50f3804c35a23286759194bc8b",
     "SaveBackMapPath": null,
     "Seed": "",
     "ServerName": "EXPR",
     "ShowGpuDriverTips": false,
     "ShowGuide": false,
     "Source": "AW dev local",
-    "StudioPort": 11301,
+    "StudioPort": 10453,
     "StudioTempPath": "C:\\MCStudioDownload\\temp\\editorTemp",
     "UserId": "10411",
     "UserName": "ZH资寒",
-    "WorldType": 1
+    "WorldType": 2
 }
