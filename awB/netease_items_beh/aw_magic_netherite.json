@@ -11,7 +11,7 @@
             }
         },
         "description": {
-            "category": "Equipment",
+            "category": "awi",
             "identifier": "aw:magic_netherite",
             "register_to_create_menu": false
         }

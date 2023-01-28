@@ -8,7 +8,7 @@
             }
         },
         "description": {
-            "category": "Construction",
+            "category": "awe",
             "custom_item_type": "egg",
             "identifier": "aw:egg_viking_general_ride",
             "register_to_create_menu": true

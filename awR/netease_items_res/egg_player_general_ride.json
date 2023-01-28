@@ -2,10 +2,10 @@
     "format_version": "1.10",
     "minecraft:item": {
         "components": {
-            "minecraft:icon": "aw:egg_player_general_ride"
+            "minecraft:icon": "egg_player_general_ride"
         },
         "description": {
-            "category": "Construction",
+            "category": "awe",
             "identifier": "aw:egg_player_general_ride",
             "register_to_create_menu": true
         }

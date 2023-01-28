@@ -6,7 +6,7 @@
             "minecraft:stacked_by_data": true
         },
         "description": {
-            "category": "Construction",
+            "category": "awi",
             "identifier": "aw:leather",
             "is_experimental": false,
             "register_to_create_menu": true

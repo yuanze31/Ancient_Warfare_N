@@ -1,12 +1,11 @@
 {
     "groups": [
         {
-            "group_name": "itemGroup.name.bandits",
-            "icon": "aw:egg_bandit_commander",
+            "group_name": "itemGroup.name.bandit",
+            "icon": "aw:egg_bandit_soldier",
             "list": [
                 "aw:egg_bandit_archer",
                 "aw:egg_bandit_archer_ride",
-                "aw:egg_bandit_commander",
                 "aw:egg_bandit_general",
                 "aw:egg_bandit_general_ride",
                 "aw:egg_bandit_soldier",
@@ -14,12 +13,11 @@
             ]
         },
         {
-            "group_name": "itemGroup.name.deserts",
-            "icon": "aw:egg_desert_commander",
+            "group_name": "itemGroup.name.desert",
+            "icon": "aw:egg_desert_soldier",
             "list": [
                 "aw:egg_desert_archer",
                 "aw:egg_desert_archer_ride",
-                "aw:egg_desert_commander",
                 "aw:egg_desert_general",
                 "aw:egg_desert_general_ride",
                 "aw:egg_desert_soldier",
@@ -27,12 +25,11 @@
             ]
         },
         {
-            "group_name": "itemGroup.name.natives",
-            "icon": "aw:egg_native_commander",
+            "group_name": "itemGroup.name.native",
+            "icon": "aw:egg_native_soldier",
             "list": [
                 "aw:egg_native_archer",
                 "aw:egg_native_archer_ride",
-                "aw:egg_native_commander",
                 "aw:egg_native_general",
                 "aw:egg_native_general_ride",
                 "aw:egg_native_soldier",
@@ -40,12 +37,11 @@
             ]
         },
         {
-            "group_name": "itemGroup.name.pirates",
-            "icon": "aw:egg_pirate_commander",
+            "group_name": "itemGroup.name.pirate",
+            "icon": "aw:egg_pirate_soldier",
             "list": [
                 "aw:egg_pirate_archer",
                 "aw:egg_pirate_archer_ride",
-                "aw:egg_pirate_commander",
                 "aw:egg_pirate_general",
                 "aw:egg_pirate_general_ride",
                 "aw:egg_pirate_soldier",
@@ -53,12 +49,11 @@
             ]
         },
         {
-            "group_name": "itemGroup.name.players",
-            "icon": "aw:egg_player_commander",
+            "group_name": "itemGroup.name.player",
+            "icon": "aw:egg_player_soldier",
             "list": [
                 "aw:egg_player_archer",
                 "aw:egg_player_archer_ride",
-                "aw:egg_player_commander",
                 "aw:egg_player_general",
                 "aw:egg_player_general_ride",
                 "aw:egg_player_soldier",
@@ -66,12 +61,11 @@
             ]
         },
         {
-            "group_name": "itemGroup.name.vikings",
-            "icon": "aw:egg_viking_commander",
+            "group_name": "itemGroup.name.viking",
+            "icon": "aw:egg_viking_soldier",
             "list": [
                 "aw:egg_viking_archer",
                 "aw:egg_viking_archer_ride",
-                "aw:egg_viking_commander",
                 "aw:egg_viking_general",
                 "aw:egg_viking_general_ride",
                 "aw:egg_viking_soldier",

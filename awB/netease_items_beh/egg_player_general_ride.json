@@ -2,11 +2,16 @@
     "format_version": "1.10",
     "minecraft:item": {
         "components": {
-
+            "minecraft:max_stack_size": 64,
+            "netease:egg": {
+                "entity": "aw:player_general_ride"
+            }
         },
         "description": {
-            "category": "Construction",
-            "identifier": "aw:egg_player_general_ride"
+            "category": "awe",
+            "custom_item_type": "egg",
+            "identifier": "aw:egg_player_general_ride",
+            "register_to_create_menu": true
         }
     }
 }

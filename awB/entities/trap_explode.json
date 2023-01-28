@@ -3,7 +3,7 @@
     "minecraft:entity": {
         "description": {
             "identifier": "aw:trap_explode",
-            "is_spawnable": false,
+            "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false,
             "scripts": {
@@ -44,9 +44,24 @@
                     "cooldown_time": 15
                 }
             },
+            "minecraft:mob_effect": {
+                "effect_range": 0,
+                "mob_effect": "slowness",
+                "effect_time": 2,
+                "entity_filter": {
+                    "any_of": [
+                        {
+                            "test": "is_family",
+                            "subject": "other",
+                            "operator": "!=",
+                            "value": "trap"
+                        }
+                    ]
+                }
+            },
             "explode": {
                 "minecraft:explode": {
-                    "fuseLength": 1,
+                    "fuseLength": 0,
                     "fuseLit": true,
                     "causesFire": false,
                     "breaks_blocks": false,

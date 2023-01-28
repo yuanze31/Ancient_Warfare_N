@@ -1,22 +1,22 @@
 {
     "category": [
         {
-            "icon": "textures/items/soldier/player_soldier",
+            "icon": "textures/tab/tab_awe",
             "labelText": "itemCategory.name.awe",
-            "name": "aws"
+            "name": "awe"
         },
         {
-            "icon": "textures/items/egg/building/egg_building_tower",
+            "icon": "textures/tab/tab_awb",
             "labelText": "itemCategory.name.awb",
             "name": "awb"
         },
         {
-            "icon": "textures/items/command_baton/diamond_command_baton",
+            "icon": "textures/tab/tab_awi",
             "labelText": "itemCategory.name.awi",
             "name": "awi"
         },
         {
-            "icon": "textures/items/egg/trap/egg_trap_explode",
+            "icon": "textures/tab/tab_awt",
             "labelText": "itemCategory.name.awt",
             "name": "awt"
         }
