@@ -1,6 +1,30 @@
 {
     "resource_pack_name": "vanilla",
     "texture_data": {
+        "aw:iron_set": {
+            "textures": "textures/items/iron_set"
+        },
+        "aw:magic_chainmail": {
+            "textures": "textures/items/chainmail_set"
+        },
+        "aw:magic_diamond": {
+            "textures": "textures/items/diamond_set"
+        },
+        "aw:magic_golden": {
+            "textures": "textures/items/gold_set"
+        },
+        "aw:magic_iron": {
+            "textures": "textures/items/iron_set"
+        },
+        "aw:magic_leather": {
+            "textures": "textures/items/leather_set"
+        },
+        "aw:magic_netherite": {
+            "textures": "textures/items/netherite_set"
+        },
+        "aw:debug_sword": {
+            "textures": "textures/items/bwc"
+        },
         "bandit_archer_ride": {
             "textures": "textures/items/bandit_archer_ride"
         },

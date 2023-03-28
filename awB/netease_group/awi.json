@@ -2,14 +2,14 @@
     "groups": [
         {
             "group_name": "itemGroup.name.set",
-            "icon": "aw:netherite",
+            "icon": "aw:netherite_set",
             "list": [
-                "aw:leather",
-                "aw:gold",
-                "aw:chainmail",
-                "aw:iron",
-                "aw:diamond",
-                "aw:netherite"
+                "aw:leather_set",
+                "aw:gold_set",
+                "aw:chainmail_set",
+                "aw:iron_set",
+                "aw:diamond_set",
+                "aw:netherite_set"
             ]
         },
         {

@@ -2,7 +2,7 @@
     "format_version": "1.12",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "aw:iron"
+            "identifier": "aw:iron_set"
         },
         "tags": [
             "crafting_table"
@@ -22,7 +22,7 @@
             }
         ],
         "result": {
-            "item": "aw:iron",
+            "item": "aw:iron_set",
             "count": 1
         }
     }

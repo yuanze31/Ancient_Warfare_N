@@ -249,7 +249,7 @@
                                         "test": "has_equipment",
                                         "subject": "other",
                                         "domain": "hand",
-                                        "value": "aw:leather"
+                                        "value": "aw:leather_set"
                                     },
                                     {
                                         "test": "is_family",
@@ -293,7 +293,7 @@
                                         "test": "has_equipment",
                                         "subject": "other",
                                         "domain": "hand",
-                                        "value": "aw:chainmail"
+                                        "value": "aw:chainmail_set"
                                     },
                                     {
                                         "test": "is_family",
@@ -315,7 +315,7 @@
                                         "test": "has_equipment",
                                         "subject": "other",
                                         "domain": "hand",
-                                        "value": "aw:iron"
+                                        "value": "aw:iron_set"
                                     },
                                     {
                                         "test": "is_family",
@@ -337,7 +337,7 @@
                                         "test": "has_equipment",
                                         "subject": "other",
                                         "domain": "hand",
-                                        "value": "aw:diamond"
+                                        "value": "aw:diamond_set"
                                     },
                                     {
                                         "test": "is_family",
@@ -473,7 +473,7 @@
                             "subject": "other",
                             "value": "monster"
                         },
-                        "max_dist": 60
+                        "max_dist": 32
                     },
                     {
                         "filters": {
@@ -481,7 +481,7 @@
                             "subject": "other",
                             "value": "bandit"
                         },
-                        "max_dist": 60
+                        "max_dist": 32
                     },
                     {
                         "filters": {
@@ -489,7 +489,7 @@
                             "subject": "other",
                             "value": "player"
                         },
-                        "max_dist": 60
+                        "max_dist": 32
                     },
                     {
                         "filters": {
@@ -497,7 +497,7 @@
                             "subject": "other",
                             "value": "native"
                         },
-                        "max_dist": 60
+                        "max_dist": 32
                     },
                     {
                         "filters": {
@@ -505,7 +505,7 @@
                             "subject": "other",
                             "value": "pirate"
                         },
-                        "max_dist": 60
+                        "max_dist": 32
                     },
                     {
                         "filters": {
@@ -513,7 +513,7 @@
                             "subject": "other",
                             "value": "viking"
                         },
-                        "max_dist": 60
+                        "max_dist": 32
                     }
                 ],
                 "must_see": true

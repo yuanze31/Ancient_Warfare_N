@@ -2,7 +2,7 @@
     "format_version": "1.12",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "aw:gold"
+            "identifier": "aw:gold_set"
         },
         "tags": [
             "crafting_table"
@@ -22,7 +22,7 @@
             }
         ],
         "result": {
-            "item": "aw:gold",
+            "item": "aw:gold_set",
             "count": 1
         }
     }

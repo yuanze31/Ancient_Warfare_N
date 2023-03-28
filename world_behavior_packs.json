@@ -7,23 +7,5 @@
             10,
             3
         ]
-    },
-    {
-        "pack_id": "a29861c5-c27d-43a2-bdf1-93b15ac736b5",
-        "type": "Addon",
-        "version": [
-            1,
-            10,
-            1
-        ]
-    },
-    {
-        "pack_id": "d9bdba7d-5323-df6c-84a7-ffd26d6ec092",
-        "type": "Addon",
-        "version": [
-            1,
-            10,
-            1
-        ]
     }
 ]

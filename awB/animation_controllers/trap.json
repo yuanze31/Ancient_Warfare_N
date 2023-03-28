@@ -6,7 +6,7 @@
             "states": {
                 "default": {
                     "on_entry": [
-                        "/effect @e[r=3] slowness 2 255 true",
+                        "/effect @e[r=3] slowness 2 7 true",
                         "/effect @e[r=3] weakness 2 255 true",
                         "/effect @e[r=3] nausea 2 255 true",
                         "/effect @e[r=3] blindness 2 255 true"
@@ -19,7 +19,7 @@
             "states": {
                 "default": {
                     "on_entry": [
-                        "/effect @e[r=3] slowness 3 3 true"
+                        "/effect @e[r=3] slowness 3 2 true"
                     ]
                 }
             }
@@ -29,7 +29,7 @@
             "states": {
                 "default": {
                     "on_entry": [
-                        "/effect @e[r=3] slowness 3 255 true"
+                        "/effect @e[r=3] slowness 3 7 true"
                     ]
                 }
             }
@@ -39,7 +39,7 @@
             "states": {
                 "default": {
                     "on_entry": [
-                        "/effect @e[r=3] slowness 5 255 true",
+                        "/effect @e[r=3] slowness 5 7 true",
                         "/effect @e[r=3] weakness 5 255 true",
                         "/effect @e[r=3] resistance 5 255 true"
                     ]

@@ -1,19 +1,13 @@
 {
-    "Arena.Component.Namespace": "aw",
-    "Arena.Component.SimpleOutfit.Version": [
-        0,
-        0,
-        1
-    ],
-    "FirstTabSetting": 1,
+    "Arena.Component.Namespace": "rwydh",
+    "FirstTabSetting": 0,
     "ShortItemSettings": [
         "awR\\ui",
+        "awB\\Presets",
+        "awB\\Parts",
+        "awB\\BoxData",
         "awR\\effects",
         "awR\\models",
         "awR\\textures"
-    ],
-    "Uluru.autoLayerDict": {
-
-    },
-    "Uluru.checkSuspectOldUI": true
+    ]
 }

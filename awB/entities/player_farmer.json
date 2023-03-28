@@ -1321,7 +1321,7 @@
                     "cooldown": 2
                 },
                 "minecraft:economy_trade_table": {
-                    "display_name": "entity.villager.leather",
+                    "display_name": "entity.villager.leather_set",
                     "table": "trading/economy_trades/leather_worker_trades.json",
                     "new_screen": true,
                     "persist_trades": true

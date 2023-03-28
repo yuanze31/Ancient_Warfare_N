@@ -41,10 +41,10 @@
                 "unskilled": "textures/entity/villager2/professions/unskilled",
                 "Levels Layer": {},
                 "level_stone": "textures/entity/villager2/levels/level_stone",
-                "level_iron": "textures/entity/villager2/levels/level_iron",
-                "level_gold": "textures/entity/villager2/levels/level_gold",
+                "level_iron_set": "textures/entity/villager2/levels/level_iron_set",
+                "level_gold_set": "textures/entity/villager2/levels/level_gold_set",
                 "level_emerald": "textures/entity/villager2/levels/level_emerald",
-                "level_diamond": "textures/entity/villager2/levels/level_diamond"
+                "level_diamond_set": "textures/entity/villager2/levels/level_diamond_set"
             },
             "geometry": {
                 "default": "geometry.villager_v2"
