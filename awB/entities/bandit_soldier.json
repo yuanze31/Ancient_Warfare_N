@@ -525,17 +525,13 @@
                     "max": 20,
                     "value": 20
                 },
-                "minecraft:is_tamed": {
-
-                },
+                "minecraft:is_tamed": {},
                 "minecraft:leashable": {
                     "hard_distance": 8.0,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
-                "minecraft:persistent": {
-
-                },
+                "minecraft:persistent": {},
                 "minecraft:type_family": {
                     "family": [
                         "aw",
@@ -643,9 +639,7 @@
             }
         },
         "components": {
-            "minecraft:annotation.open_door": {
-
-            },
+            "minecraft:annotation.open_door": {},
             "minecraft:attack": {
                 "damage": 2
             },
@@ -669,12 +663,8 @@
                 "require_complete_path": true,
                 "track_target": true
             },
-            "minecraft:behavior.move_towards_target": {
-
-            },
-            "minecraft:behavior.open_door": {
-
-            },
+            "minecraft:behavior.move_towards_target": {},
+            "minecraft:behavior.open_door": {},
             "minecraft:behavior.random_look_around": {
                 "priority": 7
             },
@@ -682,9 +672,7 @@
                 "breathesAir": true,
                 "breathesWater": true
             },
-            "minecraft:can_climb": {
-
-            },
+            "minecraft:can_climb": {},
             "minecraft:collision_box": {
                 "height": 1.8,
                 "width": 0.7
@@ -699,21 +687,15 @@
                 "max": 100,
                 "value": 100
             },
-            "minecraft:jump.static": {
-
-            },
+            "minecraft:jump.static": {},
             "minecraft:loot": {
                 "table": "loot_tables/entities/soldier/soldier_loot.json"
             },
             "minecraft:movement": {
                 "value": 0.4
             },
-            "minecraft:movement.amphibious": {
-
-            },
-            "minecraft:movement.basic": {
-
-            },
+            "minecraft:movement.amphibious": {},
+            "minecraft:movement.basic": {},
             "minecraft:nameable": {
                 "allowNameTagRenaming": true,
                 "alwaysShow": true
@@ -726,12 +708,8 @@
                 "can_path_over_water": true,
                 "is_amphibious": true
             },
-            "minecraft:persistent": {
-
-            },
-            "minecraft:physics": {
-
-            },
+            "minecraft:persistent": {},
+            "minecraft:physics": {},
             "minecraft:pushable": {
                 "is_pushable": true,
                 "is_pushable_by_piston": true

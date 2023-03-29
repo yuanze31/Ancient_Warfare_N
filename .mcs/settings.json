@@ -9,5 +9,9 @@
         "awR\\effects",
         "awR\\models",
         "awR\\textures"
-    ]
+    ],
+    "Uluru.autoLayerDict": {
+
+    },
+    "Uluru.checkSuspectOldUI": true
 }

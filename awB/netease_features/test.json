@@ -1,0 +1,10 @@
+{
+    "format_version": "1.14.0",
+    "netease:structure_feature": {
+        "description": {
+            "identifier": "rwydh:test"
+        },
+        "places_structure": "rwydh:test",
+        "rotation": 0
+    }
+}

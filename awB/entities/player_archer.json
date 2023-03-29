@@ -35,7 +35,7 @@
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 2,
-                    "speed_multiplier": 1.00,
+                    "speed_multiplier": 1.0,
                     "start_distance": 10,
                     "stop_distance": 3.0
                 },
@@ -355,6 +355,68 @@
                 ]
             },
             "recruit_normal": {
+                "minecraft:behavior.hurt_by_target": {
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "monster"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "bandit"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "desert"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "native"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "pirate"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "playera"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "viking"
+                            },
+                            "max_dist": 32
+                        }
+                    ],
+                    "hurt_owner": true,
+                    "priority": 2
+                },
                 "minecraft:behavior.nearest_attackable_target": {
                     "entity_types": [
                         {
@@ -423,7 +485,7 @@
                     "priority": 3
                 },
                 "minecraft:behavior.owner_hurt_target": {
-                    "priority": 1
+                    "priority": 2
                 },
                 "minecraft:behavior.ranged_attack": {
                     "attack_interval_max": 1,
@@ -451,24 +513,106 @@
                         }
                     }
                 ],
+                "minecraft:healable": {
+                    "items": [
+                        {
+                            "heal_amount": 3,
+                            "item": "porkchop"
+                        },
+                        {
+                            "heal_amount": 8,
+                            "item": "cooked_porkchop"
+                        },
+                        {
+                            "heal_amount": 2,
+                            "item": "fish"
+                        },
+                        {
+                            "heal_amount": 2,
+                            "item": "salmon"
+                        },
+                        {
+                            "heal_amount": 1,
+                            "item": "clownfish"
+                        },
+                        {
+                            "heal_amount": 1,
+                            "item": "pufferfish"
+                        },
+                        {
+                            "heal_amount": 5,
+                            "item": "cooked_fish"
+                        },
+                        {
+                            "heal_amount": 6,
+                            "item": "cooked_salmon"
+                        },
+                        {
+                            "heal_amount": 3,
+                            "item": "beef"
+                        },
+                        {
+                            "heal_amount": 8,
+                            "item": "cooked_beef"
+                        },
+                        {
+                            "heal_amount": 2,
+                            "item": "chicken"
+                        },
+                        {
+                            "heal_amount": 6,
+                            "item": "cooked_chicken"
+                        },
+                        {
+                            "heal_amount": 2,
+                            "item": "muttonRaw"
+                        },
+                        {
+                            "heal_amount": 6,
+                            "item": "muttonCooked"
+                        },
+                        {
+                            "heal_amount": 4,
+                            "item": "rotten_flesh"
+                        },
+                        {
+                            "heal_amount": 3,
+                            "item": "rabbit"
+                        },
+                        {
+                            "heal_amount": 5,
+                            "item": "cooked_rabbit"
+                        },
+                        {
+                            "heal_amount": 10,
+                            "item": "rabbit_stew"
+                        }
+                    ]
+                },
                 "minecraft:health": {
                     "max": 15,
                     "value": 15
                 },
-                "minecraft:is_tamed": {},
+                "minecraft:is_tamed": {
+
+                },
                 "minecraft:leashable": {
                     "hard_distance": 8.0,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
-                "minecraft:persistent": {},
+                "minecraft:persistent": {
+
+                },
                 "minecraft:type_family": {
                     "family": [
                         "aw",
                         "archer",
                         "playerarmy"
                     ]
-                },
+                }
+            },
+            "wide": {
                 "minecraft:behavior.hurt_by_target": {
                     "entity_types": [
                         {
@@ -476,6 +620,22 @@
                                 "subject": "other",
                                 "test": "is_family",
                                 "value": "monster"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "playerarmy"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "player"
                             },
                             "max_dist": 32
                         },
@@ -515,7 +675,69 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
-                                "value": "playera"
+                                "value": "viking"
+                            },
+                            "max_dist": 32
+                        }
+                    ],
+                    "hurt_owner": true,
+                    "priority": 2
+                },
+                "minecraft:behavior.nearest_attackable_target": {
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "monster"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "player"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "playerarmy"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "bandit"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "desert"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "native"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "pirate"
                             },
                             "max_dist": 32
                         },
@@ -528,163 +750,47 @@
                             "max_dist": 32
                         }
                     ],
-                    "hurt_owner": true,
-                    "priority": 2
+                    "must_see": true,
+                    "priority": 2,
+                    "reselect_targets": true,
+                    "within_radius": 16.0
+                },
+                "minecraft:damage_sensor": [
+                    {
+                        "deals_damage": false,
+                        "on_damage": {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "playera"
+                            }
+                        }
+                    }
+                ],
+                "minecraft:health": {
+                    "max": 20,
+                    "value": 20
+                },
+                "minecraft:type_family": {
+                    "family": [
+                        "aw",
+                        "archer",
+                        "playera"
+                    ]
                 }
             }
         },
         "components": {
-            "minecraft:movement": {
-                "value": 0.3
-            },
-            "minecraft:annotation.open_door": {},
-            "minecraft:behavior.hurt_by_target": {
-                "entity_types": [
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "monster"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "playerarmy"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "player"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "bandit"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "desert"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "native"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "pirate"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "viking"
-                        },
-                        "max_dist": 32
-                    }
-                ],
-                "hurt_owner": true,
-                "priority": 2
+            "minecraft:annotation.open_door": {
+
             },
             "minecraft:behavior.look_at_player": {
                 "look_distance": 8,
                 "priority": 6
             },
-            "minecraft:behavior.nearest_attackable_target": {
-                "entity_types": [
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "monster"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "player"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "playerarmy"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "bandit"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "desert"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "native"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "pirate"
-                        },
-                        "max_dist": 32
-                    },
-                    {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "viking"
-                        },
-                        "max_dist": 32
-                    }
-                ],
-                "must_see": true,
-                "priority": 2,
-                "reselect_targets": true,
-                "within_radius": 16.0
+            "minecraft:behavior.open_door": {
+
             },
-            "minecraft:behavior.open_door": {},
             "minecraft:behavior.random_look_around": {
                 "priority": 7
             },
@@ -692,7 +798,7 @@
                 "attack_interval_max": 1,
                 "attack_interval_min": 1,
                 "attack_radius": 16.0,
-                "priority": 1,
+                "priority": 2,
                 "ranged_fov": 120.0,
                 "speed_multiplier": 1.0
             },
@@ -700,23 +806,13 @@
                 "breathesAir": true,
                 "breathesWater": true
             },
-            "minecraft:can_climb": {},
+            "minecraft:can_climb": {
+
+            },
             "minecraft:collision_box": {
                 "height": 1.8,
                 "width": 0.7
             },
-            "minecraft:damage_sensor": [
-                {
-                    "deals_damage": false,
-                    "on_damage": {
-                        "filters": {
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "playera"
-                        }
-                    }
-                }
-            ],
             "minecraft:equipment": {
                 "table": "loot_tables/entities/archer/archer_basic.json"
             },
@@ -727,92 +823,21 @@
                 "max": 100,
                 "value": 100
             },
-            "minecraft:healable": {
-                "items": [
-                    {
-                        "heal_amount": 3,
-                        "item": "porkchop"
-                    },
-                    {
-                        "heal_amount": 8,
-                        "item": "cooked_porkchop"
-                    },
-                    {
-                        "heal_amount": 2,
-                        "item": "fish"
-                    },
-                    {
-                        "heal_amount": 2,
-                        "item": "salmon"
-                    },
-                    {
-                        "heal_amount": 1,
-                        "item": "clownfish"
-                    },
-                    {
-                        "heal_amount": 1,
-                        "item": "pufferfish"
-                    },
-                    {
-                        "heal_amount": 5,
-                        "item": "cooked_fish"
-                    },
-                    {
-                        "heal_amount": 6,
-                        "item": "cooked_salmon"
-                    },
-                    {
-                        "heal_amount": 3,
-                        "item": "beef"
-                    },
-                    {
-                        "heal_amount": 8,
-                        "item": "cooked_beef"
-                    },
-                    {
-                        "heal_amount": 2,
-                        "item": "chicken"
-                    },
-                    {
-                        "heal_amount": 6,
-                        "item": "cooked_chicken"
-                    },
-                    {
-                        "heal_amount": 2,
-                        "item": "muttonRaw"
-                    },
-                    {
-                        "heal_amount": 6,
-                        "item": "muttonCooked"
-                    },
-                    {
-                        "heal_amount": 4,
-                        "item": "rotten_flesh"
-                    },
-                    {
-                        "heal_amount": 3,
-                        "item": "rabbit"
-                    },
-                    {
-                        "heal_amount": 5,
-                        "item": "cooked_rabbit"
-                    },
-                    {
-                        "heal_amount": 10,
-                        "item": "rabbit_stew"
-                    }
-                ]
+            "minecraft:jump.static": {
+
             },
-            "minecraft:health": {
-                "max": 20,
-                "value": 20
-            },
-            "minecraft:jump.static": {},
             "minecraft:loot": {
                 "table": "loot_tables/entities/archer/archer_loot.json"
             },
-            "minecraft:movement.amphibious": {},
-            "minecraft:movement.basic": {},
+            "minecraft:movement": {
+                "value": 0.4
+            },
+            "minecraft:movement.amphibious": {
+
+            },
+            "minecraft:movement.basic": {
+
+            },
             "minecraft:nameable": {
                 "allowNameTagRenaming": true,
                 "alwaysShow": true
@@ -825,8 +850,12 @@
                 "can_path_over_water": true,
                 "is_amphibious": true
             },
-            "minecraft:persistent": {},
-            "minecraft:physics": {},
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
             "minecraft:scale": {
                 "value": 1
             },
@@ -842,13 +871,6 @@
                     "event": "recruit",
                     "target": "self"
                 }
-            },
-            "minecraft:type_family": {
-                "family": [
-                    "aw",
-                    "archer",
-                    "playera"
-                ]
             },
             "minecraft:water_movement": {
                 "drag_factor": 0.8
@@ -899,7 +921,7 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "attack"
+                        "wide"
                     ]
                 }
             },
@@ -915,6 +937,11 @@
                     "component_groups": [
                         "recruit_normal",
                         "recruit_free"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wide"
                     ]
                 }
             },

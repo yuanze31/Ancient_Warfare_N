@@ -4,32 +4,32 @@
         "component_groups": {
             "chainmail_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_chainmail.json"
+                    "table": "loot_tables/entities/archer_horse/archer_horse_chainmail.json"
                 }
             },
             "diamond_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_diamond.json"
+                    "table": "loot_tables/entities/archer_horse/archer_horse_diamond.json"
                 }
             },
             "golden_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_golden.json"
+                    "table": "loot_tables/entities/archer_horse/archer_horse_golden.json"
                 }
             },
             "iron_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_iron.json"
+                    "table": "loot_tables/entities/archer_horse/archer_horse_iron.json"
                 }
             },
             "leather_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_leather.json"
+                    "table": "loot_tables/entities/archer_horse/archer_horse_leather.json"
                 }
             },
             "netherite_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_netherite.json"
+                    "table": "loot_tables/entities/archer_horse/archer_horse_netherite.json"
                 }
             },
             "recruit_follow": {
@@ -593,21 +593,17 @@
                     "max": 15,
                     "value": 15
                 },
-                "minecraft:is_tamed": {
-
-                },
+                "minecraft:is_tamed": {},
                 "minecraft:leashable": {
                     "hard_distance": 8.0,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
-                "minecraft:persistent": {
-
-                },
+                "minecraft:persistent": {},
                 "minecraft:type_family": {
                     "family": [
                         "aw",
-                        "archer",
+                        "archer_horse",
                         "playerarmy"
                     ]
                 }
@@ -643,6 +639,14 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
+                                "value": "bandit"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
                                 "value": "desert"
                             },
                             "max_dist": 32
@@ -668,14 +672,6 @@
                                 "subject": "other",
                                 "test": "is_family",
                                 "value": "playera"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "viking"
                             },
                             "max_dist": 32
                         }
@@ -713,6 +709,14 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
+                                "value": "bandit"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
                                 "value": "desert"
                             },
                             "max_dist": 32
@@ -740,14 +744,6 @@
                                 "value": "playera"
                             },
                             "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "viking"
-                            },
-                            "max_dist": 32
                         }
                     ],
                     "must_see": true,
@@ -762,7 +758,7 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
-                                "value": "bandit"
+                                "value": "viking"
                             }
                         }
                     }
@@ -774,23 +770,19 @@
                 "minecraft:type_family": {
                     "family": [
                         "aw",
-                        "archer",
-                        "bandit"
+                        "archer_horse",
+                        "viking"
                     ]
                 }
             }
         },
         "components": {
-            "minecraft:annotation.open_door": {
-
-            },
+            "minecraft:annotation.open_door": {},
             "minecraft:behavior.look_at_player": {
                 "look_distance": 8,
                 "priority": 6
             },
-            "minecraft:behavior.open_door": {
-
-            },
+            "minecraft:behavior.open_door": {},
             "minecraft:behavior.random_look_around": {
                 "priority": 7
             },
@@ -806,15 +798,13 @@
                 "breathesAir": true,
                 "breathesWater": true
             },
-            "minecraft:can_climb": {
-
-            },
+            "minecraft:can_climb": {},
             "minecraft:collision_box": {
                 "height": 1.8,
                 "width": 0.7
             },
             "minecraft:equipment": {
-                "table": "loot_tables/entities/archer/archer_basic.json"
+                "table": "loot_tables/entities/archer_horse/archer_horse_basic.json"
             },
             "minecraft:fall_damage": {
                 "value": 0
@@ -823,21 +813,15 @@
                 "max": 100,
                 "value": 100
             },
-            "minecraft:jump.static": {
-
-            },
+            "minecraft:jump.static": {},
             "minecraft:loot": {
-                "table": "loot_tables/entities/archer/archer_loot.json"
+                "table": "loot_tables/entities/archer_horse/archer_horse_loot.json"
             },
             "minecraft:movement": {
-                "value": 0.4
+                "value": 0.5
             },
-            "minecraft:movement.amphibious": {
-
-            },
-            "minecraft:movement.basic": {
-
-            },
+            "minecraft:movement.amphibious": {},
+            "minecraft:movement.basic": {},
             "minecraft:nameable": {
                 "allowNameTagRenaming": true,
                 "alwaysShow": true
@@ -850,12 +834,8 @@
                 "can_path_over_water": true,
                 "is_amphibious": true
             },
-            "minecraft:persistent": {
-
-            },
-            "minecraft:physics": {
-
-            },
+            "minecraft:persistent": {},
+            "minecraft:physics": {},
             "minecraft:scale": {
                 "value": 1
             },
@@ -877,7 +857,7 @@
             }
         },
         "description": {
-            "identifier": "aw:bandit_archer",
+            "identifier": "aw:viking_archer_horse",
             "is_experimental": false,
             "is_spawnable": false,
             "is_summonable": true
