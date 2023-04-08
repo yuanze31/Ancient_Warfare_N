@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.base.attack",
+                "base": "animation.base.base",
+                "move": "animation.horse.move",
+                "sit": "animation.base.sit"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "new": "geometry.native_soldier_horse",
+                "old": "geometry.old.horse"
+            },
+            "identifier": "aw:native_soldier_horse",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.native_soldier_horse"
+            ],
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "attack",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "spawn_egg": {
+                "texture": "native_soldier_horse"
+            },
+            "textures": {
+                "new": "textures/entity/native/native_soldier_horse",
+                "old": "textures/entity/native/old_native_soldier_horse"
+            }
+        }
+    }
+}

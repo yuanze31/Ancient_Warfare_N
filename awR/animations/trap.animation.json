@@ -2,7 +2,6 @@
     "format_version": "1.8.0",
     "animations": {
         "animation.trap.base": {
-            "loop": true,
             "bones": {
                 "head": {
                     "rotation": {
@@ -18,7 +17,8 @@
                         ]
                     }
                 }
-            }
+            },
+            "loop": true
         }
     }
 }

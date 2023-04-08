@@ -1,0 +1,30 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.desert_archer_horse": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.new",
+                        "Texture.old"
+                    ]
+                },
+                "geometries": {
+                    "Array.geos": [
+                        "Geometry.new",
+                        "Geometry.old"
+                    ]
+                }
+            },
+            "geometry": "Array.geos[query.skin_id]",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.skins[query.skin_id]"
+            ]
+        }
+    }
+}
