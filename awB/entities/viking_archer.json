@@ -777,6 +777,7 @@
             }
         },
         "components": {
+            "minecraft:behavior.float": {},
             "minecraft:annotation.open_door": {},
             "minecraft:behavior.look_at_player": {
                 "look_distance": 8,

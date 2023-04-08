@@ -5,13 +5,12 @@
             "states": {
                 "default": {
                     "on_entry": [
-                        "/summon aw:native_soldier 帝国士兵",
-                        "/summon aw:native_soldier 帝国士兵",
-                        "/summon aw:native_archer 帝国弓箭手",
-                        "/summon aw:native_soldier_horse 帝国骑兵",
-                        "/summon aw:native_archer_horse 帝国游骑兵",
-                        "/summon aw:native_commander 帝国指挥官",
-                        "/summon aw:native_general_horse 帝国首领"
+                        "/summon aw:native_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:native_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:native_archer ~-1 ~+1 ~-1",
+                        "/summon aw:native_soldier_horse ~ ~+1 ~",
+                        "/summon aw:native_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:native_general_horse ~+1 ~+1 ~"
                     ]
                 }
             }

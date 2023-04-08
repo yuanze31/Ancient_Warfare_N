@@ -593,13 +593,17 @@
                     "max": 15,
                     "value": 15
                 },
-                "minecraft:is_tamed": {},
+                "minecraft:is_tamed": {
+
+                },
                 "minecraft:leashable": {
                     "hard_distance": 8.0,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
-                "minecraft:persistent": {},
+                "minecraft:persistent": {
+
+                },
                 "minecraft:type_family": {
                     "family": [
                         "aw",
@@ -777,12 +781,19 @@
             }
         },
         "components": {
-            "minecraft:annotation.open_door": {},
+            "minecraft:annotation.open_door": {
+
+            },
+            "minecraft:behavior.float": {
+
+            },
             "minecraft:behavior.look_at_player": {
                 "look_distance": 8,
                 "priority": 6
             },
-            "minecraft:behavior.open_door": {},
+            "minecraft:behavior.open_door": {
+
+            },
             "minecraft:behavior.random_look_around": {
                 "priority": 7
             },
@@ -798,7 +809,9 @@
                 "breathesAir": true,
                 "breathesWater": true
             },
-            "minecraft:can_climb": {},
+            "minecraft:can_climb": {
+
+            },
             "minecraft:collision_box": {
                 "height": 1.8,
                 "width": 0.7
@@ -813,15 +826,21 @@
                 "max": 100,
                 "value": 100
             },
-            "minecraft:jump.static": {},
+            "minecraft:jump.static": {
+
+            },
             "minecraft:loot": {
                 "table": "loot_tables/entities/archer_horse/archer_horse_loot.json"
             },
             "minecraft:movement": {
                 "value": 0.5
             },
-            "minecraft:movement.amphibious": {},
-            "minecraft:movement.basic": {},
+            "minecraft:movement.amphibious": {
+
+            },
+            "minecraft:movement.basic": {
+
+            },
             "minecraft:nameable": {
                 "allowNameTagRenaming": true,
                 "alwaysShow": true
@@ -834,8 +853,12 @@
                 "can_path_over_water": true,
                 "is_amphibious": true
             },
-            "minecraft:persistent": {},
-            "minecraft:physics": {},
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
             "minecraft:scale": {
                 "value": 1
             },

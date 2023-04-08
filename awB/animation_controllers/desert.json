@@ -5,13 +5,12 @@
             "states": {
                 "default": {
                     "on_entry": [
-                        "/summon aw:desert_soldier 沙漠士兵",
-                        "/summon aw:desert_soldier 沙漠士兵",
-                        "/summon aw:desert_archer 沙漠弓箭手",
-                        "/summon aw:desert_soldier_horse 沙漠骑兵",
-                        "/summon aw:desert_archer_horse 沙漠游骑兵",
-                        "/summon aw:desert_commander 沙漠指挥官",
-                        "/summon aw:desert_general_horse 沙漠首领"
+                        "/summon aw:desert_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:desert_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:desert_archer ~-1 ~+1 ~-1",
+                        "/summon aw:desert_soldier_horse ~ ~+1 ~",
+                        "/summon aw:desert_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:desert_general_horse ~+1 ~+1 ~"
                     ]
                 }
             }

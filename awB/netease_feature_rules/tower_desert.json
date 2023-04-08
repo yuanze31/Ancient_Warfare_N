@@ -10,7 +10,7 @@
                                 {
                                     "operator": "==",
                                     "test": "has_biome_tag",
-                                    "value": "plains"
+                                    "value": "desert"
                                 }
                             ]
                         }
@@ -20,12 +20,12 @@
             "placement_pass": "surface_pass"
         },
         "description": {
-            "identifier": "rwydh:test_spawn",
-            "places_feature": "rwydh:test"
+            "identifier": "rwydh:tower_desert",
+            "places_feature": "rwydh:tower_desert"
         },
         "distribution": {
             "coordinate_eval_order": "xzy",
-            "iterations": "math.mod(variable.originx+0,1040)==0&&math.mod(variable.originz+0,1040)==0&&math.abs(query.noise(variable.originx+0,variable.originz+0))<0?0:0",
+            "iterations": "math.mod(variable.originx+0,80)==0&&math.mod(variable.originz+0,80)==0&&math.abs(query.noise(variable.originx+0,variable.originz+0))<0.2?1:0",
             "scatter_chance": 100,
             "x": {
                 "distribution": "uniform",

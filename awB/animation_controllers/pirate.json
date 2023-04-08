@@ -5,13 +5,12 @@
       "states": {
         "default": {
           "on_entry": [
-            "/summon aw:pirate_soldier 海盗士兵",
-            "/summon aw:pirate_soldier 海盗士兵",
-            "/summon aw:pirate_archer 海盗弓箭手",
-            "/summon aw:pirate_soldier_horse 海盗骑兵",
-            "/summon aw:pirate_archer_horse 海盗游骑兵",
-            "/summon aw:pirate_commander 海盗指挥官",
-            "/summon aw:pirate_general_horse 海盗首领"
+            "/summon aw:pirate_soldier ~+1 ~+1 ~+1",
+            "/summon aw:pirate_soldier ~+1 ~+1 ~-1",
+            "/summon aw:pirate_archer ~-1 ~+1 ~-1",
+            "/summon aw:pirate_soldier_horse ~ ~+1 ~",
+            "/summon aw:pirate_archer_horse ~-1 ~+1 ~+1",
+            "/summon aw:pirate_general_horse ~+1 ~+1 ~"
           ]
         }
       }

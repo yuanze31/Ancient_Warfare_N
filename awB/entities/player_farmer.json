@@ -1639,6 +1639,7 @@
             }
         },
         "components": {
+            "minecraft:behavior.float": {},
             "minecraft:type_family": {
                 "family": [
                     "villager",

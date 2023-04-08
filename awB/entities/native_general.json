@@ -639,6 +639,7 @@
             }
         },
         "components": {
+            "minecraft:behavior.float": {},
             "minecraft:annotation.open_door": {},
             "minecraft:attack": {
                 "damage": 2

@@ -5,13 +5,12 @@
       "states": {
         "default": {
           "on_entry": [
-            "/summon aw:player_soldier 士兵",
-            "/summon aw:player_soldier 士兵",
-            "/summon aw:player_archer 弓箭手",
-            "/summon aw:player_soldier_horse 骑兵",
-            "/summon aw:player_archer_horse 游骑兵",
-            "/summon aw:player_commander 指挥官",
-            "/summon aw:player_general_horse 首领"
+            "/summon aw:player_soldier ~+1 ~+1 ~+1",
+            "/summon aw:player_soldier ~+1 ~+1 ~-1",
+            "/summon aw:player_archer ~-1 ~+1 ~-1",
+            "/summon aw:player_soldier_horse ~ ~+1 ~",
+            "/summon aw:player_archer_horse ~-1 ~+1 ~+1",
+            "/summon aw:player_general_horse ~+1 ~+1 ~"
           ]
         }
       }
