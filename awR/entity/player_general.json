@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.base.attack",
+                "base": "animation.base.base",
+                "move": "animation.base.move",
+                "sit": "animation.base.sit"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "new": "geometry.player_general",
+                "old": "geometry.basic_entity"
+            },
+            "identifier": "aw:player_general",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.player_general"
+            ],
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "attack",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "spawn_egg": {
+                "texture": "player_egg",
+                "texture_index": 3
+            },
+            "textures": {
+                "new": "textures/entity/player/player_general",
+                "old": "textures/entity/player/old_player_general"
+            }
+        }
+    }
+}

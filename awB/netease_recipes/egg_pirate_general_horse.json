@@ -1,0 +1,42 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:recipes_egg_pirate_general_horse"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " T ",
+            "OQJ",
+            "HRA"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:saddle"
+            },
+            "H": {
+                "item": "minecraft:kelp"
+            },
+            "J": {
+                "item": "minecraft:iron_sword"
+            },
+            "O": {
+                "item": "minecraft:shield"
+            },
+            "Q": {
+                "item": "minecraft:leather_chestplate"
+            },
+            "R": {
+                "item": "minecraft:leather_leggings"
+            },
+            "T": {
+                "item": "minecraft:iron_helmet"
+            }
+        },
+        "result": {
+            "item": "aw:egg_pirate_general_horse"
+        }
+    }
+}

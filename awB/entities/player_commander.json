@@ -13,6 +13,166 @@
                     "track_target": true
                 }
             },
+            "chainmail_suit": {
+                "minecraft:behavior.send_event": {
+                    "event_choices": [
+                        {
+                            "cast_duration": 0.1,
+                            "cooldown_time": 0.1,
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "viking"
+                                    }
+                                ]
+                            },
+                            "max_activation_range": 50,
+                            "min_activation_range": 0,
+                            "sequence": [
+                                {
+                                    "base_delay": 0.05,
+                                    "event": "chainmail_suit"
+                                }
+                            ],
+                            "weight": 3
+                        }
+                    ],
+                    "priority": 0
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/commander3.json"
+                }
+            },
+            "diamond_suit": {
+                "minecraft:behavior.send_event": {
+                    "event_choices": [
+                        {
+                            "cast_duration": 0.1,
+                            "cooldown_time": 0.1,
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "viking"
+                                    }
+                                ]
+                            },
+                            "max_activation_range": 50,
+                            "min_activation_range": 0,
+                            "sequence": [
+                                {
+                                    "base_delay": 0.05,
+                                    "event": "diamond_suit"
+                                }
+                            ],
+                            "weight": 3
+                        }
+                    ],
+                    "priority": 0
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/commander5.json"
+                }
+            },
+            "golden_suit": {
+                "minecraft:behavior.send_event": {
+                    "event_choices": [
+                        {
+                            "cast_duration": 0.1,
+                            "cooldown_time": 0.1,
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "viking"
+                                    }
+                                ]
+                            },
+                            "max_activation_range": 50,
+                            "min_activation_range": 0,
+                            "sequence": [
+                                {
+                                    "base_delay": 0.05,
+                                    "event": "golden_suit"
+                                }
+                            ],
+                            "weight": 3
+                        }
+                    ],
+                    "priority": 0
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/commander2.json"
+                }
+            },
+            "iron_suit": {
+                "minecraft:behavior.send_event": {
+                    "event_choices": [
+                        {
+                            "cast_duration": 0.1,
+                            "cooldown_time": 0.1,
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "viking"
+                                    }
+                                ]
+                            },
+                            "max_activation_range": 50,
+                            "min_activation_range": 0,
+                            "sequence": [
+                                {
+                                    "base_delay": 0.05,
+                                    "event": "iron_suit"
+                                }
+                            ],
+                            "weight": 3
+                        }
+                    ],
+                    "priority": 0
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/commander4.json"
+                }
+            },
+            "leather_suit": {
+                "minecraft:behavior.send_event": {
+                    "event_choices": [
+                        {
+                            "cast_duration": 0.1,
+                            "cooldown_time": 0.1,
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "viking"
+                                    }
+                                ]
+                            },
+                            "max_activation_range": 50,
+                            "min_activation_range": 0,
+                            "sequence": [
+                                {
+                                    "base_delay": 0.05,
+                                    "event": "leather_suit"
+                                }
+                            ],
+                            "weight": 3
+                        }
+                    ],
+                    "priority": 0
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/entities/commander1.json"
+                }
+            },
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 1,
@@ -190,9 +350,7 @@
                         }
                     }
                 ],
-                "minecraft:is_tamed": {
-
-                },
+                "minecraft:is_tamed": {},
                 "minecraft:leashable": {
                     "hard_distance": 6,
                     "max_distance": 10,
@@ -214,9 +372,7 @@
                     "event": "minecraft:stop_aggro",
                     "target": "self"
                 },
-                "minecraft:sittable": {
-
-                }
+                "minecraft:sittable": {}
             },
             "准备攻击": {
                 "minecraft:behavior.send_event": {
@@ -276,14 +432,10 @@
                     "priority": 0
                 }
             },
-            "基本属性": {
-
-            }
+            "基本属性": {}
         },
         "components": {
-            "minecraft:behavior.float": {
-
-            },
+            "minecraft:behavior.float": {},
             "minecraft:behavior.hurt_by_target": {
                 "priority": 1
             },
@@ -354,9 +506,7 @@
                 "suffocateTime": 0,
                 "totalSupply": 15
             },
-            "minecraft:can_climb": {
-
-            },
+            "minecraft:can_climb": {},
             "minecraft:collision_box": {
                 "height": 2,
                 "width": 0.8
@@ -463,21 +613,15 @@
                 "max": 20,
                 "value": 20
             },
-            "minecraft:jump.static": {
-
-            },
+            "minecraft:jump.static": {},
             "minecraft:loot": {
                 "table": "loot_tables/entities/emerald.json"
             },
             "minecraft:movement": {
                 "value": 0.3
             },
-            "minecraft:movement.basic": {
-
-            },
-            "minecraft:nameable": {
-
-            },
+            "minecraft:movement.basic": {},
+            "minecraft:nameable": {},
             "minecraft:navigation.walk": {
                 "avoid_sun": false,
                 "avoid_water": true,
@@ -491,12 +635,8 @@
                 "event": "minecraft:stop_aggro",
                 "target": "self"
             },
-            "minecraft:persistent": {
-
-            },
-            "minecraft:physics": {
-
-            },
+            "minecraft:persistent": {},
+            "minecraft:physics": {},
             "minecraft:scale": {
                 "value": 1
             },
@@ -517,7 +657,7 @@
             "identifier": "aw:player_commander",
             "is_experimental": false,
             "is_spawnable": false,
-            "is_summonable": false
+            "is_summonable": true
         },
         "events": {
             "chainmail_suit": {
@@ -665,9 +805,7 @@
                 "randomize": [
                     {
                         "add": {
-                            "component_groups": [
-
-                            ]
+                            "component_groups": []
                         }
                     }
                 ]
