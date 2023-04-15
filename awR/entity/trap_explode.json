@@ -2,32 +2,32 @@
     "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
+            "animations": {
+                "base": "animation.base.base"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "default": "geometry.trap_explode"
+            },
             "identifier": "aw:trap_explode",
             "materials": {
                 "default": "entity_alphatest"
             },
-            "textures": {
-                "new": "textures/entity/trap/trap_explode"
-            },
-            "geometry": {
-                "new": "geometry.trap_explode"
-            },
-            "enable_attachables": true,
+            "render_controllers": [
+                "controller.render.default"
+            ],
             "scripts": {
                 "animate": [
                     "base"
                 ],
                 "scale": "1"
             },
-            "animations": {
-                "base": "animation.base.base"
-            },
-            "render_controllers": [
-                "controller.render.default"
-            ],
             "spawn_egg": {
                 "texture": "trap_explode",
                 "texture_index": 0
+            },
+            "textures": {
+                "default": "textures/entity/trap/trap_explode"
             }
         }
     }

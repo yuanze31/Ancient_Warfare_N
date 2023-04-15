@@ -1,29 +1,8 @@
 {
     "resource_pack_name": "vanilla",
     "texture_data": {
-        "aw:iron_set": {
-            "textures": "textures/items/iron_set"
-        },
-        "aw:magic_chainmail": {
-            "textures": "textures/items/chainmail_set"
-        },
-        "aw:magic_diamond": {
-            "textures": "textures/items/diamond_set"
-        },
-        "aw:magic_golden": {
-            "textures": "textures/items/gold_set"
-        },
-        "aw:magic_iron": {
-            "textures": "textures/items/iron_set"
-        },
-        "aw:magic_leather": {
-            "textures": "textures/items/leather_set"
-        },
-        "aw:magic_netherite": {
-            "textures": "textures/items/netherite_set"
-        },
-        "aw:debug_sword": {
-            "textures": "textures/items/bwc"
+        "aim": {
+            "textures": "textures/entity/aim"
         },
         "bandit_archer_horse": {
             "textures": "textures/items/bandit_archer_horse"
@@ -47,6 +26,9 @@
         },
         "chainmail_set": {
             "textures": "textures/items/chainmail_set"
+        },
+        "debug_sword": {
+            "textures": "textures/items/bwc"
         },
         "desert_archer_horse": {
             "textures": "textures/items/desert_archer_horse"
@@ -230,6 +212,24 @@
         "leather_set": {
             "textures": "textures/items/leather_set"
         },
+        "magic_chainmail": {
+            "textures": "textures/items/chainmail_set"
+        },
+        "magic_diamond": {
+            "textures": "textures/items/diamond_set"
+        },
+        "magic_golden": {
+            "textures": "textures/items/gold_set"
+        },
+        "magic_iron": {
+            "textures": "textures/items/iron_set"
+        },
+        "magic_leather": {
+            "textures": "textures/items/leather_set"
+        },
+        "magic_netherite": {
+            "textures": "textures/items/netherite_set"
+        },
         "native_archer_horse": {
             "textures": "textures/items/native_archer_horse"
         },
@@ -290,6 +290,12 @@
         },
         "stone_command_baton": {
             "textures": "textures/items/stone_command_baton"
+        },
+        "to_new_skin": {
+            "textures": "textures/items/to_new_skin"
+        },
+        "to_old_skin": {
+            "textures": "textures/items/to_old_skin"
         },
         "viking_archer_horse": {
             "textures": "textures/items/viking_archer_horse"

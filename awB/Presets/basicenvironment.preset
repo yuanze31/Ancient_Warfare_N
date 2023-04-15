@@ -1,0 +1,29 @@
+{
+    "boxDataList": [],
+    "childParts": [
+        {
+            "bpType": "basicenvironmentPart",
+            "changes": {},
+            "classType": "PartInstance",
+            "clientPartType": null,
+            "customVariables": [],
+            "directoryPath": "basicenvironment",
+            "metaType": "basicenvironmentPartMeta",
+            "objId": "e8ce2d07003943378542614ca2ab5252",
+            "partType": "basicenvironmentPart"
+        }
+    ],
+    "childPresets": [],
+    "classType": "PresetBase",
+    "dimension": 0,
+    "forceLoad": true,
+    "name": "basicenvironment",
+    "notifyRemove": true,
+    "objId": "b622b291fc5e4d72a5376ced4b89b018",
+    "preLoad": true,
+    "presetId": "f498bdff-6c5a-4ee0-a588-0cb9ba02d454",
+    "presetType": "空预设",
+    "previewEnable": true,
+    "singleton": false,
+    "unique": false
+}
