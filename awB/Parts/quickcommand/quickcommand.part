@@ -1,0 +1,11 @@
+{
+    "bpType": "quickcommandPart",
+    "changes": {},
+    "classType": "PartInstance",
+    "clientPartType": null,
+    "customVariables": [],
+    "directoryPath": "quickcommand",
+    "metaType": "quickcommandPartMeta",
+    "objId": "ba98a0b827864d178f2102c14c3345e4",
+    "partType": "quickcommandPart"
+}

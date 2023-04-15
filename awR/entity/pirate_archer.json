@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "base": "animation.base.base",
+                "bow_and_arrow": "animation.base.bow_and_arrow",
+                "move": "animation.base.move",
+                "sit": "animation.base.sit"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "new": "geometry.pirate_archer",
+                "old": "geometry.basic_entity"
+            },
+            "identifier": "aw:pirate_archer",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.pirate_archer"
+            ],
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "sit",
+                    "bow_and_arrow"
+                ],
+                "scale": "1"
+            },
+            "spawn_egg": {
+                "texture": "pirate_egg",
+                "texture_index": 1
+            },
+            "textures": {
+                "new": "textures/entity/pirate/pirate_archer",
+                "old": "textures/entity/pirate/old_pirate_archer"
+            }
+        }
+    }
+}

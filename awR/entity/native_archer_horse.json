@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "base": "animation.base.base",
+                "bow_and_arrow": "animation.base.bow_and_arrow",
+                "move": "animation.horse.move",
+                "sit": "animation.base.sit"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "new": "geometry.native_archer_horse",
+                "old": "geometry.old.horse"
+            },
+            "identifier": "aw:native_archer_horse",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.native_archer_horse"
+            ],
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "bow_and_arrow",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "spawn_egg": {
+                "texture": "native_archer_horse"
+            },
+            "textures": {
+                "new": "textures/entity/native/native_archer_horse",
+                "old": "textures/entity/native/old_native_archer_horse"
+            }
+        }
+    }
+}

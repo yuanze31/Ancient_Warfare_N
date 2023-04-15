@@ -32,6 +32,64 @@
                     "table": "loot_tables/entities/archer_horse/archer_horse_netherite.json"
                 }
             },
+            "new_skin": {
+                "minecraft:interact": [
+                    {
+                        "interact_text": "switch to old skin",
+                        "on_interact": {
+                            "event": "switch_to_old",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:wooden_command_baton"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": false
+                    }
+                ],
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "old_skin": {
+                "minecraft:interact": [
+                    {
+                        "interact_text": "switch to new skin",
+                        "on_interact": {
+                            "event": "switch_to_new",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:wooden_command_baton"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": false
+                    }
+                ],
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 2,
@@ -924,7 +982,8 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "old_skin"
                     ]
                 }
             },
@@ -969,6 +1028,30 @@
                 "remove": {
                     "component_groups": [
                         "recruit_follow"
+                    ]
+                }
+            },
+            "switch_to_new": {
+                "add": {
+                    "component_groups": [
+                        "new_skin"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "old_skin"
+                    ]
+                }
+            },
+            "switch_to_old": {
+                "add": {
+                    "component_groups": [
+                        "old_skin"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "new_skin"
                     ]
                 }
             }

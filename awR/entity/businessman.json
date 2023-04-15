@@ -7,10 +7,10 @@
                 "default": "entity_alphatest"
             },
             "textures": {
-                "default": "textures/entity/businessman"
+                "new": "textures/entity/businessman"
             },
             "geometry": {
-                "default": "geometry.businessman"
+                "new": "geometry.businessman"
             },
             "enable_attachables": true,
             "scripts": {
@@ -25,7 +25,8 @@
                 "move": "animation.base.move"
             },
             "render_controllers": [
-                "controller.render.default"
+                "controller.render.default",
+                "controller.render."
             ],
             "spawn_egg": {
                 "texture": "businessman",

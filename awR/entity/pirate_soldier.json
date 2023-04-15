@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.base.attack",
+                "base": "animation.base.base",
+                "move": "animation.base.move",
+                "sit": "animation.base.sit"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "new": "geometry.pirate_soldier",
+                "old": "geometry.basic_entity"
+            },
+            "identifier": "aw:pirate_soldier",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.pirate_soldier"
+            ],
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "attack",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "spawn_egg": {
+                "texture": "pirate_egg",
+                "texture_index": 0
+            },
+            "textures": {
+                "new": "textures/entity/pirate/pirate_soldier",
+                "old": "textures/entity/pirate/old_pirate_soldier"
+            }
+        }
+    }
+}

@@ -32,6 +32,64 @@
                     "table": "loot_tables/entities/soldier/soldier_netherite.json"
                 }
             },
+            "new_skin": {
+                "minecraft:interact": [
+                    {
+                        "interact_text": "switch to old skin",
+                        "on_interact": {
+                            "event": "switch_to_old",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:wooden_command_baton"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": false
+                    }
+                ],
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "old_skin": {
+                "minecraft:interact": [
+                    {
+                        "interact_text": "switch to new skin",
+                        "on_interact": {
+                            "event": "switch_to_new",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:wooden_command_baton"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": false
+                    }
+                ],
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 2,
@@ -525,13 +583,17 @@
                     "max": 20,
                     "value": 20
                 },
-                "minecraft:is_tamed": {},
+                "minecraft:is_tamed": {
+
+                },
                 "minecraft:leashable": {
                     "hard_distance": 8.0,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
-                "minecraft:persistent": {},
+                "minecraft:persistent": {
+
+                },
                 "minecraft:type_family": {
                     "family": [
                         "aw",
@@ -639,8 +701,9 @@
             }
         },
         "components": {
-            "minecraft:behavior.float": {},
-            "minecraft:annotation.open_door": {},
+            "minecraft:annotation.open_door": {
+
+            },
             "minecraft:attack": {
                 "damage": 2
             },
@@ -649,6 +712,9 @@
                     "minecraft:iron_sword"
                 ],
                 "priority": 3
+            },
+            "minecraft:behavior.float": {
+
             },
             "minecraft:behavior.hurt_by_target": {
                 "hurt_owner": true,
@@ -664,8 +730,12 @@
                 "require_complete_path": true,
                 "track_target": true
             },
-            "minecraft:behavior.move_towards_target": {},
-            "minecraft:behavior.open_door": {},
+            "minecraft:behavior.move_towards_target": {
+
+            },
+            "minecraft:behavior.open_door": {
+
+            },
             "minecraft:behavior.random_look_around": {
                 "priority": 7
             },
@@ -673,7 +743,9 @@
                 "breathesAir": true,
                 "breathesWater": true
             },
-            "minecraft:can_climb": {},
+            "minecraft:can_climb": {
+
+            },
             "minecraft:collision_box": {
                 "height": 1.8,
                 "width": 0.7
@@ -688,15 +760,21 @@
                 "max": 100,
                 "value": 100
             },
-            "minecraft:jump.static": {},
+            "minecraft:jump.static": {
+
+            },
             "minecraft:loot": {
                 "table": "loot_tables/entities/soldier/soldier_loot.json"
             },
             "minecraft:movement": {
                 "value": 0.4
             },
-            "minecraft:movement.amphibious": {},
-            "minecraft:movement.basic": {},
+            "minecraft:movement.amphibious": {
+
+            },
+            "minecraft:movement.basic": {
+
+            },
             "minecraft:nameable": {
                 "allowNameTagRenaming": true,
                 "alwaysShow": true
@@ -709,8 +787,12 @@
                 "can_path_over_water": true,
                 "is_amphibious": true
             },
-            "minecraft:persistent": {},
-            "minecraft:physics": {},
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
             "minecraft:pushable": {
                 "is_pushable": true,
                 "is_pushable_by_piston": true
@@ -777,7 +859,8 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "old_skin"
                     ]
                 }
             },
@@ -822,6 +905,30 @@
                 "remove": {
                     "component_groups": [
                         "recruit_follow"
+                    ]
+                }
+            },
+            "switch_to_new": {
+                "add": {
+                    "component_groups": [
+                        "new_skin"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "old_skin"
+                    ]
+                }
+            },
+            "switch_to_old": {
+                "add": {
+                    "component_groups": [
+                        "old_skin"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "new_skin"
                     ]
                 }
             }

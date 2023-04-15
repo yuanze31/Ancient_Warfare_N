@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "attack": "animation.base.attack",
+                "base": "animation.base.base",
+                "move": "animation.base.move",
+                "sit": "animation.base.sit"
+            },
+            "enable_attachables": true,
+            "geometry": {
+                "new": "geometry.native_commander",
+                "old": "geometry.basic_entity"
+            },
+            "identifier": "aw:native_commander",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default",
+                "controller.render.native_commander"
+            ],
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "attack",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "spawn_egg": {
+                "texture": "native_egg",
+                "texture_index": 2
+            },
+            "textures": {
+                "new": "textures/entity/native/native_commander",
+                "old": "textures/entity/native/old_native_commander"
+            }
+        }
+    }
+}
