@@ -1,0 +1,119 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:diamond_sword",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:golden_helmet",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:golden_chestplate",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:golden_leggings",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        },
+                        {
+                            "data": 0,
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:golden_boots",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

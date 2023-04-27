@@ -5,7 +5,6 @@
             "minecraft:icon": "bwc"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:bwc"
         }
     }

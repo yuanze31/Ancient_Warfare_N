@@ -5,7 +5,6 @@
             "minecraft:icon": "leather_set"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:leather_set"
         }
     }
