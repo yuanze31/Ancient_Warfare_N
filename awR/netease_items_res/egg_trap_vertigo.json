@@ -5,7 +5,6 @@
             "minecraft:icon": "egg_trap_vertigo"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:egg_trap_vertigo"
         }
     }

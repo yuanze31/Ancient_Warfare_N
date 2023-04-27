@@ -5,7 +5,6 @@
             "minecraft:icon": "chainmail_set"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:chainmail_set"
         }
     }

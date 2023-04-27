@@ -5,7 +5,6 @@
             "minecraft:icon": "aw:magic_netherite"
         },
         "description": {
-            "category": "Equipment",
             "identifier": "aw:magic_netherite"
         }
     }

@@ -5,7 +5,6 @@
             "minecraft:icon": "egg_trap_explode"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:egg_trap_explode"
         }
     }
