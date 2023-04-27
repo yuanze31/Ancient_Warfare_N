@@ -5,7 +5,6 @@
             "minecraft:icon": "egg_bandit_general"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:egg_bandit_general"
         }
     }

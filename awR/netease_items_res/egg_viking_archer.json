@@ -5,7 +5,6 @@
             "minecraft:icon": "egg_viking_archer"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:egg_viking_archer"
         }
     }

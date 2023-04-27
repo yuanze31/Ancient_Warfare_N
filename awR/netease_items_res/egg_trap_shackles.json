@@ -5,7 +5,6 @@
             "minecraft:icon": "egg_trap_shackles"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:egg_trap_shackles"
         }
     }

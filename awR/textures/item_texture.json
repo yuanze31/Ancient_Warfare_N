@@ -27,6 +27,9 @@
         "chainmail_set": {
             "textures": "textures/items/chainmail_set"
         },
+        "chainmail_set_all": {
+            "textures": "textures/items/chainmail_set_all"
+        },
         "debug_sword": {
             "textures": "textures/items/bwc"
         },
@@ -52,6 +55,9 @@
         },
         "diamond_set": {
             "textures": "textures/items/diamond_set"
+        },
+        "diamond_set_all": {
+            "textures": "textures/items/diamond_set_all"
         },
         "egg_bandit_archer": {
             "textures": "textures/items/egg_bandit_archer"
@@ -203,14 +209,23 @@
         "gold_set": {
             "textures": "textures/items/gold_set"
         },
+        "gold_set_all": {
+            "textures": "textures/items/gold_set_all"
+        },
         "iron_command_baton": {
             "textures": "textures/items/iron_command_baton"
         },
         "iron_set": {
             "textures": "textures/items/iron_set"
         },
+        "iron_set_all": {
+            "textures": "textures/items/iron_set_all"
+        },
         "leather_set": {
             "textures": "textures/items/leather_set"
+        },
+        "leather_set_all": {
+            "textures": "textures/items/leather_set_all"
         },
         "magic_chainmail": {
             "textures": "textures/items/chainmail_set"
@@ -249,6 +264,9 @@
         },
         "netherite_set": {
             "textures": "textures/items/netherite_set"
+        },
+        "netherite_set_all": {
+            "textures": "textures/items/netherite_set_all"
         },
         "pirate_archer_horse": {
             "textures": "textures/items/pirate_archer_horse"

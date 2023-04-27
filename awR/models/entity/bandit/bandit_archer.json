@@ -36,7 +36,7 @@
 					]
 				},
 				{
-					"name": "RightItem",
+					"name": "rightItem",
 					"parent": "RightArm",
 					"pivot": [-6, 15, 0]
 				},

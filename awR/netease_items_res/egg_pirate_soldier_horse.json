@@ -5,7 +5,6 @@
             "minecraft:icon": "egg_pirate_soldier_horse"
         },
         "description": {
-            "category": "Construction",
             "identifier": "aw:egg_pirate_soldier_horse"
         }
     }

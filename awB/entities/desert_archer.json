@@ -277,6 +277,138 @@
                             }
                         },
                         "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "leather_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:leather_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "golden_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:gold_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "chainmail_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:chainmail_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "iron_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:iron_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "diamond_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:diamond_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "netherite_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:netherite_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
                     }
                 ]
             },
@@ -479,6 +611,138 @@
                             }
                         },
                         "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "leather_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:leather_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "golden_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:gold_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "chainmail_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:chainmail_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "iron_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:iron_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "diamond_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:diamond_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
+                    },
+                    {
+                        "interact_text": "添加",
+                        "on_interact": {
+                            "event": "netherite_suit_all",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "domain": "hand",
+                                        "subject": "other",
+                                        "test": "has_equipment",
+                                        "value": "aw:netherite_set_all"
+                                    },
+                                    {
+                                        "subject": "other",
+                                        "test": "is_family",
+                                        "value": "player"
+                                    }
+                                ]
+                            }
+                        },
+                        "use_item": true
                     }
                 ]
             },
@@ -554,54 +818,6 @@
                                 "value": "monster"
                             },
                             "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "bandit"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "desert"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "native"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "pirate"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "playera"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "viking"
-                            },
-                            "max_dist": 32
                         }
                     ],
                     "must_see": true,
@@ -636,7 +852,7 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
-                                "value": "player"
+                                "value": "playerdesertarmy"
                             }
                         }
                     }
@@ -732,7 +948,7 @@
                     "family": [
                         "aw",
                         "archer",
-                        "playerarmy"
+                        "playerdesertarmy"
                     ]
                 }
             },
@@ -867,22 +1083,6 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
-                                "value": "player"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
-                                "value": "playerarmy"
-                            },
-                            "max_dist": 32
-                        },
-                        {
-                            "filters": {
-                                "subject": "other",
-                                "test": "is_family",
                                 "value": "bandit"
                             },
                             "max_dist": 32
@@ -976,7 +1176,7 @@
             "minecraft:can_climb": {},
             "minecraft:collision_box": {
                 "height": 1.8,
-                "width": 0.7
+                "width": 0.6
             },
             "minecraft:equipment": {
                 "table": "loot_tables/entities/archer/archer_basic.json"
