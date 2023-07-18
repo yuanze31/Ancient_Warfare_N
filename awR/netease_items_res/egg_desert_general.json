@@ -5,6 +5,7 @@
             "minecraft:icon": "egg_desert_general"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:egg_desert_general"
         }
     }

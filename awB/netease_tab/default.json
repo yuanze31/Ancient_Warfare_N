@@ -6,9 +6,9 @@
             "name": "awe"
         },
         {
-            "icon": "textures/tab/tab_awb",
-            "labelText": "itemCategory.name.awb",
-            "name": "awb"
+            "icon": "textures/tab/tab_aweold",
+            "labelText": "itemCategory.name.aweold",
+            "name": "aweold"
         },
         {
             "icon": "textures/tab/tab_awi",
@@ -19,6 +19,11 @@
             "icon": "textures/tab/tab_awt",
             "labelText": "itemCategory.name.awt",
             "name": "awt"
+        },
+        {
+            "icon": "textures/tab/tab_awb",
+            "labelText": "itemCategory.name.awb",
+            "name": "awb"
         }
     ]
 }

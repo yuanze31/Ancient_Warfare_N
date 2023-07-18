@@ -301,7 +301,9 @@
                         "use_item": true
                     }
                 ],
-                "minecraft:is_tamed": {},
+                "minecraft:is_tamed": {
+
+                },
                 "minecraft:leashable": {
                     "hard_distance": 6,
                     "max_distance": 10,
@@ -323,7 +325,9 @@
                     "event": "minecraft:stop_aggro",
                     "target": "self"
                 },
-                "minecraft:sittable": {}
+                "minecraft:sittable": {
+
+                }
             },
             "准备攻击": {
                 "minecraft:behavior.send_event": {
@@ -383,10 +387,14 @@
                     "priority": 0
                 }
             },
-            "基本属性": {}
+            "基本属性": {
+
+            }
         },
         "components": {
-            "minecraft:behavior.float": {},
+            "minecraft:behavior.float": {
+
+            },
             "minecraft:behavior.hurt_by_target": {
                 "priority": 1
             },
@@ -457,7 +465,9 @@
                 "suffocateTime": 0,
                 "totalSupply": 15
             },
-            "minecraft:can_climb": {},
+            "minecraft:can_climb": {
+
+            },
             "minecraft:collision_box": {
                 "height": 2,
                 "width": 0.8
@@ -488,15 +498,21 @@
                 "max": 20,
                 "value": 20
             },
-            "minecraft:jump.static": {},
+            "minecraft:jump.static": {
+
+            },
             "minecraft:loot": {
                 "table": "loot_tables/entities/emerald.json"
             },
             "minecraft:movement": {
                 "value": 0.3
             },
-            "minecraft:movement.basic": {},
-            "minecraft:nameable": {},
+            "minecraft:movement.basic": {
+
+            },
+            "minecraft:nameable": {
+
+            },
             "minecraft:navigation.walk": {
                 "avoid_sun": false,
                 "avoid_water": true,
@@ -510,8 +526,12 @@
                 "event": "minecraft:stop_aggro",
                 "target": "self"
             },
-            "minecraft:persistent": {},
-            "minecraft:physics": {},
+            "minecraft:persistent": {
+
+            },
+            "minecraft:physics": {
+
+            },
             "minecraft:scale": {
                 "value": 1
             },
@@ -526,7 +546,7 @@
             "identifier": "aw:viking_commander",
             "is_experimental": false,
             "is_spawnable": false,
-            "is_summonable": true
+            "is_summonable": false
         },
         "events": {
             "chainmail_suit": {
@@ -609,7 +629,9 @@
                                 "attack"
                             ]
                         },
-                        "remove": {},
+                        "remove": {
+
+                        },
                         "weight": 50
                     },
                     {
@@ -619,7 +641,9 @@
                                 "attack"
                             ]
                         },
-                        "remove": {},
+                        "remove": {
+
+                        },
                         "weight": 40
                     },
                     {
@@ -629,7 +653,9 @@
                                 "attack"
                             ]
                         },
-                        "remove": {},
+                        "remove": {
+
+                        },
                         "weight": 30
                     },
                     {
@@ -639,7 +665,9 @@
                                 "attack"
                             ]
                         },
-                        "remove": {},
+                        "remove": {
+
+                        },
                         "weight": 20
                     },
                     {
@@ -649,7 +677,9 @@
                                 "attack"
                             ]
                         },
-                        "remove": {},
+                        "remove": {
+
+                        },
                         "weight": 10
                     }
                 ]
@@ -674,7 +704,9 @@
                 "randomize": [
                     {
                         "add": {
-                            "component_groups": []
+                            "component_groups": [
+
+                            ]
                         }
                     }
                 ]
@@ -683,7 +715,9 @@
                 "randomize": [
                     {
                         "remove": {
-                            "component_groups": []
+                            "component_groups": [
+
+                            ]
                         }
                     }
                 ]

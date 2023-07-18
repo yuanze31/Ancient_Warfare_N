@@ -1,0 +1,12 @@
+{
+    "Arena.Component.Namespace": "aw",
+    "FirstTabSetting": 0,
+    "ShortItemSettings": [
+        "awR\\ui",
+        "awB\\Presets",
+        "awB\\Parts",
+        "awR\\effects",
+        "awR\\models",
+        "awR\\textures"
+    ]
+}

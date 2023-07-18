@@ -1,0 +1,44 @@
+{
+    "bandit": {
+        "scope": "bandit",
+        "body": [
+            "bandit'$1'"
+        ]
+    },
+    "desert": {
+        "scope": "desert",
+        "body": [
+            "desert'$1'"
+        ]
+    },
+    "native": {
+        "scope": "native",
+        "body": [
+            "native'$1'"
+        ]
+    },
+    "pirate": {
+        "scope": "pirate",
+        "body": [
+            "pirate'$1'"
+        ]
+    },
+    "player": {
+        "scope": "player",
+        "body": [
+            "player'$1'"
+        ]
+    },
+    "viking": {
+        "scope": "viking",
+        "body": [
+            "viking'$1'"
+        ]
+    },
+    "trap": {
+        "scope": "trap",
+        "body": [
+            "trap'$1'"
+        ]
+    }
+}

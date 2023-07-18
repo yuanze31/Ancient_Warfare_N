@@ -5,6 +5,7 @@
             "minecraft:icon": "egg_pirate_commander"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:egg_pirate_commander"
         }
     }

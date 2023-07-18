@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:old_viking_archer",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/old/viking/viking_archer"
+            },
+            "geometry": {
+                "default": "geometry.old_basic"
+            },
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "sit",
+                    "bow_and_arrow"
+                ],
+                "scale": "1"
+            },
+            "animations": {
+                "base": "animation.old.base.base",
+                "move": "animation.old.base.move",
+                "sit": "animation.old.base.sit",
+                "bow_and_arrow": "animation.old.base.bow_and_arrow"
+            },
+            "render_controllers": [
+                "controller.render.skeleton"
+            ],
+            "enable_attachables": true,
+            "spawn_egg": {
+                "texture": "viking_egg",
+                "texture_index": 1
+            }
+        }
+    }
+}
