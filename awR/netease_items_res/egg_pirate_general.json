@@ -5,6 +5,7 @@
             "minecraft:icon": "egg_pirate_general"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:egg_pirate_general"
         }
     }

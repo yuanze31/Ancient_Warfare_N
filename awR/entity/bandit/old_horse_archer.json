@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:old_bandit_archer_horse",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/old/bandit/bandit_archer_horse"
+            },
+            "geometry": {
+                "default": "geometry.old_basic_horse"
+            },
+            "enable_attachables": true,
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "bow_and_arrow",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "animations": {
+                "base": "animation.old.base.base",
+                "move": "animation.old.horse.move",
+                "bow_and_arrow": "animation.old.base.bow_and_arrow",
+                "sit": "animation.old.base.sit"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "texture": "bandit_archer_horse"
+            }
+        }
+    }
+}

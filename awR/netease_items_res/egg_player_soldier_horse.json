@@ -5,6 +5,7 @@
             "minecraft:icon": "egg_player_soldier_horse"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:egg_player_soldier_horse"
         }
     }

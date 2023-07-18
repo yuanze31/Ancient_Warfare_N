@@ -546,7 +546,7 @@
             "identifier": "aw:pirate_commander",
             "is_experimental": false,
             "is_spawnable": false,
-            "is_summonable": true
+            "is_summonable": false
         },
         "events": {
             "chainmail_suit": {

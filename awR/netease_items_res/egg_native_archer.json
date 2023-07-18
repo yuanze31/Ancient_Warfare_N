@@ -5,6 +5,7 @@
             "minecraft:icon": "egg_native_archer"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:egg_native_archer"
         }
     }
