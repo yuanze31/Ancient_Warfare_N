@@ -9,7 +9,7 @@
             },
             "chainmail_suit_all": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_chainmail_all.json"
+                    "table": "loot_tables/entities/soldier/soldier_chainmail_all.json"
                 }
             },
             "diamond_suit": {
@@ -19,7 +19,7 @@
             },
             "diamond_suit_all": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_diamond_all.json"
+                    "table": "loot_tables/entities/soldier/soldier_diamond_all.json"
                 }
             },
             "golden_suit": {
@@ -29,7 +29,7 @@
             },
             "golden_suit_all": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_golden_all.json"
+                    "table": "loot_tables/entities/soldier/soldier_golden_all.json"
                 }
             },
             "iron_suit": {
@@ -39,7 +39,7 @@
             },
             "iron_suit_all": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_iron_all.json"
+                    "table": "loot_tables/entities/soldier/soldier_iron_all.json"
                 }
             },
             "leather_suit": {
@@ -49,7 +49,7 @@
             },
             "leather_suit_all": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_leather_all.json"
+                    "table": "loot_tables/entities/soldier/soldier_leather_all.json"
                 }
             },
             "netherite_suit": {
@@ -59,7 +59,7 @@
             },
             "netherite_suit_all": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_netherite_all.json"
+                    "table": "loot_tables/entities/soldier/soldier_netherite_all.json"
                 }
             },
             "new_skin": {
@@ -853,17 +853,13 @@
                     "max": 20,
                     "value": 20
                 },
-                "minecraft:is_tamed": {
-
-                },
+                "minecraft:is_tamed": {},
                 "minecraft:leashable": {
                     "hard_distance": 8.0,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
-                "minecraft:persistent": {
-
-                },
+                "minecraft:persistent": {},
                 "minecraft:type_family": {
                     "family": [
                         "aw",
@@ -1001,9 +997,7 @@
             }
         },
         "components": {
-            "minecraft:annotation.open_door": {
-
-            },
+            "minecraft:annotation.open_door": {},
             "minecraft:attack": {
                 "damage": 2
             },
@@ -1013,9 +1007,7 @@
                 ],
                 "priority": 3
             },
-            "minecraft:behavior.float": {
-
-            },
+            "minecraft:behavior.float": {},
             "minecraft:behavior.hurt_by_target": {
                 "hurt_owner": true,
                 "priority": 2
@@ -1030,12 +1022,8 @@
                 "require_complete_path": true,
                 "track_target": true
             },
-            "minecraft:behavior.move_towards_target": {
-
-            },
-            "minecraft:behavior.open_door": {
-
-            },
+            "minecraft:behavior.move_towards_target": {},
+            "minecraft:behavior.open_door": {},
             "minecraft:behavior.random_look_around": {
                 "priority": 7
             },
@@ -1043,9 +1031,7 @@
                 "breathesAir": true,
                 "breathesWater": true
             },
-            "minecraft:can_climb": {
-
-            },
+            "minecraft:can_climb": {},
             "minecraft:collision_box": {
                 "height": 1.8,
                 "width": 0.6
@@ -1060,21 +1046,15 @@
                 "max": 100,
                 "value": 100
             },
-            "minecraft:jump.static": {
-
-            },
+            "minecraft:jump.static": {},
             "minecraft:loot": {
                 "table": "loot_tables/entities/soldier/soldier_loot.json"
             },
             "minecraft:movement": {
                 "value": 0.4
             },
-            "minecraft:movement.amphibious": {
-
-            },
-            "minecraft:movement.basic": {
-
-            },
+            "minecraft:movement.amphibious": {},
+            "minecraft:movement.basic": {},
             "minecraft:nameable": {
                 "allowNameTagRenaming": true,
                 "alwaysShow": true
@@ -1087,12 +1067,8 @@
                 "can_path_over_water": true,
                 "is_amphibious": true
             },
-            "minecraft:persistent": {
-
-            },
-            "minecraft:physics": {
-
-            },
+            "minecraft:persistent": {},
+            "minecraft:physics": {},
             "minecraft:pushable": {
                 "is_pushable": true,
                 "is_pushable_by_piston": true
