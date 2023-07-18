@@ -1,30 +1,30 @@
 {
-  "format_version": 1,
-  "modules": [
-    {
-      "description": "古代战争debug",
-      "type": "resources",
-      "uuid": "7399ece8-d5b2-4de7-99ba-97b05fb36a8a",
-      "version": [
-        1,
-        10,
-        1
-      ]
-    }
-  ],
-  "header": {
-    "description": "古代战争debug",
-    "name": "古代战争",
-    "uuid": "6d7880f1-5e29-4dfb-bfd8-7a32872deae2",
-    "version": [
-      1,
-      10,
-      3
+    "format_version": 1,
+    "modules": [
+        {
+            "description": "古代战争debug",
+            "type": "resources",
+            "uuid": "9a4c2387-995c-4f34-b11b-aba72fdd21a7",
+            "version": [
+                1,
+                10,
+                1
+            ]
+        }
     ],
-    "min_engine_version": [
-      1,
-      10,
-      1
-    ]
-  }
+    "header": {
+        "description": "古代战争debug",
+        "name": "古代战争",
+        "uuid": "116228e2-5364-4080-80bf-6ef6c1e6823c",
+        "version": [
+            1,
+            10,
+            3
+        ],
+        "min_engine_version": [
+            1,
+            10,
+            1
+        ]
+    }
 }

@@ -30,7 +30,7 @@
     "GameType": 1,
     "Id": "26282a8b48dd46f28a70b7cd1bf8a073",
     "IsMap": false,
-    "NewEditCount": 15,
+    "NewEditCount": 16,
     "OldComponents": [
 
     ],
@@ -45,9 +45,9 @@
     "ShowGpuDriverTips": false,
     "ShowGuide": false,
     "Source": "import",
-    "StudioPort": 11107,
+    "StudioPort": 12315,
     "StudioTempPath": "C:\\MCStudioDownload\\temp\\editorTemp",
     "UserId": "52488",
     "UserName": "没有原则的原则",
-    "WorldType": 1
+    "WorldType": 2
 }

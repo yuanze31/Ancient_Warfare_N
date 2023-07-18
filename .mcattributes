@@ -4,3 +4,4 @@ diagnostic.disable.resourcepack.model.missing=true
 diagnostic.disable.resourcepack.render_controller.missing=true
 diagnostic.disable.resourcepack.texture.missing=true
 diagnostic.disable.behaviorpack.item.missing=true
+diagnostic.disable.behaviorpack.block.missing=true

@@ -90,15 +90,9 @@
                 "min": 10,
                 "value": 10
             },
-            "minecraft:nameable": {
-
-            },
-            "minecraft:persistent": {
-
-            },
-            "minecraft:physics": {
-
-            },
+            "minecraft:nameable": {},
+            "minecraft:persistent": {},
+            "minecraft:physics": {},
             "minecraft:target_nearby_sensor": {
                 "inside_range": 3,
                 "must_see": true,
