@@ -2,19 +2,9 @@
     "format_version": "1.8.0",
     "minecraft:entity": {
         "component_groups": {
-            "chainmail_suit_all": {
-                "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_chainmail_all.json"
-                }
-            },
             "chainmail_suit": {
                 "minecraft:equipment": {
                     "table": "loot_tables/entities/general_horse/general_horse_chainmail.json"
-                }
-            },
-            "diamond_suit_all": {
-                "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_diamond_all.json"
                 }
             },
             "diamond_suit": {
@@ -22,19 +12,9 @@
                     "table": "loot_tables/entities/general_horse/general_horse_diamond.json"
                 }
             },
-            "golden_suit_all": {
-                "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_golden_all.json"
-                }
-            },
             "golden_suit": {
                 "minecraft:equipment": {
                     "table": "loot_tables/entities/general_horse/general_horse_golden.json"
-                }
-            },
-            "iron_suit_all": {
-                "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_iron_all.json"
                 }
             },
             "iron_suit": {
@@ -42,34 +22,14 @@
                     "table": "loot_tables/entities/general_horse/general_horse_iron.json"
                 }
             },
-            "leather_suit_all": {
-                "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_leather_all.json"
-                }
-            },
             "leather_suit": {
                 "minecraft:equipment": {
                     "table": "loot_tables/entities/general_horse/general_horse_leather.json"
                 }
             },
-            "netherite_suit_all": {
-                "minecraft:equipment": {
-                    "table": "loot_tables/entities/archer/archer_netherite_all.json"
-                }
-            },
             "netherite_suit": {
                 "minecraft:equipment": {
                     "table": "loot_tables/entities/general_horse/general_horse_netherite.json"
-                }
-            },
-            "new_skin": {
-                "minecraft:skin_id": {
-                    "value": 0
-                }
-            },
-            "old_skin": {
-                "minecraft:skin_id": {
-                    "value": 1
                 }
             },
             "recruit_follow": {
@@ -80,50 +40,6 @@
                     "stop_distance": 3.0
                 },
                 "minecraft:interact": [
-                    {
-                        "interact_text": "switch to new skin",
-                        "on_interact": {
-                            "event": "switch_to_new",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:to_new_skin"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": false
-                    },
-                    {
-                        "interact_text": "switch to old skin",
-                        "on_interact": {
-                            "event": "switch_to_old",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:to_old_skin"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": false
-                    },
                     {
                         "interact_text": "停止跟随",
                         "on_interact": {
@@ -277,187 +193,11 @@
                             }
                         },
                         "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "leather_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:leather_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "golden_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:gold_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "chainmail_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:chainmail_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "iron_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:iron_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "diamond_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:diamond_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "netherite_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:netherite_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
                     }
                 ]
             },
             "recruit_free": {
                 "minecraft:interact": [
-                    {
-                        "interact_text": "switch to new skin",
-                        "on_interact": {
-                            "event": "switch_to_new",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:to_new_skin"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": false
-                    },
-                    {
-                        "interact_text": "switch to old skin",
-                        "on_interact": {
-                            "event": "switch_to_old",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:to_old_skin"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": false
-                    },
                     {
                         "interact_text": "跟随",
                         "on_interact": {
@@ -611,142 +351,26 @@
                             }
                         },
                         "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "leather_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:leather_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "golden_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:gold_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "chainmail_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:chainmail_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "iron_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:iron_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "diamond_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:diamond_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
-                    },
-                    {
-                        "interact_text": "添加",
-                        "on_interact": {
-                            "event": "netherite_suit_all",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:netherite_set_all"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": true
                     }
                 ]
             },
             "recruit_normal": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "monster"
+                            },
+                            "max_dist": 32
+                        }
+                    ],
+                    "must_see": true,
+                    "priority": 2,
+                    "reselect_targets": true,
+                    "within_radius": 16.0
+                },
                 "minecraft:behavior.owner_hurt_by_target": {
                     "priority": 3
                 },
@@ -768,7 +392,7 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
-                                "value": "playerbanditarmy"
+                                "value": "player"
                             }
                         }
                     }
@@ -864,57 +488,11 @@
                     "family": [
                         "aw",
                         "general_horse",
-                        "playerbanditarmy"
+                        "playerarmy"
                     ]
                 }
             },
             "wide": {
-                "minecraft:interact": [
-                    {
-                        "interact_text": "switch to new skin",
-                        "on_interact": {
-                            "event": "switch_to_new",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:to_new_skin"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": false
-                    },
-                    {
-                        "interact_text": "switch to old skin",
-                        "on_interact": {
-                            "event": "switch_to_old",
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "domain": "hand",
-                                        "subject": "other",
-                                        "test": "has_equipment",
-                                        "value": "aw:to_old_skin"
-                                    },
-                                    {
-                                        "subject": "other",
-                                        "test": "is_family",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "use_item": false
-                    }
-                ],
                 "minecraft:behavior.nearest_attackable_target": {
                     "entity_types": [
                         {
@@ -997,6 +575,7 @@
             }
         },
         "components": {
+            "minecraft:behavior.float": {},
             "minecraft:annotation.open_door": {},
             "minecraft:attack": {
                 "damage": 2
@@ -1007,7 +586,6 @@
                 ],
                 "priority": 3
             },
-            "minecraft:behavior.float": {},
             "minecraft:behavior.hurt_by_target": {
                 "hurt_owner": true,
                 "priority": 2
@@ -1034,7 +612,7 @@
             "minecraft:can_climb": {},
             "minecraft:collision_box": {
                 "height": 1.8,
-                "width": 0.6
+                "width": 0.7
             },
             "minecraft:equipment": {
                 "table": "loot_tables/entities/general_horse/general_horse_basic.json"
@@ -1135,8 +713,7 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "wide",
-                        "old_skin"
+                        "wide"
                     ]
                 }
             },
@@ -1181,30 +758,6 @@
                 "remove": {
                     "component_groups": [
                         "recruit_follow"
-                    ]
-                }
-            },
-            "switch_to_new": {
-                "add": {
-                    "component_groups": [
-                        "new_skin"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "old_skin"
-                    ]
-                }
-            },
-            "switch_to_old": {
-                "add": {
-                    "component_groups": [
-                        "old_skin"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "new_skin"
                     ]
                 }
             }

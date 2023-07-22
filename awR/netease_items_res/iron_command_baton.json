@@ -5,6 +5,7 @@
             "minecraft:icon": "iron_command_baton"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:iron_command_baton"
         }
     }

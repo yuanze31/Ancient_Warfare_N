@@ -5,6 +5,7 @@
             "minecraft:icon": "egg_trap_slow"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:egg_trap_slow"
         }
     }

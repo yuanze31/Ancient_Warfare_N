@@ -5,6 +5,7 @@
             "minecraft:icon": "gold_set"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:gold_set"
         }
     }

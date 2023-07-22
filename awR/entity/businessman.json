@@ -7,10 +7,10 @@
                 "default": "entity_alphatest"
             },
             "textures": {
-                "new": "textures/entity/businessman"
+                "default": "textures/entity/businessman"
             },
             "geometry": {
-                "new": "geometry.businessman"
+                "default": "geometry.businessman"
             },
             "enable_attachables": true,
             "scripts": {

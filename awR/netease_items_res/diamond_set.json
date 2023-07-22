@@ -5,6 +5,7 @@
             "minecraft:icon": "diamond_set"
         },
         "description": {
+            "category": "Construction",
             "identifier": "aw:diamond_set"
         }
     }
