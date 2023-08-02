@@ -4,7 +4,7 @@
         {
             "description": "古代战争",
             "type": "data",
-            "uuid": "13399703-2a0b-480b-b924-4b7dc65cd5d3",
+            "uuid": "1417bf7a-4eb5-4297-8c31-3f5300cbebf6",
             "version": [
                 1,
                 10,
@@ -15,7 +15,7 @@
     "header": {
         "description": "古代战争debug",
         "name": "古代战争",
-        "uuid": "d7ab8ac4-988e-45c3-b6ce-1a4ab2cd45da",
+        "uuid": "7b8560ec-4e01-4892-a373-f24da99f5fdc",
         "version": [
             1,
             10,
