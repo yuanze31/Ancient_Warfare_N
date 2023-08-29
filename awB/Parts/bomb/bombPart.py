@@ -13,20 +13,20 @@ class bombPart(PartBase):
         self.bpFiles = ['bombPart.bp']
         self.replicated = []
 
-    def DestroyServer(self):
-        return PartBase.DestroyServer(self)
+    def TickServer(self):
+        return PartBase.TickServer(self)
 
     def TickClient(self):
         return PartBase.TickClient(self)
 
+    def InitServer(self):
+        return PartBase.InitServer(self)
+
+    def DestroyServer(self):
+        return PartBase.DestroyServer(self)
+
     def InitClient(self):
         return PartBase.InitClient(self)
 
-    def TickServer(self):
-        return PartBase.TickServer(self)
-
     def DestroyClient(self):
         return PartBase.DestroyClient(self)
-
-    def InitServer(self):
-        return PartBase.InitServer(self)

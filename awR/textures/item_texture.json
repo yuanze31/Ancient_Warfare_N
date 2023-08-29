@@ -4,6 +4,9 @@
         "aim": {
             "textures": "textures/entity/aim"
         },
+        "aw:bomb": {
+            "textures": "textures/items/bomb"
+        },
         "bandit_archer_horse": {
             "textures": "textures/items/bandit_archer_horse"
         },
@@ -19,6 +22,9 @@
         },
         "bandit_soldier_horse": {
             "textures": "textures/items/bandit_soldier_horse"
+        },
+        "bomb": {
+            "textures": "textures/items/bomb"
         },
         "bwc": {
             "textures": "textures/items/bwc"
