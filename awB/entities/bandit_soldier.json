@@ -35,9 +35,9 @@
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 2,
-                    "speed_multiplier": 1.0,
+                    "speed_multiplier": 1,
                     "start_distance": 10,
-                    "stop_distance": 3.0
+                    "stop_distance": 3
                 },
                 "minecraft:interact": [
                     {
@@ -369,7 +369,7 @@
                     "must_see": true,
                     "priority": 2,
                     "reselect_targets": true,
-                    "within_radius": 16.0
+                    "within_radius": 16
                 },
                 "minecraft:behavior.owner_hurt_by_target": {
                     "priority": 3
@@ -382,7 +382,7 @@
                         "aw:stone_command_baton"
                     ],
                     "priority": 0,
-                    "speed_multiplier": 1.0,
+                    "speed_multiplier": 1,
                     "within_radius": 41
                 },
                 "minecraft:damage_sensor": [
@@ -479,7 +479,7 @@
                 },
                 "minecraft:is_tamed": {},
                 "minecraft:leashable": {
-                    "hard_distance": 8.0,
+                    "hard_distance": 8,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
@@ -547,7 +547,7 @@
                     "must_see": true,
                     "priority": 2,
                     "reselect_targets": true,
-                    "within_radius": 16.0
+                    "within_radius": 16
                 },
                 "minecraft:damage_sensor": [
                     {
@@ -611,7 +611,6 @@
             },
             "minecraft:behavior.float": {},
             "minecraft:behavior.hurt_by_target": {
-                "alert_same_type": true,
                 "hurt_owner": true,
                 "priority": 2
             },
@@ -621,7 +620,7 @@
             },
             "minecraft:behavior.melee_attack": {
                 "priority": 2,
-                "reach_multiplier": 1.0,
+                "reach_multiplier": 1,
                 "require_complete_path": true,
                 "track_target": true
             },
@@ -783,7 +782,8 @@
                 },
                 "remove": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "wild_calm"
                     ]
                 }
             },

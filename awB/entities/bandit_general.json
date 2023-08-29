@@ -35,9 +35,9 @@
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 2,
-                    "speed_multiplier": 1.0,
+                    "speed_multiplier": 1,
                     "start_distance": 10,
-                    "stop_distance": 3.0
+                    "stop_distance": 3
                 },
                 "minecraft:interact": [
                     {
@@ -369,7 +369,7 @@
                     "must_see": true,
                     "priority": 2,
                     "reselect_targets": true,
-                    "within_radius": 16.0
+                    "within_radius": 16
                 },
                 "minecraft:behavior.owner_hurt_by_target": {
                     "priority": 3
@@ -382,7 +382,7 @@
                         "aw:stone_command_baton"
                     ],
                     "priority": 0,
-                    "speed_multiplier": 1.0,
+                    "speed_multiplier": 1,
                     "within_radius": 41
                 },
                 "minecraft:damage_sensor": [
@@ -479,7 +479,7 @@
                 },
                 "minecraft:is_tamed": {},
                 "minecraft:leashable": {
-                    "hard_distance": 8.0,
+                    "hard_distance": 8,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
@@ -547,7 +547,7 @@
                     "must_see": true,
                     "priority": 2,
                     "reselect_targets": true,
-                    "within_radius": 16.0
+                    "within_radius": 16
                 },
                 "minecraft:damage_sensor": [
                     {
@@ -572,10 +572,33 @@
                         "bandit"
                     ]
                 }
+            },
+            "wild_angry": {
+                "minecraft:angry": {
+                    "broadcastAnger": true,
+                    "broadcastRange": 20,
+                    "broadcast_filters": {
+                        "operator": "==",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "bandit"
+                    },
+                    "calm_event": {
+                        "event": "become_wild_calm_event",
+                        "target": "self"
+                    },
+                    "duration": 10,
+                    "duration_delta": 2
+                }
+            },
+            "wild_calm": {
+                "minecraft:on_target_acquired": {
+                    "event": "become_wild_angry_event",
+                    "target": "self"
+                }
             }
         },
         "components": {
-            "minecraft:behavior.float": {},
             "minecraft:annotation.open_door": {},
             "minecraft:attack": {
                 "damage": 2
@@ -586,6 +609,7 @@
                 ],
                 "priority": 3
             },
+            "minecraft:behavior.float": {},
             "minecraft:behavior.hurt_by_target": {
                 "hurt_owner": true,
                 "priority": 2
@@ -596,7 +620,7 @@
             },
             "minecraft:behavior.melee_attack": {
                 "priority": 2,
-                "reach_multiplier": 1.0,
+                "reach_multiplier": 1,
                 "require_complete_path": true,
                 "track_target": true
             },
@@ -675,6 +699,30 @@
             "is_summonable": true
         },
         "events": {
+            "become_wild_angry_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                }
+            },
+            "become_wild_calm_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                }
+            },
             "chainmail_suit": {
                 "add": {
                     "component_groups": [
@@ -713,7 +761,8 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "wild_calm"
                     ]
                 }
             },
@@ -733,7 +782,8 @@
                 },
                 "remove": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "wild_calm"
                     ]
                 }
             },

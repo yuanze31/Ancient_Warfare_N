@@ -572,6 +572,30 @@
                         "bandit"
                     ]
                 }
+            },
+            "wild_angry": {
+                "minecraft:angry": {
+                    "broadcastAnger": true,
+                    "broadcastRange": 20,
+                    "broadcast_filters": {
+                        "operator": "==",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "bandit"
+                    },
+                    "calm_event": {
+                        "event": "become_wild_calm_event",
+                        "target": "self"
+                    },
+                    "duration": 10,
+                    "duration_delta": 2
+                }
+            },
+            "wild_calm": {
+                "minecraft:on_target_acquired": {
+                    "event": "become_wild_angry_event",
+                    "target": "self"
+                }
             }
         },
         "components": {
@@ -675,6 +699,30 @@
             "is_summonable": true
         },
         "events": {
+            "become_wild_angry_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                }
+            },
+            "become_wild_calm_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                }
+            },
             "chainmail_suit": {
                 "add": {
                     "component_groups": [
@@ -713,7 +761,8 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "wild_calm"
                     ]
                 }
             },
@@ -733,7 +782,8 @@
                 },
                 "remove": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "wild_calm"
                     ]
                 }
             },
