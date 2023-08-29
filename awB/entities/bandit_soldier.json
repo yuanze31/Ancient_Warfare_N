@@ -572,10 +572,33 @@
                         "bandit"
                     ]
                 }
+            },
+            "wild_angry": {
+                "minecraft:angry": {
+                    "broadcastAnger": true,
+                    "broadcastRange": 20,
+                    "broadcast_filters": {
+                        "operator": "==",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "bandit"
+                    },
+                    "calm_event": {
+                        "event": "become_wild_calm_event",
+                        "target": "self"
+                    },
+                    "duration": 10,
+                    "duration_delta": 2
+                }
+            },
+            "wild_calm": {
+                "minecraft:on_target_acquired": {
+                    "event": "become_wild_angry_event",
+                    "target": "self"
+                }
             }
         },
         "components": {
-            "minecraft:behavior.float": {},
             "minecraft:annotation.open_door": {},
             "minecraft:attack": {
                 "damage": 2
@@ -586,7 +609,9 @@
                 ],
                 "priority": 3
             },
+            "minecraft:behavior.float": {},
             "minecraft:behavior.hurt_by_target": {
+                "alert_same_type": true,
                 "hurt_owner": true,
                 "priority": 2
             },
@@ -596,7 +621,7 @@
             },
             "minecraft:behavior.melee_attack": {
                 "priority": 2,
-                "reach_multiplier": 2.0,
+                "reach_multiplier": 1.0,
                 "require_complete_path": true,
                 "track_target": true
             },
@@ -675,6 +700,30 @@
             "is_summonable": true
         },
         "events": {
+            "become_wild_angry_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                }
+            },
+            "become_wild_calm_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                }
+            },
             "chainmail_suit": {
                 "add": {
                     "component_groups": [
@@ -713,7 +762,8 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "wide"
+                        "wide",
+                        "wild_calm"
                     ]
                 }
             },

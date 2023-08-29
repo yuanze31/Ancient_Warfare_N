@@ -596,7 +596,7 @@
             },
             "minecraft:behavior.melee_attack": {
                 "priority": 2,
-                "reach_multiplier": 2.0,
+                "reach_multiplier": 1.0,
                 "require_complete_path": true,
                 "track_target": true
             },
