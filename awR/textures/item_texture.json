@@ -11,7 +11,6 @@
             "textures": [
                 "textures/items/bandit_soldier",
                 "textures/items/bandit_archer",
-                "textures/items/bandit_commander",
                 "textures/items/bandit_general"
             ]
         },
@@ -40,7 +39,6 @@
             "textures": [
                 "textures/items/desert_soldier",
                 "textures/items/desert_archer",
-                "textures/items/desert_commander",
                 "textures/items/desert_general"
             ]
         },
@@ -65,9 +63,6 @@
         "egg_bandit_archer_horse": {
             "textures": "textures/items/egg_bandit_archer_horse"
         },
-        "egg_bandit_commander": {
-            "textures": "textures/items/egg_bandit_commander"
-        },
         "egg_bandit_general": {
             "textures": "textures/items/egg_bandit_general"
         },
@@ -89,9 +84,6 @@
         "egg_desert_archer_horse": {
             "textures": "textures/items/egg_desert_archer_horse"
         },
-        "egg_desert_commander": {
-            "textures": "textures/items/egg_desert_commander"
-        },
         "egg_desert_general": {
             "textures": "textures/items/egg_desert_general"
         },
@@ -110,9 +102,6 @@
         "egg_native_archer_horse": {
             "textures": "textures/items/egg_native_archer_horse"
         },
-        "egg_native_commander": {
-            "textures": "textures/items/egg_native_commander"
-        },
         "egg_native_general": {
             "textures": "textures/items/egg_native_general"
         },
@@ -124,84 +113,6 @@
         },
         "egg_native_soldier_horse": {
             "textures": "textures/items/egg_native_soldier_horse"
-        },
-        "egg_pirate_archer": {
-            "textures": "textures/items/egg_pirate_archer"
-        },
-        "egg_pirate_archer_horse": {
-            "textures": "textures/items/egg_pirate_archer_horse"
-        },
-        "egg_pirate_commander": {
-            "textures": "textures/items/egg_pirate_commander"
-        },
-        "egg_pirate_general": {
-            "textures": "textures/items/egg_pirate_general"
-        },
-        "egg_pirate_general_horse": {
-            "textures": "textures/items/egg_pirate_general_horse"
-        },
-        "egg_pirate_soldier": {
-            "textures": "textures/items/egg_pirate_soldier"
-        },
-        "egg_pirate_soldier_horse": {
-            "textures": "textures/items/egg_pirate_soldier_horse"
-        },
-        "egg_player_archer": {
-            "textures": "textures/items/egg_player_archer"
-        },
-        "egg_player_archer_horse": {
-            "textures": "textures/items/egg_player_archer_horse"
-        },
-        "egg_player_commander": {
-            "textures": "textures/items/egg_player_commander"
-        },
-        "egg_player_general": {
-            "textures": "textures/items/egg_player_general"
-        },
-        "egg_player_general_horse": {
-            "textures": "textures/items/egg_player_general_horse"
-        },
-        "egg_player_soldier": {
-            "textures": "textures/items/egg_player_soldier"
-        },
-        "egg_player_soldier_horse": {
-            "textures": "textures/items/egg_player_soldier_horse"
-        },
-        "egg_trap_explode": {
-            "textures": "textures/items/egg_trap_explode"
-        },
-        "egg_trap_shackles": {
-            "textures": "textures/items/egg_trap_shackles"
-        },
-        "egg_trap_sleep": {
-            "textures": "textures/items/egg_trap_sleep"
-        },
-        "egg_trap_slow": {
-            "textures": "textures/items/egg_trap_slow"
-        },
-        "egg_trap_vertigo": {
-            "textures": "textures/items/egg_trap_vertigo"
-        },
-        "egg_viking_archer": {
-            "textures": "textures/items/egg_viking_archer"
-        },
-        "egg_viking_archer_horse": {
-            "textures": "textures/items/egg_viking_archer_horse"
-        },
-        "egg_viking_commander": {
-            "textures": "textures/items/egg_viking_commander"
-        },
-        "egg_viking_general": {
-            "textures": "textures/items/egg_viking_general"
-        },
-        "egg_viking_general_horse": {
-            "textures": "textures/items/egg_viking_general_horse"
-        },
-        "egg_viking_soldier": {
-            "textures": "textures/items/egg_viking_soldier"
-        },
-        "egg_viking_soldier_horse": {
-            "textures": "textures/items/egg_viking_soldier_horse"
         },
         "egg_old_bandit_archer": {
             "textures": "textures/items/egg_old_bandit_archer"
@@ -311,6 +222,75 @@
         "egg_old_viking_soldier_horse": {
             "textures": "textures/items/egg_old_viking_soldier_horse"
         },
+        "egg_pirate_archer": {
+            "textures": "textures/items/egg_pirate_archer"
+        },
+        "egg_pirate_archer_horse": {
+            "textures": "textures/items/egg_pirate_archer_horse"
+        },
+        "egg_pirate_general": {
+            "textures": "textures/items/egg_pirate_general"
+        },
+        "egg_pirate_general_horse": {
+            "textures": "textures/items/egg_pirate_general_horse"
+        },
+        "egg_pirate_soldier": {
+            "textures": "textures/items/egg_pirate_soldier"
+        },
+        "egg_pirate_soldier_horse": {
+            "textures": "textures/items/egg_pirate_soldier_horse"
+        },
+        "egg_player_archer": {
+            "textures": "textures/items/egg_player_archer"
+        },
+        "egg_player_archer_horse": {
+            "textures": "textures/items/egg_player_archer_horse"
+        },
+        "egg_player_general": {
+            "textures": "textures/items/egg_player_general"
+        },
+        "egg_player_general_horse": {
+            "textures": "textures/items/egg_player_general_horse"
+        },
+        "egg_player_soldier": {
+            "textures": "textures/items/egg_player_soldier"
+        },
+        "egg_player_soldier_horse": {
+            "textures": "textures/items/egg_player_soldier_horse"
+        },
+        "egg_trap_explode": {
+            "textures": "textures/items/egg_trap_explode"
+        },
+        "egg_trap_shackles": {
+            "textures": "textures/items/egg_trap_shackles"
+        },
+        "egg_trap_sleep": {
+            "textures": "textures/items/egg_trap_sleep"
+        },
+        "egg_trap_slow": {
+            "textures": "textures/items/egg_trap_slow"
+        },
+        "egg_trap_vertigo": {
+            "textures": "textures/items/egg_trap_vertigo"
+        },
+        "egg_viking_archer": {
+            "textures": "textures/items/egg_viking_archer"
+        },
+        "egg_viking_archer_horse": {
+            "textures": "textures/items/egg_viking_archer_horse"
+        },
+        "egg_viking_general": {
+            "textures": "textures/items/egg_viking_general"
+        },
+        "egg_viking_general_horse": {
+            "textures": "textures/items/egg_viking_general_horse"
+        },
+        "egg_viking_soldier": {
+            "textures": "textures/items/egg_viking_soldier"
+        },
+        "egg_viking_soldier_horse": {
+            "textures": "textures/items/egg_viking_soldier_horse"
+        },
         "gold_command_baton": {
             "textures": "textures/items/gold_command_baton"
         },
@@ -360,7 +340,6 @@
             "textures": [
                 "textures/items/native_soldier",
                 "textures/items/native_archer",
-                "textures/items/native_commander",
                 "textures/items/native_general"
             ]
         },
@@ -383,7 +362,6 @@
             "textures": [
                 "textures/items/pirate_soldier",
                 "textures/items/pirate_archer",
-                "textures/items/pirate_commander",
                 "textures/items/pirate_general"
             ]
         },
@@ -400,7 +378,6 @@
             "textures": [
                 "textures/items/player_soldier",
                 "textures/items/player_archer",
-                "textures/items/player_commander",
                 "textures/items/player_general",
                 "textures/items/player_medic",
                 "textures/items/player_farmer",
@@ -430,7 +407,6 @@
             "textures": [
                 "textures/items/viking_soldier",
                 "textures/items/viking_archer",
-                "textures/items/viking_commander",
                 "textures/items/viking_general"
             ]
         },

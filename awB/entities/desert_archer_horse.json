@@ -460,7 +460,7 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
-                                "value": "player"
+                                "value": "playerarmy"
                             }
                         }
                     }
@@ -560,7 +560,7 @@
                     ]
                 }
             },
-            "wide": {
+            "wild": {
                 "minecraft:behavior.hurt_by_target": {
                     "entity_types": [
                         {
@@ -725,13 +725,37 @@
                         "event": "become_wild_calm_event",
                         "target": "self"
                     },
-                    "duration": 10,
-                    "duration_delta": 2
+                    "duration": 25,
+                    "duration_delta": 3
                 }
             },
             "wild_calm": {
                 "minecraft:on_target_acquired": {
                     "event": "become_wild_angry_event",
+                    "target": "self"
+                }
+            },
+            "recruit_angry": {
+                "minecraft:angry": {
+                    "broadcastAnger": true,
+                    "broadcastRange": 20,
+                    "broadcast_filters": {
+                        "operator": "==",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "playerarmy"
+                    },
+                    "calm_event": {
+                        "event": "become_recruit_calm_event",
+                        "target": "self"
+                    },
+                    "duration": 25,
+                    "duration_delta": 3
+                }
+            },
+            "recruit_calm": {
+                "minecraft:on_target_acquired": {
+                    "event": "become_recruit_angry_event",
                     "target": "self"
                 }
             }
@@ -848,6 +872,30 @@
                     ]
                 }
             },
+            "become_recruit_angry_event": {
+                "add": {
+                    "component_groups": [
+                        "recruit_angry"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "recruit_calm"
+                    ]
+                }
+            },
+            "become_recruit_calm_event": {
+                "add": {
+                    "component_groups": [
+                        "recruit_calm"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "recruit_angry"
+                    ]
+                }
+            },
             "chainmail_suit": {
                 "add": {
                     "component_groups": [
@@ -886,7 +934,7 @@
             "minecraft:entity_spawned": {
                 "add": {
                     "component_groups": [
-                        "wide",
+                        "wild",
                         "wild_calm"
                     ]
                 }
@@ -902,12 +950,13 @@
                 "add": {
                     "component_groups": [
                         "recruit_normal",
-                        "recruit_free"
+                        "recruit_free",
+                        "recruit_calm"
                     ]
                 },
                 "remove": {
                     "component_groups": [
-                        "wide",
+                        "wild",
                         "wild_calm"
                     ]
                 }

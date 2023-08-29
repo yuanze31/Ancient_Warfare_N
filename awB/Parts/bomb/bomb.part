@@ -1,0 +1,11 @@
+{
+    "bpType": "bombPart",
+    "changes": {},
+    "classType": "PartInstance",
+    "clientPartType": null,
+    "customVariables": [],
+    "directoryPath": "bomb",
+    "metaType": "bombPartMeta",
+    "objId": "4de6e84cc03c4e3d85c4391d6ffd3e55",
+    "partType": "bombPart"
+}
