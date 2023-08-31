@@ -577,12 +577,9 @@
                 "minecraft:angry": {
                     "broadcastAnger": true,
                     "broadcastRange": 20,
-                    "broadcast_filters": {
-                        "operator": "==",
-                        "subject": "other",
-                        "test": "is_family",
-                        "value": "native"
-                    },
+                    "broadcast_targets": [
+                        "native"
+                    ],
                     "calm_event": {
                         "event": "become_wild_calm_event",
                         "target": "self"
@@ -601,12 +598,9 @@
                 "minecraft:angry": {
                     "broadcastAnger": true,
                     "broadcastRange": 20,
-                    "broadcast_filters": {
-                        "operator": "==",
-                        "subject": "other",
-                        "test": "is_family",
-                        "value": "playerarmy"
-                    },
+                    "broadcast_targets": [
+                        "playerarmy"
+                    ],
                     "calm_event": {
                         "event": "become_recruit_calm_event",
                         "target": "self"
