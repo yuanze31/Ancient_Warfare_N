@@ -32,6 +32,27 @@
                     "table": "loot_tables/entities/soldier/soldier_netherite.json"
                 }
             },
+            "recruit_angry": {
+                "minecraft:angry": {
+                    "broadcastAnger": true,
+                    "broadcastRange": 20,
+                    "broadcast_targets": [
+                        "playerarmy"
+                    ],
+                    "calm_event": {
+                        "event": "become_recruit_calm_event",
+                        "target": "self"
+                    },
+                    "duration": 25,
+                    "duration_delta": 3
+                }
+            },
+            "recruit_calm": {
+                "minecraft:on_target_acquired": {
+                    "event": "become_recruit_angry_event",
+                    "target": "self"
+                }
+            },
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 2,
@@ -577,12 +598,9 @@
                 "minecraft:angry": {
                     "broadcastAnger": true,
                     "broadcastRange": 20,
-                    "broadcast_filters": {
-                        "operator": "==",
-                        "subject": "other",
-                        "test": "is_family",
-                        "value": "bandit"
-                    },
+                    "broadcast_targets": [
+                        "bandit"
+                    ],
                     "calm_event": {
                         "event": "become_wild_calm_event",
                         "target": "self"
@@ -594,30 +612,6 @@
             "wild_calm": {
                 "minecraft:on_target_acquired": {
                     "event": "become_wild_angry_event",
-                    "target": "self"
-                }
-            },
-            "recruit_angry": {
-                "minecraft:angry": {
-                    "broadcastAnger": true,
-                    "broadcastRange": 20,
-                    "broadcast_filters": {
-                        "operator": "==",
-                        "subject": "other",
-                        "test": "is_family",
-                        "value": "playerarmy"
-                    },
-                    "calm_event": {
-                        "event": "become_recruit_calm_event",
-                        "target": "self"
-                    },
-                    "duration": 25,
-                    "duration_delta": 3
-                }
-            },
-            "recruit_calm": {
-                "minecraft:on_target_acquired": {
-                    "event": "become_recruit_angry_event",
                     "target": "self"
                 }
             }
@@ -723,30 +717,6 @@
             "is_summonable": true
         },
         "events": {
-            "become_wild_angry_event": {
-                "add": {
-                    "component_groups": [
-                        "wild_angry"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "wild_calm"
-                    ]
-                }
-            },
-            "become_wild_calm_event": {
-                "add": {
-                    "component_groups": [
-                        "wild_calm"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "wild_angry"
-                    ]
-                }
-            },
             "become_recruit_angry_event": {
                 "add": {
                     "component_groups": [
@@ -768,6 +738,30 @@
                 "remove": {
                     "component_groups": [
                         "recruit_angry"
+                    ]
+                }
+            },
+            "become_wild_angry_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                }
+            },
+            "become_wild_calm_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_angry"
                     ]
                 }
             },
