@@ -2,7 +2,7 @@
     "format_version": "1.10",
     "minecraft:item": {
         "components": {
-            "minecraft:icon": "aw:iron_set"
+            "minecraft:icon": "iron_set"
         },
         "description": {
             "category": "Construction",

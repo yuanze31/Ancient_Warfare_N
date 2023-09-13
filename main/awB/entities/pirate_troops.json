@@ -1,32 +1,10 @@
 {
     "format_version": "1.8.0",
     "minecraft:entity": {
-        "description": {
-            "identifier": "aw:pirate_troops",
-            "scripts": {
-                "animate": [
-                    "troops"
-                ]
-            },
-            "animations": {
-                "troops": "controller.animation.pirate_troops"
-            },
-            "is_spawnable": false,
-            "is_summonable": true,
-            "is_experimental": false
-        },
         "components": {
-            "minecraft:health": {
-                "value": 1,
-                "max": 1,
-                "min": 1
-            },
-            "minecraft:explode": {
-                "fuseLength": 1,
-                "fuseLit": true,
-                "power": 0,
-                "causesFire": false,
-                "breaks_blocks": false
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
             },
             "minecraft:damage_sensor": [
                 {
@@ -34,12 +12,34 @@
                     "deals_damage": false
                 }
             ],
+            "minecraft:explode": {
+                "breaks_blocks": false,
+                "causesFire": false,
+                "fuseLength": 1,
+                "fuseLit": true,
+                "power": 0
+            },
             "minecraft:fire_immune": true,
-            "minecraft:collision_box": {
-                "width": 0,
-                "height": 0
+            "minecraft:health": {
+                "max": 1,
+                "min": 1,
+                "value": 1
             },
             "minecraft:physics": {}
+        },
+        "description": {
+            "animations": {
+                "troops": "controller.animation.pirate_troops"
+            },
+            "identifier": "aw:pirate_troops",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "scripts": {
+                "animate": [
+                    "troops"
+                ]
+            }
         }
     }
 }
