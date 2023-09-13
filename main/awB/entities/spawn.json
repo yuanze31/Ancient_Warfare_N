@@ -1,13 +1,6 @@
 {
     "format_version": "1.8.0",
     "minecraft:entity": {
-        "description": {
-            "identifier": "aw:spawn",
-            "is_spawnable": false,
-            "is_summonable": true,
-            "is_experimental": false,
-            "runtime_identifier": "aw:spawn"
-        },
         "component_groups": {
             "bandit": {
                 "minecraft:transformation": {
@@ -41,15 +34,13 @@
             }
         },
         "components": {
-            "minecraft:type_family": {
-                "family": [
-                    "spawn"
-                ]
+            "minecraft:breathable": {
+                "suffocateTime": 0,
+                "totalSupply": 15
             },
-            "minecraft:health": {
-                "value": 20,
-                "max": 20,
-                "min": 20
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
             },
             "minecraft:damage_sensor": {
                 "triggers": [
@@ -58,70 +49,79 @@
                     }
                 ]
             },
+            "minecraft:health": {
+                "max": 20,
+                "min": 20,
+                "value": 20
+            },
+            "minecraft:physics": {},
             "minecraft:pushable": {
                 "is_pushable": false,
                 "is_pushable_by_piston": true
             },
-            "minecraft:breathable": {
-                "totalSupply": 15,
-                "suffocateTime": 0
-            },
-            "minecraft:physics": {},
-            "minecraft:collision_box": {
-                "width": 0,
-                "height": 0
+            "minecraft:type_family": {
+                "family": [
+                    "spawn"
+                ]
             }
+        },
+        "description": {
+            "identifier": "aw:spawn",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "runtime_identifier": "aw:spawn"
         },
         "events": {
             "minecraft:entity_spawned": {
                 "randomize": [
                     {
-                        "weight": 1,
                         "add": {
                             "component_groups": [
                                 "bandit"
                             ]
-                        }
+                        },
+                        "weight": 1
                     },
                     {
-                        "weight": 1,
                         "add": {
                             "component_groups": [
                                 "desert"
                             ]
-                        }
+                        },
+                        "weight": 1
                     },
                     {
-                        "weight": 1,
                         "add": {
                             "component_groups": [
                                 "native"
                             ]
-                        }
+                        },
+                        "weight": 1
                     },
                     {
-                        "weight": 1,
                         "add": {
                             "component_groups": [
                                 "pirate"
                             ]
-                        }
+                        },
+                        "weight": 1
                     },
                     {
-                        "weight": 1,
                         "add": {
                             "component_groups": [
                                 "player"
                             ]
-                        }
+                        },
+                        "weight": 1
                     },
                     {
-                        "weight": 1,
                         "add": {
                             "component_groups": [
                                 "viking"
                             ]
-                        }
+                        },
+                        "weight": 1
                     }
                 ]
             }

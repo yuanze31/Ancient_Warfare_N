@@ -2,8 +2,13 @@
     "format_version": 1,
     "header": {
         "description": "AW",
+        "min_engine_version": [
+            1,
+            18,
+            0
+        ],
         "name": "AW",
-        "uuid": "461bb503-8c6c-4e8c-b10b-7a5bfa36e6d0",
+        "uuid": "d7e6aa8f-cd0a-499e-8daa-2c54fcea4570",
         "version": [
             1,
             10,
@@ -14,7 +19,7 @@
         {
             "description": "AW",
             "type": "data",
-            "uuid": "ee57795e-0ada-4495-87d5-ab1501aa47b2",
+            "uuid": "2e8353a5-723f-4526-8ec6-6a118cabe3c3",
             "version": [
                 1,
                 10,
