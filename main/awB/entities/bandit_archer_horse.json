@@ -32,12 +32,33 @@
                     "table": "loot_tables/entities/archer_horse/archer_horse_netherite.json"
                 }
             },
+            "recruit_angry": {
+                "minecraft:angry": {
+                    "broadcastAnger": true,
+                    "broadcastRange": 20,
+                    "broadcast_targets": [
+                        "playerarmy"
+                    ],
+                    "calm_event": {
+                        "event": "become_recruit_calm_event",
+                        "target": "self"
+                    },
+                    "duration": 25,
+                    "duration_delta": 3
+                }
+            },
+            "recruit_calm": {
+                "minecraft:on_target_acquired": {
+                    "event": "become_recruit_angry_event",
+                    "target": "self"
+                }
+            },
             "recruit_follow": {
                 "minecraft:behavior.follow_owner": {
                     "priority": 2,
-                    "speed_multiplier": 1.0,
+                    "speed_multiplier": 1,
                     "start_distance": 10,
-                    "stop_distance": 3.0
+                    "stop_distance": 3
                 },
                 "minecraft:interact": [
                     {
@@ -425,16 +446,64 @@
                                 "test": "is_family",
                                 "value": "monster"
                             },
-                            "max_dist": 32
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "bandit"
+                            },
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "desert"
+                            },
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "native"
+                            },
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "pirate"
+                            },
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "playera"
+                            },
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "viking"
+                            },
+                            "max_dist": 8
                         }
                     ],
                     "must_see": true,
-                    "priority": 2,
+                    "priority": 3,
                     "reselect_targets": true,
-                    "within_radius": 16.0
+                    "within_radius": 4
                 },
                 "minecraft:behavior.owner_hurt_by_target": {
-                    "priority": 3
+                    "priority": 2
                 },
                 "minecraft:behavior.owner_hurt_target": {
                     "priority": 2
@@ -450,7 +519,7 @@
                         "aw:stone_command_baton"
                     ],
                     "priority": 0,
-                    "speed_multiplier": 1.0,
+                    "speed_multiplier": 1,
                     "within_radius": 41
                 },
                 "minecraft:damage_sensor": [
@@ -542,12 +611,12 @@
                     ]
                 },
                 "minecraft:health": {
-                    "max": 15,
-                    "value": 15
+                    "max": 18,
+                    "value": 18
                 },
                 "minecraft:is_tamed": {},
                 "minecraft:leashable": {
-                    "hard_distance": 8.0,
+                    "hard_distance": 8,
                     "max_distance": 10,
                     "soft_distance": 4
                 },
@@ -645,6 +714,14 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
+                                "value": "playerarmy"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
                                 "value": "desert"
                             },
                             "max_dist": 32
@@ -685,7 +762,7 @@
                     "must_see": true,
                     "priority": 2,
                     "reselect_targets": true,
-                    "within_radius": 16.0
+                    "within_radius": 16
                 },
                 "minecraft:damage_sensor": [
                     {
@@ -731,27 +808,6 @@
                     "event": "become_wild_angry_event",
                     "target": "self"
                 }
-            },
-            "recruit_angry": {
-                "minecraft:angry": {
-                    "broadcastAnger": true,
-                    "broadcastRange": 20,
-                    "broadcast_targets": [
-                        "playerarmy"
-                    ],
-                    "calm_event": {
-                        "event": "become_recruit_calm_event",
-                        "target": "self"
-                    },
-                    "duration": 25,
-                    "duration_delta": 3
-                }
-            },
-            "recruit_calm": {
-                "minecraft:on_target_acquired": {
-                    "event": "become_recruit_angry_event",
-                    "target": "self"
-                }
             }
         },
         "components": {
@@ -768,10 +824,10 @@
             "minecraft:behavior.ranged_attack": {
                 "attack_interval_max": 1,
                 "attack_interval_min": 1,
-                "attack_radius": 16.0,
+                "attack_radius": 16,
                 "priority": 2,
-                "ranged_fov": 120.0,
-                "speed_multiplier": 1.0
+                "ranged_fov": 120,
+                "speed_multiplier": 1
             },
             "minecraft:breathable": {
                 "breathesAir": true,
@@ -797,7 +853,7 @@
                 "table": "loot_tables/entities/archer_horse/archer_horse_loot.json"
             },
             "minecraft:movement": {
-                "value": 0.5
+                "value": 0.4
             },
             "minecraft:movement.amphibious": {},
             "minecraft:movement.basic": {},
@@ -842,30 +898,6 @@
             "is_summonable": true
         },
         "events": {
-            "become_wild_angry_event": {
-                "add": {
-                    "component_groups": [
-                        "wild_angry"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "wild_calm"
-                    ]
-                }
-            },
-            "become_wild_calm_event": {
-                "add": {
-                    "component_groups": [
-                        "wild_calm"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "wild_angry"
-                    ]
-                }
-            },
             "become_recruit_angry_event": {
                 "add": {
                     "component_groups": [
@@ -887,6 +919,30 @@
                 "remove": {
                     "component_groups": [
                         "recruit_angry"
+                    ]
+                }
+            },
+            "become_wild_angry_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_angry"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                }
+            },
+            "become_wild_calm_event": {
+                "add": {
+                    "component_groups": [
+                        "wild_calm"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "wild_angry"
                     ]
                 }
             },

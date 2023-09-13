@@ -24,12 +24,8 @@
                 "min": 1,
                 "value": 1
             },
-            "minecraft:persistent": {
-
-            },
-            "minecraft:physics": {
-
-            }
+            "minecraft:persistent": {},
+            "minecraft:physics": {}
         },
         "description": {
             "animations": {
