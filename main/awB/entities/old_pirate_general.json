@@ -4,32 +4,32 @@
         "component_groups": {
             "chainmail_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/general/general_chainmail.json"
+                    "table": "loot_tables/entities/general/general_chainmail_old.json"
                 }
             },
             "diamond_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/general/general_diamond.json"
+                    "table": "loot_tables/entities/general/general_diamond_old.json"
                 }
             },
             "golden_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/general/general_golden.json"
+                    "table": "loot_tables/entities/general/general_golden_old.json"
                 }
             },
             "iron_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/general/general_iron.json"
+                    "table": "loot_tables/entities/general/general_iron_old.json"
                 }
             },
             "leather_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/general/general_leather.json"
+                    "table": "loot_tables/entities/general/general_leather_old.json"
                 }
             },
             "netherite_suit": {
                 "minecraft:equipment": {
-                    "table": "loot_tables/entities/general/general_netherite.json"
+                    "table": "loot_tables/entities/general/general_netherite_old.json"
                 }
             },
             "recruit_angry": {
@@ -37,7 +37,7 @@
                     "broadcastAnger": true,
                     "broadcastRange": 20,
                     "broadcast_targets": [
-                        "playerarmy"
+                        "playerarmy_old"
                     ],
                     "calm_event": {
                         "event": "become_recruit_calm_event",
@@ -405,6 +405,14 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
+                                "value": "playerarmy"
+                            },
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
                                 "value": "bandit"
                             },
                             "max_dist": 8
@@ -453,7 +461,7 @@
                     "must_see": true,
                     "priority": 3,
                     "reselect_targets": true,
-                    "within_radius": 4
+                    "within_radius": 6
                 },
                 "minecraft:behavior.owner_hurt_by_target": {
                     "priority": 2
@@ -467,7 +475,7 @@
                     ],
                     "priority": 0,
                     "speed_multiplier": 1,
-                    "within_radius": 41
+                    "within_radius": 32
                 },
                 "minecraft:damage_sensor": [
                     {
@@ -476,7 +484,7 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
-                                "value": "playerarmy"
+                                "value": "playerarmy_old"
                             }
                         }
                     }
@@ -572,7 +580,7 @@
                     "family": [
                         "aw",
                         "general",
-                        "playerarmy"
+                        "playerarmy_old"
                     ]
                 }
             },
@@ -605,6 +613,14 @@
                                 "subject": "other",
                                 "test": "is_family",
                                 "value": "playerarmy"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "playerarmy_old"
                             },
                             "max_dist": 32
                         },
