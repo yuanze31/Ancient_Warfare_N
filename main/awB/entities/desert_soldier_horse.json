@@ -453,7 +453,7 @@
                     "must_see": true,
                     "priority": 3,
                     "reselect_targets": true,
-                    "within_radius": 4
+                    "within_radius": 6
                 },
                 "minecraft:behavior.owner_hurt_by_target": {
                     "priority": 2
@@ -467,7 +467,7 @@
                     ],
                     "priority": 0,
                     "speed_multiplier": 1,
-                    "within_radius": 41
+                    "within_radius": 32
                 },
                 "minecraft:damage_sensor": [
                     {
