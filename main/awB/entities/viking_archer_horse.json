@@ -452,6 +452,14 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
+                                "value": "playerarmy_old"
+                            },
+                            "max_dist": 8
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
                                 "value": "bandit"
                             },
                             "max_dist": 8
@@ -652,6 +660,14 @@
                             "filters": {
                                 "subject": "other",
                                 "test": "is_family",
+                                "value": "playerarmy_old"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
                                 "value": "player"
                             },
                             "max_dist": 32
@@ -715,6 +731,14 @@
                                 "subject": "other",
                                 "test": "is_family",
                                 "value": "playerarmy"
+                            },
+                            "max_dist": 32
+                        },
+                        {
+                            "filters": {
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "playerarmy_old"
                             },
                             "max_dist": 32
                         },
