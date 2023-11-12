@@ -461,7 +461,7 @@
                     "must_see": true,
                     "priority": 3,
                     "reselect_targets": true,
-                    "within_radius": 6
+                    "within_radius": 8
                 },
                 "minecraft:behavior.owner_hurt_by_target": {
                     "priority": 2
