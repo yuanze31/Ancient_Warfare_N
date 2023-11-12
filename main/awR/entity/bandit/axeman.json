@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:bandit_axeman",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/bandit/bandit_axeman"
+            },
+            "geometry": {
+                "default": "geometry.bandit_axeman"
+            },
+            "enable_attachables": true,
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "attack",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "animations": {
+                "base": "animation.base.base",
+                "move": "animation.base.move",
+                "attack": "animation.base.attack",
+                "sit": "animation.base.sit"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "texture": "bandit_egg",
+                "texture_index": 0
+            }
+        }
+    }
+}
