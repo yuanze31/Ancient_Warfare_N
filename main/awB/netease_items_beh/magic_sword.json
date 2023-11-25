@@ -12,9 +12,9 @@
             }
         },
         "description": {
-            "category": "Equipment",
+            "category": "awother",
             "identifier": "aw:debug_sword",
-            "register_to_create_menu": false
+            "register_to_create_menu": true
         }
     }
 }

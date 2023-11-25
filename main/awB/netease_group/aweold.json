@@ -6,6 +6,7 @@
             "list": [
                 "aw:egg_old_bandit_archer",
                 "aw:egg_old_bandit_axeman",
+                "aw:egg_old_bandit_axeman_pro",
                 "aw:egg_old_bandit_general",
                 "aw:egg_old_bandit_soldier",
                 "aw:egg_old_bandit_archer_horse",
@@ -19,6 +20,7 @@
             "list": [
                 "aw:egg_old_desert_archer",
                 "aw:egg_old_desert_axeman",
+                "aw:egg_old_desert_axeman_pro",
                 "aw:egg_old_desert_general",
                 "aw:egg_old_desert_soldier",
                 "aw:egg_old_desert_archer_horse",
@@ -32,6 +34,7 @@
             "list": [
                 "aw:egg_old_native_archer",
                 "aw:egg_old_native_axeman",
+                "aw:egg_old_native_axeman_pro",
                 "aw:egg_old_native_general",
                 "aw:egg_old_native_soldier",
                 "aw:egg_old_native_archer_horse",
@@ -45,6 +48,7 @@
             "list": [
                 "aw:egg_old_pirate_archer",
                 "aw:egg_old_pirate_axeman",
+                "aw:egg_old_pirate_axeman_pro",
                 "aw:egg_old_pirate_general",
                 "aw:egg_old_pirate_soldier",
                 "aw:egg_old_pirate_archer_horse",
@@ -58,6 +62,7 @@
             "list": [
                 "aw:egg_old_player_archer",
                 "aw:egg_old_player_axeman",
+                "aw:egg_old_player_axeman_pro",
                 "aw:egg_old_player_general",
                 "aw:egg_old_player_soldier",
                 "aw:egg_old_player_archer_horse",
@@ -71,6 +76,7 @@
             "list": [
                 "aw:egg_old_viking_archer",
                 "aw:egg_old_viking_axeman",
+                "aw:egg_old_viking_axeman_pro",
                 "aw:egg_old_viking_general",
                 "aw:egg_old_viking_soldier",
                 "aw:egg_old_viking_archer_horse",

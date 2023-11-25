@@ -10,15 +10,15 @@
     "boxDataList": [],
     "childParts": [
         {
-            "bpType": "bombPart",
+            "bpType": "Player0Part",
             "changes": {},
             "classType": "PartInstance",
             "clientPartType": null,
             "customVariables": [],
-            "directoryPath": "bomb",
-            "metaType": "bombPartMeta",
-            "objId": "51cfd5d6eb354caeb2ea9b8baf6d0e82",
-            "partType": "bombPart"
+            "directoryPath": "Player0",
+            "metaType": "Player0PartMeta",
+            "objId": "eebad14304fb491b9f71ccde50133844",
+            "partType": "Player0Part"
         }
     ],
     "childPresets": [],
@@ -40,7 +40,7 @@
     },
     "name": "Player0",
     "notifyRemove": true,
-    "objId": "f4cdb3c7f2a84395a1bb5771e82b0500",
+    "objId": "9f3298a666634a02b89873568d010ff6",
     "preLoad": false,
     "presetId": "d18eb44f-9098-4ec8-9795-db5b2eafb3f9",
     "presetType": "玩家预设",
