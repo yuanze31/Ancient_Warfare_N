@@ -24,6 +24,11 @@
             "icon": "textures/tab/tab_awb",
             "labelText": "itemCategory.name.awb",
             "name": "awb"
+        },
+        {
+            "icon": "textures/tab/awothertab",
+            "labelText": "itemCategory.name.awother",
+            "name": "awother"
         }
     ]
 }

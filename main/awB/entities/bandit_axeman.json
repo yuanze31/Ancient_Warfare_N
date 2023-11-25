@@ -771,7 +771,7 @@
                 "table": "loot_tables/entities/axeman/axeman_loot.json"
             },
             "minecraft:movement": {
-                "value": 0.3
+                "value": 0.33
             },
             "minecraft:movement.amphibious": {},
             "minecraft:movement.basic": {},

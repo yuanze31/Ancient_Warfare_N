@@ -5,7 +5,7 @@
             "minecraft:icon": "egg_building_tower"
         },
         "description": {
-            "category": "Construction",
+            "category": "awb",
             "identifier": "aw:egg_building_tower"
         }
     }

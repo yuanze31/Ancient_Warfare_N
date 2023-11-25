@@ -25,6 +25,12 @@
         "chainmail_set_all": {
             "textures": "textures/items/chainmail_set_all"
         },
+        "coin_gold": {
+            "textures": "textures/items/coin_gold"
+        },
+        "coin_iron": {
+            "textures": "textures/items/coin_iron"
+        },
         "debug_sword": {
             "textures": "textures/items/bwc"
         },
@@ -55,6 +61,9 @@
         "egg_bandit_axeman": {
             "textures": "textures/items/bandit_axeman"
         },
+        "egg_bandit_axeman_pro": {
+            "textures": "textures/items/bandit_axeman_pro"
+        },
         "egg_bandit_general": {
             "textures": "textures/items/bandit_general"
         },
@@ -68,7 +77,7 @@
             "textures": "textures/items/bandit_soldier_horse"
         },
         "egg_building_tower": {
-            "textures": "textures/items/building_tower"
+            "textures": "textures/items/egg_building_tower"
         },
         "egg_desert_archer": {
             "textures": "textures/items/desert_archer"
@@ -78,6 +87,9 @@
         },
         "egg_desert_axeman": {
             "textures": "textures/items/desert_axeman"
+        },
+        "egg_desert_axeman_pro": {
+            "textures": "textures/items/desert_axeman_pro"
         },
         "egg_desert_general": {
             "textures": "textures/items/desert_general"
@@ -100,6 +112,9 @@
         "egg_native_axeman": {
             "textures": "textures/items/native_axeman"
         },
+        "egg_native_axeman_pro": {
+            "textures": "textures/items/native_axeman_pro"
+        },
         "egg_native_general": {
             "textures": "textures/items/native_general"
         },
@@ -120,6 +135,9 @@
         },
         "egg_old_bandit_axeman": {
             "textures": "textures/items/old_bandit_axeman"
+        },
+        "egg_old_bandit_axeman_pro": {
+            "textures": "textures/items/old_bandit_axeman_pro"
         },
         "egg_old_bandit_general": {
             "textures": "textures/items/old_bandit_general"
@@ -142,6 +160,9 @@
         "egg_old_desert_axeman": {
             "textures": "textures/items/old_desert_axeman"
         },
+        "egg_old_desert_axeman_pro": {
+            "textures": "textures/items/old_desert_axeman_pro"
+        },
         "egg_old_desert_general": {
             "textures": "textures/items/old_desert_general"
         },
@@ -162,6 +183,9 @@
         },
         "egg_old_native_axeman": {
             "textures": "textures/items/old_native_axeman"
+        },
+        "egg_old_native_axeman_pro": {
+            "textures": "textures/items/old_native_axeman_pro"
         },
         "egg_old_native_general": {
             "textures": "textures/items/old_native_general"
@@ -184,6 +208,9 @@
         "egg_old_pirate_axeman": {
             "textures": "textures/items/old_pirate_axeman"
         },
+        "egg_old_pirate_axeman_pro": {
+            "textures": "textures/items/old_pirate_axeman_pro"
+        },
         "egg_old_pirate_general": {
             "textures": "textures/items/old_pirate_general"
         },
@@ -204,6 +231,9 @@
         },
         "egg_old_player_axeman": {
             "textures": "textures/items/old_player_axeman"
+        },
+        "egg_old_player_axeman_pro": {
+            "textures": "textures/items/old_player_axeman_pro"
         },
         "egg_old_player_general": {
             "textures": "textures/items/old_player_general"
@@ -226,6 +256,9 @@
         "egg_old_viking_axeman": {
             "textures": "textures/items/old_viking_axeman"
         },
+        "egg_old_viking_axeman_pro": {
+            "textures": "textures/items/old_viking_axeman_pro"
+        },
         "egg_old_viking_general": {
             "textures": "textures/items/old_viking_general"
         },
@@ -247,6 +280,9 @@
         "egg_pirate_axeman": {
             "textures": "textures/items/pirate_axeman"
         },
+        "egg_pirate_axeman_pro": {
+            "textures": "textures/items/pirate_axeman_pro"
+        },
         "egg_pirate_general": {
             "textures": "textures/items/pirate_general"
         },
@@ -267,6 +303,9 @@
         },
         "egg_player_axeman": {
             "textures": "textures/items/player_axeman"
+        },
+        "egg_player_axeman_pro": {
+            "textures": "textures/items/player_axeman_pro"
         },
         "egg_player_general": {
             "textures": "textures/items/player_general"
@@ -303,6 +342,9 @@
         },
         "egg_viking_axeman": {
             "textures": "textures/items/viking_axeman"
+        },
+        "egg_viking_axeman_pro": {
+            "textures": "textures/items/viking_axeman_pro"
         },
         "egg_viking_general": {
             "textures": "textures/items/viking_general"
@@ -372,6 +414,9 @@
         },
         "netherite_set_all": {
             "textures": "textures/items/netherite_set_all"
+        },
+        "awother": {
+            "textures": "textures/item/awotheritem"
         },
         "pirate_archer_horse": {
             "textures": "textures/items/pirate_archer_horse"

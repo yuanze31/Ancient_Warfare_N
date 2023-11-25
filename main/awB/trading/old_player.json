@@ -1,0 +1,193 @@
+{
+    "tiers": [
+        {
+            "total_exp_required": 0,
+            "trades": [
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_archer",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_archer_horse",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_axeman",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_axeman_pro",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_general",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_general_horse",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_soldier",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_old_player_soldier_horse",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_gold",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
