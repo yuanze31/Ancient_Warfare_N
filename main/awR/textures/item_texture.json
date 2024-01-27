@@ -4,6 +4,9 @@
         "aim": {
             "textures": "textures/entity/aim"
         },
+        "awother": {
+            "textures": "textures/item/awotheritem"
+        },
         "bandit_archer_horse": {
             "textures": "textures/items/bandit_archer_horse"
         },
@@ -70,6 +73,9 @@
         "egg_bandit_general_horse": {
             "textures": "textures/items/bandit_general_horse"
         },
+        "egg_bandit_lance": {
+            "textures": "textures/items/bandit_lance"
+        },
         "egg_bandit_soldier": {
             "textures": "textures/items/bandit_soldier"
         },
@@ -97,6 +103,9 @@
         "egg_desert_general_horse": {
             "textures": "textures/items/desert_general_horse"
         },
+        "egg_desert_lance": {
+            "textures": "textures/items/desert_lance"
+        },
         "egg_desert_soldier": {
             "textures": "textures/items/desert_soldier"
         },
@@ -120,6 +129,9 @@
         },
         "egg_native_general_horse": {
             "textures": "textures/items/native_general_horse"
+        },
+        "egg_native_lance": {
+            "textures": "textures/items/native_lance"
         },
         "egg_native_soldier": {
             "textures": "textures/items/native_soldier"
@@ -145,6 +157,9 @@
         "egg_old_bandit_general_horse": {
             "textures": "textures/items/old_bandit_general_horse"
         },
+        "egg_old_bandit_lance": {
+            "textures": "textures/items/old_bandit_lance"
+        },
         "egg_old_bandit_soldier": {
             "textures": "textures/items/old_bandit_soldier"
         },
@@ -168,6 +183,9 @@
         },
         "egg_old_desert_general_horse": {
             "textures": "textures/items/old_desert_general_horse"
+        },
+        "egg_old_desert_lance": {
+            "textures": "textures/items/old_desert_lance"
         },
         "egg_old_desert_soldier": {
             "textures": "textures/items/old_desert_soldier"
@@ -193,6 +211,9 @@
         "egg_old_native_general_horse": {
             "textures": "textures/items/old_native_general_horse"
         },
+        "egg_old_native_lance": {
+            "textures": "textures/items/old_native_lance"
+        },
         "egg_old_native_soldier": {
             "textures": "textures/items/old_native_soldier"
         },
@@ -216,6 +237,9 @@
         },
         "egg_old_pirate_general_horse": {
             "textures": "textures/items/old_pirate_general_horse"
+        },
+        "egg_old_pirate_lance": {
+            "textures": "textures/items/old_pirate_lance"
         },
         "egg_old_pirate_soldier": {
             "textures": "textures/items/old_pirate_soldier"
@@ -241,6 +265,9 @@
         "egg_old_player_general_horse": {
             "textures": "textures/items/old_player_general_horse"
         },
+        "egg_old_player_lance": {
+            "textures": "textures/items/old_player_lance"
+        },
         "egg_old_player_soldier": {
             "textures": "textures/items/old_player_soldier"
         },
@@ -264,6 +291,9 @@
         },
         "egg_old_viking_general_horse": {
             "textures": "textures/items/old_viking_general_horse"
+        },
+        "egg_old_viking_lance": {
+            "textures": "textures/items/old_viking_lance"
         },
         "egg_old_viking_soldier": {
             "textures": "textures/items/old_viking_soldier"
@@ -289,6 +319,9 @@
         "egg_pirate_general_horse": {
             "textures": "textures/items/pirate_general_horse"
         },
+        "egg_pirate_lance": {
+            "textures": "textures/items/pirate_lance"
+        },
         "egg_pirate_soldier": {
             "textures": "textures/items/pirate_soldier"
         },
@@ -312,6 +345,9 @@
         },
         "egg_player_general_horse": {
             "textures": "textures/items/player_general_horse"
+        },
+        "egg_player_lance": {
+            "textures": "textures/items/player_lance"
         },
         "egg_player_soldier": {
             "textures": "textures/items/player_soldier"
@@ -352,6 +388,9 @@
         "egg_viking_general_horse": {
             "textures": "textures/items/viking_general_horse"
         },
+        "egg_viking_lance": {
+            "textures": "textures/items/viking_lance"
+        },
         "egg_viking_soldier": {
             "textures": "textures/items/viking_soldier"
         },
@@ -375,6 +414,9 @@
         },
         "iron_set_all": {
             "textures": "textures/items/iron_set_all"
+        },
+        "lance": {
+            "textures": "textures/items/lance"
         },
         "leather_set": {
             "textures": "textures/items/leather_set"
@@ -414,9 +456,6 @@
         },
         "netherite_set_all": {
             "textures": "textures/items/netherite_set_all"
-        },
-        "awother": {
-            "textures": "textures/item/awotheritem"
         },
         "pirate_archer_horse": {
             "textures": "textures/items/pirate_archer_horse"
