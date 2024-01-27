@@ -1,0 +1,197 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.lance_soldier.base": {
+            "loop": true,
+            "animation_length": 0.25,
+            "loop_delay": "2",
+            "bones": {
+                "RightArm": {
+                    "rotation": [
+                        0,
+                        0,
+                        "((Math.cos(query.life_time * 103.2) * 2.865) + 2.865)"
+                    ]
+                },
+                "LeftArm": {
+                    "rotation": [
+                        0,
+                        0,
+                        "-((Math.cos(query.life_time * 103.2) * 2.865) + 2.865)"
+                    ]
+                }
+            }
+        },
+        "animation.lance_soldier.attack": {
+            "animation_length": 0.75,
+            "bones": {
+                "RightArm": {
+                    "rotation": {
+                        "0.0": {
+                            "post": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        },
+                        "0.1667": {
+                            "post": [
+                                80,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        },
+                        "0.5833": {
+                            "post": [
+                                40,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        },
+                        "0.75": {
+                            "post": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        }
+                    }
+                },
+                "RightItem": {
+                    "rotation": {
+                        "0.1667": {
+                            "pre": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "post": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        },
+                        "0.5833": {
+                            "post": [
+                                0,
+                                0,
+                                35
+                            ],
+                            "lerp_mode": "catmullrom"
+                        },
+                        "0.75": {
+                            "post": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        }
+                    },
+                    "position": {
+                        "0.1667": {
+                            "pre": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "post": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        },
+                        "0.5833": {
+                            "post": [
+                                8,
+                                12,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        },
+                        "0.75": {
+                            "post": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lerp_mode": "catmullrom"
+                        }
+                    }
+                }
+            }
+        },
+        "animation.lance_soldier.move": {
+            "loop": true,
+            "bones": {
+                "rightArm": {
+                    "rotation": [
+                        "(Math.cos(query.modified_distance_moved*38.17)*query.modified_move_speed/variable.gliding_speed_value)*57.3",
+                        0,
+                        0
+                    ]
+                },
+                "leftArm": {
+                    "rotation": [
+                        "-(Math.cos(query.modified_distance_moved*38.17)*query.modified_move_speed/variable.gliding_speed_value)*57.3",
+                        0,
+                        0
+                    ]
+                },
+                "rightLeg": {
+                    "rotation": [
+                        "-1.32*(Math.cos(query.modified_distance_moved*38.17)*query.modified_move_speed/variable.gliding_speed_value)*57.3",
+                        0,
+                        0
+                    ]
+                },
+                "leftLeg": {
+                    "rotation": [
+                        "1.32*(Math.cos(query.modified_distance_moved*38.17)*query.modified_move_speed/variable.gliding_speed_value)*57.3",
+                        0,
+                        0
+                    ]
+                }
+            }
+        },
+        "animation.lance_soldier.sit": {
+            "loop": true,
+            "bones": {
+                "rightArm": {
+                    "rotation": [
+                        "query.is_riding*-95",
+                        0,
+                        0
+                    ]
+                },
+                "leftArm": {
+                    "rotation": [
+                        "query.is_riding*-95",
+                        0,
+                        0
+                    ]
+                },
+                "rightLeg": {
+                    "rotation": [
+                        "query.is_riding*-95",
+                        "query.is_riding*20",
+                        0
+                    ]
+                },
+                "leftLeg": {
+                    "rotation": [
+                        "query.is_riding*-95 ",
+                        "query.is_riding*-20",
+                        0
+                    ]
+                }
+            }
+        }
+    }
+}
