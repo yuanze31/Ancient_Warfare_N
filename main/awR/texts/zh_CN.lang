@@ -350,6 +350,4 @@ itemGroup.name.pirate=海盗系列
 itemGroup.name.player=玩家系列
 itemGroup.name.set=盔甲
 itemGroup.name.viking=维纳亚海盗系列
-spawn.spawn.name=default
-entity.aw:entity.name=
-item.spawn_egg.entity.aw:entity.name=
+item.aw:lance.name=矛

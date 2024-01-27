@@ -2,13 +2,13 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aw:bandit_soldier",
+      "identifier": "aw:bandit_lance",
       "materials": { "default": "entity_alphatest" },
       "textures": {
-        "default": "textures/entity/bandit/bandit_soldier"
+        "default": "textures/entity/bandit/bandit_lance"
       },
       "geometry": {
-        "default": "geometry.bandit_soldier"
+        "default": "geometry.bandit_lance"
       },
       "enable_attachables": true,
       "scripts": {

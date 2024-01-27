@@ -2,13 +2,13 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aw:bandit_soldier",
+      "identifier": "aw:pirate_lance",
       "materials": { "default": "entity_alphatest" },
       "textures": {
-        "default": "textures/entity/bandit/bandit_soldier"
+        "default": "textures/entity/pirate/pirate_lance"
       },
       "geometry": {
-        "default": "geometry.bandit_soldier"
+        "default": "geometry.pirate_lance"
       },
       "enable_attachables": true,
       "scripts": {
@@ -28,7 +28,7 @@
 			},
       "render_controllers": [ "controller.render.default" ],
       "spawn_egg": {
-        "texture": "bandit_egg",
+        "texture": "pirate_egg",
         "texture_index": 0
       }
     }

@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:old_desert_lance",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/old/desert/desert_lance"
+            },
+            "geometry": {
+                "default": "geometry.old_basic"
+            },
+            "enable_attachables": true,
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "attack",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "animations": {
+                "base": "animation.old.base.base",
+                "move": "animation.old.base.move",
+                "attack": "animation.old.base.attack",
+                "sit": "animation.old.base.sit"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "texture": "desert_egg",
+                "texture_index": 0
+            }
+        }
+    }
+}
