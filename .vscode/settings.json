@@ -1,3 +1,12 @@
 {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggest.showKeywords": true,
+    "editor.suggest.showSnippets": true
 }

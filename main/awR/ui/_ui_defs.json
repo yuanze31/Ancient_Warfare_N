@@ -1,5 +1,7 @@
 {
     "ui_defs": [
-        "ui/netease_editor_template_namespace.json"
+        "ui/netease_editor_template_namespace.json",
+        "ui/wand_button.json",
+        "ui/wand_screen.json"
     ]
 }
