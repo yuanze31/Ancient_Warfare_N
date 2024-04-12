@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "design:custom_golden_sword",
+			"category": "Equipment"
+        },
+
+        "components": {
+            "minecraft:icon": "design:custom_golden_sword",
+            "minecraft:render_offsets": "tools"
+        }
+    }
+}

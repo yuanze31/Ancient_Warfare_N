@@ -46,6 +46,9 @@
         "desert_soldier_horse": {
             "textures": "textures/items/desert_soldier_horse"
         },
+        "design:custom_golden_sword": {
+            "textures": "textures/items/gold_sword"
+        },
         "diamond_command_baton": {
             "textures": "textures/items/diamond_command_baton"
         },
