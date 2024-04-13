@@ -33,21 +33,21 @@ class AnimationClient(ClientSystem):
         actor_comp = compFactory.CreateActorRender(clientApi.GetLocalPlayerId())
         actor_comp.AddPlayerAnimation(
             'sword_third_hold',
-            'animation.custom_golden_sword.third_hold'
+            'animation.lance.third_hold'
         )
         actor_comp.AddPlayerAnimation(
             'third_arm_attack',
-            'animation.custom_golden_sword.third_arm_attack'
+            'animation.lance.third_arm_attack'
         )
         actor_comp.AddPlayerAnimationController(
             'controller.third_person_attack_fixed',
             'controller.animation.player.third_person_attack_fixed'
         )
         actor_comp.AddPlayerAnimationIntoState(
-            'root', 'third_person', 'sword_third_hold', "query.get_equipped_item_full_name('main_hand') == 'design:custom_golden_sword'"
+            'root', 'third_person', 'sword_third_hold', "query.get_equipped_item_full_name('main_hand') == 'aw:lance'"
         )
         actor_comp.AddPlayerAnimationIntoState(
-            'root', 'third_person', 'controller.third_person_attack_fixed', "query.get_equipped_item_full_name('main_hand') == 'design:custom_golden_sword'"
+            'root', 'third_person', 'controller.third_person_attack_fixed', "query.get_equipped_item_full_name('main_hand') == 'aw:lance'"
         )
         actor_comp.RebuildPlayerRender()
 
@@ -55,7 +55,7 @@ class AnimationClient(ClientSystem):
         current_time = time.time()
         carried_item = compFactory.CreateItem(clientApi.GetLocalPlayerId()).GetCarriedItem()
         # 在事件响应时计算当前时间扣去过去时间戳是否大于攻击动画的时间，我们的自定义攻击动画时间为0.75秒，因此判断结果需要大于0.75。
-        if current_time - self.click_cooldown > 0.75 and carried_item and carried_item['newItemName'] == 'design:custom_golden_sword':
+        if current_time - self.click_cooldown > 0.75 and carried_item and carried_item['newItemName'] == 'aw:lance':
             # 继续判断是否满足是金剑，是则重新计算时间戳。
             self.click_cooldown = time.time()
             # 动画开始的时间点
@@ -75,7 +75,7 @@ class AnimationClient(ClientSystem):
             })
         else:
             # 正在播放动画时，若重复点击，则取消点击
-            if carried_item and carried_item['newItemName'] == 'design:custom_golden_sword':
+            if carried_item and carried_item['newItemName'] == 'aw:lance':
                 event['cancel'] = True
 
     def attack_click_block(self, event):

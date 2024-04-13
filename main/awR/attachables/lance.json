@@ -8,14 +8,37 @@
                 "enchanted": "entity_alphatest_glint"
             },
             "textures": {
-                "default": "textures/items/lance",
-                "enchanted": "textures/misc/enchanted_item_glint"
+                "default": "textures/entity/lance",
+                "enchanted": "textures/misc/enchanted_item_glint",
+                "arm": "textures/entity/steve"
+            },
+            "animations": {
+                "first_hold": "animation.lance.first_hold",
+                "first_scale": "animation.lance.first_scale",
+                "attack_rotation_sword": "animation.lance.sword_attack",
+                "third_attack_rotation_sword": "animation.lance.third_sword_attack",
+                "controller.attack": "controller.animation.sword.attack"
+            },
+            "scripts": {
+                "animate": [
+                    "controller.attack",
+                    {
+                        "first_hold": "c.is_first_person"
+                    },
+                    {
+                        "first_scale": "c.is_first_person"
+                    }
+                ]
             },
             "geometry": {
-                "default": "geometry.lance_model"
+                "default": "geometry.lance",
+                "arm": "geometry.lance_arm"
             },
             "render_controllers": [
-                "controller.render.item_default"
+                "controller.render.item_default",
+                {
+                    "controller.render.sword_controller": "c.is_first_person"
+                }
             ]
         }
     }

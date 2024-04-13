@@ -1,13 +1,13 @@
 {
     "format_version": "1.10",
     "minecraft:item": {
-        "components": {
-            "minecraft:icon": "lance"
-        },
         "description": {
-            "category": "awi",
             "identifier": "aw:lance",
-            "register_to_create_menu": true
+            "category": "awi"
+        },
+        "components": {
+            "minecraft:icon": "lance",
+            "minecraft:render_offsets": "tools"
         }
     }
 }
