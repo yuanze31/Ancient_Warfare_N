@@ -23,10 +23,10 @@
                 "scale": "1"
             },
             "animations": {
-                "base": "animation.lance.base",
-                "move": "animation.lance.move",
-                "attack": "animation.lance.attack",
-                "sit": "animation.lance.sit"
+                "base": "animation.lance_soldier.base",
+                "move": "animation.lance_soldier.move",
+                "attack": "animation.lance_soldier.attack",
+                "sit": "animation.lance_soldier.sit"
             },
             "render_controllers": [
                 "controller.render.default"
