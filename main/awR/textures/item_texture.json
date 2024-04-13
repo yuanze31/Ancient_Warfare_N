@@ -397,6 +397,9 @@
         "egg_viking_soldier_horse": {
             "textures": "textures/items/viking_soldier_horse"
         },
+        "fire_wand": {
+            "textures": "textures/items/fire_wand"
+        },
         "gold_command_baton": {
             "textures": "textures/items/gold_command_baton"
         },
@@ -405,6 +408,9 @@
         },
         "gold_set_all": {
             "textures": "textures/items/gold_set_all"
+        },
+        "ice_wand": {
+            "textures": "textures/items/ice_wand"
         },
         "iron_command_baton": {
             "textures": "textures/items/iron_command_baton"

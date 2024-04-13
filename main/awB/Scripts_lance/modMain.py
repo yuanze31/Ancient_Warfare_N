@@ -13,12 +13,12 @@ class CustomSwordMod(object):
     @Mod.InitClient()
     def init_client(self):
         clientApi.RegisterSystem("CustomSwordMod", "AnimationClient",
-                                 "CustomSwordScripts.client.AnimationClient")
+                                 "Scripts_lance.client.AnimationClient")
 
     @Mod.InitServer()
     def init_server(self):
         serverApi.RegisterSystem("CustomSwordMod", "AnimationServer",
-                                 "CustomSwordScripts.server.AnimationServer")
+                                 "Scripts_lance.server.AnimationServer")
 
     @Mod.DestroyClient()
     def destroy_client(self):
