@@ -8,5 +8,22 @@
         "strings": false
     },
     "editor.suggest.showKeywords": true,
-    "editor.suggest.showSnippets": true
+    "editor.suggest.showSnippets": true,
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "999",
+        "--target-version",
+        "py27"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.languageServer": "Pylance",
+    "python.formatting.provider": "black",
+    "python.autoComplete.extraPaths": [
+        "C:\\python27\\lib\\site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "C:\\python27\\lib\\site-packages"
+    ]
 }
