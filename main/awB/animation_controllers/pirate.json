@@ -2,8 +2,17 @@
   "format_version": "1.10.0",
   "animation_controllers": {
     "controller.animation.pirate_troops": {
+      "initial_state": "default",
       "states": {
         "default": {
+          "transitions": [
+            {
+              "condition": "query.scoreboard('pirate_summon', 'minecraft:dummy') == 1 && query.scoreboard('new_summon', 'minecraft:dummy') == 1",
+              "state": "summon_pirate_troops"
+            }
+          ]
+        },
+        "summon_pirate_troops": {
           "on_entry": [
             "/summon aw:pirate_soldier ~+1 ~+1 ~+1",
             "/summon aw:pirate_soldier ~+1 ~+1 ~-1",

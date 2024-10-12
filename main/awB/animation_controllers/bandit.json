@@ -2,8 +2,17 @@
   "format_version": "1.10.0",
   "animation_controllers": {
     "controller.animation.bandit_troops": {
+      "initial_state": "default",
       "states": {
         "default": {
+          "transitions": [
+            {
+              "condition": "true",
+              "state": "summon_bandits"
+            }
+          ]
+        },
+        "summon_bandits": {
           "on_entry": [
             "/summon aw:bandit_soldier ~+1 ~+1 ~+1",
             "/summon aw:bandit_soldier ~+1 ~+1 ~-1",

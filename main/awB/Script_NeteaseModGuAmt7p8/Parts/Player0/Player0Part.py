@@ -16,6 +16,9 @@ class Player0Part(PartBase):
     def DestroyServer(self):
         return PartBase.DestroyServer(self)
 
+    def InitServer(self):
+        return PartBase.InitServer(self)
+
     def TickClient(self):
         return PartBase.TickClient(self)
 
@@ -27,6 +30,3 @@ class Player0Part(PartBase):
 
     def DestroyClient(self):
         return PartBase.DestroyClient(self)
-
-    def InitServer(self):
-        return PartBase.InitServer(self)

@@ -4,12 +4,17 @@
         "conditions": [
             {
                 "minecraft:density_limit": {
-                    "surface": 3
+                    "surface": 3,
+                    "underground": 3
                 },
-                "minecraft:difficulty_filter": {
-                    "min": "easy"
+                "minecraft:distance_filter": {
+                    "max": 32,
+                    "min": 12
                 },
                 "minecraft:spawns_on_surface": {
+
+                },
+                "minecraft:spawns_underground": {
 
                 },
                 "minecraft:weight": {
@@ -19,7 +24,7 @@
         ],
         "description": {
             "identifier": "aw:spawn",
-            "population_control": "monster"
+            "population_control": "ambient"
         }
     }
 }
