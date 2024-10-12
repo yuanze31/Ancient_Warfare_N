@@ -31,8 +31,6 @@
                     -128.0
                 ],
                 "Data":{
-                    "apiName":"GetLevelId",
-                    "inputParams":[],
                     "outputParams":[
                         {
                             "portName":"output",
@@ -40,18 +38,20 @@
                             "paramName":"存档ID"
                         }
                     ],
+                    "inputParams":[],
                     "innerParams":[
                         "output"
                     ],
+                    "support":3,
+                    "inputTextMap":null,
+                    "general":false,
+                    "debugLog":false,
+                    "apiName":"GetLevelId",
+                    "portData":{},
+                    "htmlToolTip":"<b>GetLevelId</b><br/><font color=\"#ff646e\">服务端</font>/<font color=\"#66cbed\">客户端</font><br/>获取levelId。某些组件需要levelId创建，可以用此接口获取levelId。其中level即为当前地图的游戏。<br/><a style=\"color:#66cbed\" href=\"https://mc.163.com/dev/mcmanual/mc-dev/mcdocs/1-ModAPI/接口/世界/地图.html?catalog=1#getlevelid\">点击查看文档</a>",
                     "Type":"InnerSdkApiNode",
                     "inputType":"",
-                    "inputTextMap":null,
-                    "portData":{},
-                    "enableVariable":false,
-                    "support":3,
-                    "debugLog":false,
-                    "general":false,
-                    "htmlToolTip":"<b>GetLevelId</b><br/><font color=\"#ff646e\">服务端</font>/<font color=\"#66cbed\">客户端</font><br/>获取levelId。某些组件需要levelId创建，可以用此接口获取levelId。其中level即为当前地图的游戏。<br/><a style=\"color:#66cbed\" href=\"https://mc.163.com/dev/mcmanual/mc-dev/mcdocs/1-ModAPI/接口/世界/地图.html?catalog=1#getlevelid\">点击查看文档</a>"
+                    "enableVariable":false
                 },
                 "Name":"调用:获取存档ID",
                 "ParentGroupID":"gpYC9inLrRkfxrCKkhbC6f",
@@ -110,17 +110,17 @@
                     176.0
                 ],
                 "Data":{
-                    "triggerName":"InitServer",
                     "outputParams":[],
                     "innerParams":[],
-                    "Type":"InnerPartTriggerNode",
-                    "portData":{},
-                    "enableVariable":false,
                     "support":2,
-                    "debugLog":false,
                     "general":false,
+                    "debugLog":false,
+                    "triggerName":"InitServer",
+                    "portData":{},
                     "htmlToolTip":"<b>InitServer</b><br/><font color=\"#ff646e\">服务端</font><br/>服务端的零件对象初始化入口<br/><a style=\"color:#66cbed\" href=\"https://mc.163.com/dev/mcmanual/mc-dev/mcdocs/3-PresetAPI/预设对象/零件/零件PartBase.html?catalog=1#initserver\">点击查看文档</a>",
-                    "inputParams":[]
+                    "Type":"InnerPartTriggerNode",
+                    "inputParams":[],
+                    "enableVariable":false
                 },
                 "Name":"监听:服务端初始化",
                 "NodeID":"9ivEHY22fGVoumKWUECCHn"
@@ -132,17 +132,17 @@
                     -128.0
                 ],
                 "Data":{
-                    "triggerName":"InitServer",
                     "outputParams":[],
                     "innerParams":[],
-                    "Type":"InnerPartTriggerNode",
-                    "portData":{},
-                    "enableVariable":false,
                     "support":2,
-                    "debugLog":false,
                     "general":false,
+                    "debugLog":false,
+                    "triggerName":"InitServer",
+                    "portData":{},
                     "htmlToolTip":"<b>InitServer</b><br/><font color=\"#ff646e\">服务端</font><br/>服务端的零件对象初始化入口<br/><a style=\"color:#66cbed\" href=\"https://mc.163.com/dev/mcmanual/mc-dev/mcdocs/3-PresetAPI/预设对象/零件/零件PartBase.html?catalog=1#initserver\">点击查看文档</a>",
-                    "inputParams":[]
+                    "Type":"InnerPartTriggerNode",
+                    "inputParams":[],
+                    "enableVariable":false
                 },
                 "Name":"监听:服务端初始化",
                 "ParentGroupID":"gpYC9inLrRkfxrCKkhbC6f",
@@ -291,8 +291,14 @@
                     176.0
                 ],
                 "Data":{
-                    "compName":"command",
-                    "apiName":"SetCommand",
+                    "outputParams":[
+                        {
+                            "portName":"output",
+                            "type":"Bool",
+                            "paramName":"是否成功"
+                        }
+                    ],
+                    "storylineComponentEntityId":"-1",
                     "inputParams":[
                         {
                             "portName":"cmdStr",
@@ -310,34 +316,29 @@
                             "paramName":"输出到聊天窗口（可选）"
                         }
                     ],
-                    "outputParams":[
-                        {
-                            "portName":"output",
-                            "type":"Bool",
-                            "paramName":"是否成功"
-                        }
-                    ],
                     "innerParams":[
                         "cmdStr",
                         "playerId",
                         "showOutput",
                         "output"
                     ],
-                    "Type":"InnerSdkComponentNodeV2",
-                    "inputType":"",
+                    "support":2,
                     "inputTextMap":{
                         "storylineComponentEntityId":"存档ID"
                     },
+                    "general":false,
+                    "compName":"command",
+                    "debugLog":false,
+                    "apiName":"SetCommand",
                     "portData":{
                         "playerId":null,
                         "showOutput":false,
                         "cmdStr":"gamerule showdeathmessages false"
                     },
-                    "enableVariable":false,
-                    "support":2,
-                    "debugLog":false,
-                    "general":false,
-                    "htmlToolTip":"<b>SetCommand</b><br/><font color=\"#ff646e\">服务端</font><br/>使用游戏内指令<br/><a style=\"color:#66cbed\" href=\"https://mc.163.com/dev/mcmanual/mc-dev/mcdocs/1-ModAPI/接口/世界/指令.html?catalog=1#setcommand\">点击查看文档</a>"
+                    "htmlToolTip":"<b>SetCommand</b><br/><font color=\"#ff646e\">服务端</font><br/>使用游戏内指令<br/><a style=\"color:#66cbed\" href=\"https://mc.163.com/dev/mcmanual/mc-dev/mcdocs/1-ModAPI/接口/世界/指令.html?catalog=1#setcommand\">点击查看文档</a>",
+                    "Type":"InnerSdkComponentNodeV2",
+                    "inputType":"",
+                    "enableVariable":false
                 },
                 "Name":"调用:使用游戏内指令",
                 "VarData":{
@@ -459,6 +460,17 @@
                 "Collapsed":false,
                 "type":"BlueprintHtmlGroup"
             },
+            "gpYC9inLrRkfxrCKkhbC6f":{
+                "Pos":[
+                    208.0,
+                    -208.0
+                ],
+                "Width":672.0,
+                "Height":176.0,
+                "Name":"Get levelid",
+                "Collapsed":false,
+                "type":"BlueprintGroup"
+            },
             "VDSnAEJedjm4tmVhDAX6kC":{
                 "Pos":[
                     -608.0,
@@ -475,21 +487,10 @@
                 ],
                 "Collapsed":false,
                 "type":"BlueprintHtmlGroup"
-            },
-            "gpYC9inLrRkfxrCKkhbC6f":{
-                "Pos":[
-                    208.0,
-                    -208.0
-                ],
-                "Width":672.0,
-                "Height":176.0,
-                "Name":"Get levelid",
-                "Collapsed":false,
-                "type":"BlueprintGroup"
             }
         }
     },
     "Scale":0.716978,
-    "PosX":991.936704,
-    "PosY":119.841446
+    "PosX":1075.662829,
+    "PosY":405.004936
 }

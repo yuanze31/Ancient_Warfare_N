@@ -32,7 +32,7 @@
     "isValid": true,
     "name": "bomb",
     "notifyRemove": true,
-    "objId": "613d5ac10db84208a3d957ac949f4c41",
+    "objId": "116a044822c94bb3a2852f1a56f4d3c7",
     "oxygenAttrs": {
         "SetAirSeconds": 15,
         "SetRecoverTotalAirSupplyTime": 0.0
