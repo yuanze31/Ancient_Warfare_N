@@ -1,27 +1,19 @@
 {
-  "format_version": "1.10.0",
-  "animation_controllers": {
-    "controller.animation.native_troops": {
-      "initial_state": "default",
-      "states": {
-        "default": {
-          "transitions": [
-            {
-              "summon_native_troops": "query.scoreboard('native_summon') == 1 && query.scoreboard('new_summon') == 1"
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.native_troops": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/summon aw:native_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:native_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:native_archer ~-1 ~+1 ~-1",
+                        "/summon aw:native_soldier_horse ~ ~+1 ~",
+                        "/summon aw:native_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:native_general_horse ~+1 ~+1 ~"
+                    ]
+                }
             }
-          ]
-        },
-        "summon_native_troops": {
-          "on_entry": [
-            "/summon aw:native_soldier ~+1 ~+1 ~+1",
-            "/summon aw:native_soldier ~+1 ~+1 ~-1",
-            "/summon aw:native_archer ~-1 ~+1 ~-1",
-            "/summon aw:native_soldier_horse ~ ~+1 ~",
-            "/summon aw:native_archer_horse ~-1 ~+1 ~+1",
-            "/summon aw:native_general_horse ~+1 ~+1 ~"
-          ]
         }
-      }
     }
-  }
 }

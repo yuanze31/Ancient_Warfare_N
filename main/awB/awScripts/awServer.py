@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import random
 
 import mod.server.extraServerApi as serverApi
 
@@ -11,33 +12,125 @@ class awServerSystem(ServerSystem):
 
     def __init__(self, namespace, system_name):
         ServerSystem.__init__(self, namespace, system_name)
-        namespace = serverApi.GetEngineNamespace()
-        system_name = serverApi.GetEngineSystemName()
+        self.namespace = serverApi.GetEngineNamespace()
+        self.system_name = serverApi.GetEngineSystemName()
 
         self.ListenEvent()
-        # self.allow_spawn = 0
+        self.allow_spawn = 0
+        print "awdebug:已启动Server"
 
-    # 监听函数，用于定义和监听函数。函数名称除了强调的其他都是自取的，这个函数也是。
     def ListenEvent(self):
-        self.ListenForEvent(serverApi.GetEngineNamespace(), serverApi.GetEngineSystemName(), "ServerChatEvent", self, self.OnServerChat)
+        self.ListenForEvent(self.namespace, self.system_name, "ServerChatEvent", self, self.onServerChat)
+        self.ListenForEvent(self.namespace, self.system_name, "ServerSpawnMobEvent", self, self.onServerSpawnMob)
 
-    # 反监听函数，用于反监听事件，在代码中有创建注册就对应了销毁反注册是一个好的编程习惯，不要依赖引擎来做这些事。
     def UnListenEvent(self):
-        self.UnListenForEvent(serverApi.GetEngineNamespace(), serverApi.GetEngineSystemName(), "ServerChatEvent", self, self.OnServerChat)
+        self.UnListenForEvent(self.namespace, self.system_name, "ServerChatEvent", self, self.onServerChat)
+        self.UnListenForEvent(self.namespace, self.system_name, "ServerSpawnMobEvent", self, self.onServerSpawnMob)
 
-    # 函数名为Destroy才会被调用，在这个System被引擎回收的时候会调这个函数来销毁一些内容
     def Destroy(self):
-        # 调用上面的反监听函数来销毁
         self.UnListenEvent()
 
-    def OnServerChat(self, args):
-        # playerId = args["playerId"]
-        print "收到消息"
+    def onServerChat(self, args):
+        print "awdebug:收到消息！"
         if args["message"] == "awe":
-            # self.allow_spawn = 1
-            print "允许"
-        elif args['message'] == "awd":
-            # self.allow_spawn = 0
-            print "禁止"
+            self.allow_spawn = 1
+            print "awdebug:允许生成", self.allow_spawn
+        elif args["message"] == "awd":
+            self.allow_spawn = 0
+            print "awdebug:禁止生成", self.allow_spawn
         else:
-            print "无动作"
+            print "awdebug:无动作"
+
+    def onServerSpawnMob(self, args):
+        entityid = args["entityId"]
+        identifier = args["identifier"]
+        # realIdentifier = args["realIdentifier"]
+        if identifier == "aw:spawn":
+            print "awdebug:收到生成", "-identifier", identifier, "-entityid", entityid, "-allowspawn", self.allow_spawn
+            x = args["x"]
+            y = args["y"]
+            z = args["z"]
+            print "x", x, "y", y, "z", z
+            # 生成实体
+            if self.allow_spawn == 1:
+                result = self.onAWspawnspawn(x, y, z)
+                if result is not None:
+                    print "awdebug:生成成功"
+                else:
+                    print "awdebug:生成失败"
+            # 销毁aw:spawn实体
+            if self.DestroyEntity(entityid):
+                print "awdebug:Desory success"
+            else:
+                print "awdebug:Desory fail"
+            pass
+
+    def onAWspawnspawn(self, x, y, z):
+        def notNone(args):
+            if args is None:
+                return 0
+            else:
+                return 1
+
+        def spawnBandit():
+            result1 = self.CreateEngineEntityByTypeStr("aw:bandit_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
+            result2 = self.CreateEngineEntityByTypeStr("aw:bandit_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
+            result3 = self.CreateEngineEntityByTypeStr("aw:bandit_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
+            result4 = self.CreateEngineEntityByTypeStr("aw:bandit_soldier_horse", (x, y + 1, z), (0, 0), 0)
+            result5 = self.CreateEngineEntityByTypeStr("aw:bandit_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
+            result6 = self.CreateEngineEntityByTypeStr("aw:bandit_general_horse", (x + 1, y + 1, z), (0, 0), 0)
+            print result1, result2, result3, result4, result5, result6
+            return all(notNone(r) for r in [result1, result2, result3, result4, result5, result6])
+
+        def spawnDesert():
+            result1 = self.CreateEngineEntityByTypeStr("aw:desert_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
+            result2 = self.CreateEngineEntityByTypeStr("aw:desert_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
+            result3 = self.CreateEngineEntityByTypeStr("aw:desert_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
+            result4 = self.CreateEngineEntityByTypeStr("aw:desert_soldier_horse", (x, y + 1, z), (0, 0), 0)
+            result5 = self.CreateEngineEntityByTypeStr("aw:desert_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
+            result6 = self.CreateEngineEntityByTypeStr("aw:desert_general_horse", (x + 1, y + 1, z), (0, 0), 0)
+            print result1, result2, result3, result4, result5, result6
+            return all(notNone(r) for r in [result1, result2, result3, result4, result5, result6])
+
+        def spawnNative():
+            result1 = self.CreateEngineEntityByTypeStr("aw:native_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
+            result2 = self.CreateEngineEntityByTypeStr("aw:native_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
+            result3 = self.CreateEngineEntityByTypeStr("aw:native_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
+            result4 = self.CreateEngineEntityByTypeStr("aw:native_soldier_horse", (x, y + 1, z), (0, 0), 0)
+            result5 = self.CreateEngineEntityByTypeStr("aw:native_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
+            result6 = self.CreateEngineEntityByTypeStr("aw:native_general_horse", (x + 1, y + 1, z), (0, 0), 0)
+            print result1, result2, result3, result4, result5, result6
+            return all(notNone(r) for r in [result1, result2, result3, result4, result5, result6])
+
+        def spawnPirate():
+            result1 = self.CreateEngineEntityByTypeStr("aw:pirate_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
+            result2 = self.CreateEngineEntityByTypeStr("aw:pirate_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
+            result3 = self.CreateEngineEntityByTypeStr("aw:pirate_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
+            result4 = self.CreateEngineEntityByTypeStr("aw:pirate_soldier_horse", (x, y + 1, z), (0, 0), 0)
+            result5 = self.CreateEngineEntityByTypeStr("aw:pirate_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
+            result6 = self.CreateEngineEntityByTypeStr("aw:pirate_general_horse", (x + 1, y + 1, z), (0, 0), 0)
+            print result1, result2, result3, result4, result5, result6
+            return all(notNone(r) for r in [result1, result2, result3, result4, result5, result6])
+
+        def spawnPlayer():
+            result1 = self.CreateEngineEntityByTypeStr("aw:player_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
+            result2 = self.CreateEngineEntityByTypeStr("aw:player_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
+            result3 = self.CreateEngineEntityByTypeStr("aw:player_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
+            result4 = self.CreateEngineEntityByTypeStr("aw:player_soldier_horse", (x, y + 1, z), (0, 0), 0)
+            result5 = self.CreateEngineEntityByTypeStr("aw:player_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
+            result6 = self.CreateEngineEntityByTypeStr("aw:player_general_horse", (x + 1, y + 1, z), (0, 0), 0)
+            print result1, result2, result3, result4, result5, result6
+            return all(notNone(r) for r in [result1, result2, result3, result4, result5, result6])
+
+        def spawnViking():
+            result1 = self.CreateEngineEntityByTypeStr("aw:viking_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
+            result2 = self.CreateEngineEntityByTypeStr("aw:viking_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
+            result3 = self.CreateEngineEntityByTypeStr("aw:viking_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
+            result4 = self.CreateEngineEntityByTypeStr("aw:viking_soldier_horse", (x, y + 1, z), (0, 0), 0)
+            result5 = self.CreateEngineEntityByTypeStr("aw:viking_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
+            result6 = self.CreateEngineEntityByTypeStr("aw:viking_general_horse", (x + 1, y + 1, z), (0, 0), 0)
+            print result1, result2, result3, result4, result5, result6
+            return all(notNone(r) for r in [result1, result2, result3, result4, result5, result6])
+
+        spawn_func = [spawnBandit(), spawnDesert(), spawnNative(), spawnPirate(), spawnPlayer(), spawnViking()]
+        return spawn_func[random.randint(0, 5)]

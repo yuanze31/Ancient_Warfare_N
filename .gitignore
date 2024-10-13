@@ -1,8 +1,6 @@
 .vscode/
 .idea/
 .mcs/
-/awB/.idea
-/awB/venv
 
 *.bat
 
@@ -17,3 +15,6 @@ studio.json
 world_behavior_packs.json
 world_resource_packs.json
 world_icon.jpeg
+
+main/awB/awScripts/test.py
+.gitignore

@@ -3,28 +3,27 @@
     "minecraft:spawn_rules": {
         "conditions": [
             {
-                "minecraft:density_limit": {
-                    "surface": 3,
-                    "underground": 3
+                "minecraft:biome_filter": {
+                    "operator": "==",
+                    "test": "has_biome_tag",
+                    "value": "animal"
                 },
-                "minecraft:distance_filter": {
-                    "max": 32,
-                    "min": 12
+                "minecraft:density_limit": {
+                    "surface": 1,
+                    "underground": 1
                 },
                 "minecraft:spawns_on_surface": {
-
                 },
                 "minecraft:spawns_underground": {
-
                 },
                 "minecraft:weight": {
-                    "default": 5
+                    "default": 99
                 }
             }
         ],
         "description": {
             "identifier": "aw:spawn",
-            "population_control": "ambient"
+            "population_control": "animal"
         }
     }
 }
