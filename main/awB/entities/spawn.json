@@ -19,15 +19,18 @@
                     }
                 ]
             },
+            "minecraft:explode": {
+                "fuseLength": "5",
+                "power": 0.0
+            },
             "minecraft:health": {
                 "max": 20,
                 "min": 20,
                 "value": 20
             },
-            "minecraft:physics": {},
-            "minecraft:pushable": {
-                "is_pushable": false,
-                "is_pushable_by_piston": false
+            "minecraft:persistent": {
+            },
+            "minecraft:physics": {
             },
             "minecraft:type_family": {
                 "family": [
