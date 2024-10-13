@@ -3,11 +3,6 @@
     "minecraft:spawn_rules": {
         "conditions": [
             {
-                "minecraft:biome_filter": {
-                    "operator": "==",
-                    "test": "has_biome_tag",
-                    "value": "animal"
-                },
                 "minecraft:density_limit": {
                     "surface": 1,
                     "underground": 1
@@ -17,13 +12,13 @@
                 "minecraft:spawns_underground": {
                 },
                 "minecraft:weight": {
-                    "default": 99
+                    "default": 3
                 }
             }
         ],
         "description": {
             "identifier": "aw:spawn",
-            "population_control": "animal"
+            "population_control": "monster"
         }
     }
 }
