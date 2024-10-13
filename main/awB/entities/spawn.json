@@ -2,36 +2,6 @@
     "format_version": "1.8.0",
     "minecraft:entity": {
         "component_groups": {
-            "bandit": {
-                "minecraft:transformation": {
-                    "into": "aw:bandit_troops"
-                }
-            },
-            "desert": {
-                "minecraft:transformation": {
-                    "into": "aw:desert_troops"
-                }
-            },
-            "native": {
-                "minecraft:transformation": {
-                    "into": "aw:native_troops"
-                }
-            },
-            "pirate": {
-                "minecraft:transformation": {
-                    "into": "aw:pirate_troops"
-                }
-            },
-            "player": {
-                "minecraft:transformation": {
-                    "into": "aw:player_troops"
-                }
-            },
-            "viking": {
-                "minecraft:transformation": {
-                    "into": "aw:viking_troops"
-                }
-            }
         },
         "components": {
             "minecraft:breathable": {
@@ -49,15 +19,18 @@
                     }
                 ]
             },
+            "minecraft:explode": {
+                "fuseLength": "5",
+                "power": 0.0
+            },
             "minecraft:health": {
                 "max": 20,
                 "min": 20,
                 "value": 20
             },
-            "minecraft:physics": {},
-            "minecraft:pushable": {
-                "is_pushable": false,
-                "is_pushable_by_piston": true
+            "minecraft:persistent": {
+            },
+            "minecraft:physics": {
             },
             "minecraft:type_family": {
                 "family": [
@@ -73,58 +46,6 @@
             "runtime_identifier": "aw:spawn"
         },
         "events": {
-            "minecraft:entity_spawned": {
-                "randomize": [
-                    {
-                        "add": {
-                            "component_groups": [
-                                "bandit"
-                            ]
-                        },
-                        "weight": 1
-                    },
-                    {
-                        "add": {
-                            "component_groups": [
-                                "desert"
-                            ]
-                        },
-                        "weight": 1
-                    },
-                    {
-                        "add": {
-                            "component_groups": [
-                                "native"
-                            ]
-                        },
-                        "weight": 1
-                    },
-                    {
-                        "add": {
-                            "component_groups": [
-                                "pirate"
-                            ]
-                        },
-                        "weight": 1
-                    },
-                    {
-                        "add": {
-                            "component_groups": [
-                                "player"
-                            ]
-                        },
-                        "weight": 1
-                    },
-                    {
-                        "add": {
-                            "component_groups": [
-                                "viking"
-                            ]
-                        },
-                        "weight": 1
-                    }
-                ]
-            }
         }
     }
 }

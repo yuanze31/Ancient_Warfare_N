@@ -1,7 +1,8 @@
 # -*- coding: UTF-8 -*-
-from mod.common.mod import Mod
-import mod.server.extraServerApi as serverApi
+
 import mod.client.extraClientApi as clientApi
+import mod.server.extraServerApi as serverApi
+from mod.common.mod import Mod
 
 
 @Mod.Binding(name="CustomSwordMod", version="0.1")
@@ -12,13 +13,11 @@ class CustomSwordMod(object):
 
     @Mod.InitClient()
     def init_client(self):
-        clientApi.RegisterSystem("CustomSwordMod", "AnimationClient",
-                                 "Scripts_lance.client.AnimationClient")
+        clientApi.RegisterSystem("CustomSwordMod", "AnimationClient", "Scripts_lance.client.AnimationClient")
 
     @Mod.InitServer()
     def init_server(self):
-        serverApi.RegisterSystem("CustomSwordMod", "AnimationServer",
-                                 "Scripts_lance.server.AnimationServer")
+        serverApi.RegisterSystem("CustomSwordMod", "AnimationServer", "Scripts_lance.server.AnimationServer")
 
     @Mod.DestroyClient()
     def destroy_client(self):
