@@ -7,8 +7,7 @@
         "default": {
           "transitions": [
             {
-              "condition": "query.scoreboard('desert_summon', 'minecraft:dummy') == 1 && query.scoreboard('new_summon', 'minecraft:dummy') == 1",
-              "state": "summon_desert_troops"
+              "summon_desert_troops": "query.scoreboard('desert_summon') == 1 && query.scoreboard('new_summon') == 1"
             }
           ]
         },

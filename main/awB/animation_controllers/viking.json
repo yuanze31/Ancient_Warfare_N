@@ -7,8 +7,7 @@
         "default": {
           "transitions": [
             {
-              "condition": "query.scoreboard('viking_summon', 'minecraft:dummy') == 1 && query.scoreboard('new_summon', 'minecraft:dummy') == 1",
-              "state": "summon_viking_troops"
+              "summon_viking_troops": "query.scoreboard('viking_summon') == 1 && query.scoreboard('new_summon') == 1"
             }
           ]
         },

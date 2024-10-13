@@ -7,8 +7,7 @@
         "default": {
           "transitions": [
             {
-              "condition": "true",
-              "state": "summon_bandits"
+              "summon_bandits": "query.scoreboard('bandit_summon') == 1 && query.scoreboard('new_summon') == 1"
             }
           ]
         },
