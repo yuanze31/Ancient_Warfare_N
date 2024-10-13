@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
-import mod.server.extraServerApi as serverApi
+
 import math
+
+import mod.server.extraServerApi as serverApi
 from mod.common.utils.mcmath import Vector3
 
 compFactory = serverApi.GetEngineCompFactory()
@@ -26,28 +28,28 @@ class AnimationServer(ServerSystem):
         self.player_attacked_cache[player_id] = _type
         if _type == 'will_hit':
             entities = compFactory.CreateGame(player_id).GetEntitiesAround(player_id, 6,
-                                                                  {
-                                                                      'any_of': {
-                                                                          'test': 'is_family',
-                                                                          'subject': 'other',
-                                                                          'operator': 'not',
-                                                                          'value': 'instabuild'
-                                                                      }
-                                                                  })
+                                                                           {
+                                                                                   'any_of':{
+                                                                                           'test':'is_family',
+                                                                                           'subject':'other',
+                                                                                           'operator':'not',
+                                                                                           'value':'instabuild'
+                                                                                           }
+                                                                                   })
             for entity in entities:
                 self.sector_attack(player_id, entity, 65.0, 6.0, 7, attacker_id=player_id)
         elif _type == 'start':
             players = compFactory.CreatePlayer(player_id).GetRelevantPlayer([player_id])
             self.NotifyToMultiClients(players, 'AttackSync', {
-                'playerId': player_id,
-                'value': 1.0
-            })
+                    'playerId':player_id,
+                    'value':1.0
+                    })
         else:
             players = compFactory.CreatePlayer(player_id).GetRelevantPlayer([player_id])
             self.NotifyToMultiClients(players, 'AttackSync', {
-                'playerId': player_id,
-                'value': 0.0
-            })
+                    'playerId':player_id,
+                    'value':0.0
+                    })
 
     def attack_click_block(self, event):
         player_id = event['playerId']

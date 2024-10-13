@@ -1,28 +1,19 @@
 {
-  "format_version": "1.10.0",
-  "animation_controllers": {
-    "controller.animation.desert_troops": {
-      "initial_state": "default",
-      "states": {
-        "default": {
-          "transitions": [
-            {
-              "condition": "query.scoreboard('desert_summon', 'minecraft:dummy') == 1 && query.scoreboard('new_summon', 'minecraft:dummy') == 1",
-              "state": "summon_desert_troops"
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.desert_troops": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/summon aw:desert_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:desert_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:desert_archer ~-1 ~+1 ~-1",
+                        "/summon aw:desert_soldier_horse ~ ~+1 ~",
+                        "/summon aw:desert_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:desert_general_horse ~+1 ~+1 ~"
+                    ]
+                }
             }
-          ]
-        },
-        "summon_desert_troops": {
-          "on_entry": [
-            "/summon aw:desert_soldier ~+1 ~+1 ~+1",
-            "/summon aw:desert_soldier ~+1 ~+1 ~-1",
-            "/summon aw:desert_archer ~-1 ~+1 ~-1",
-            "/summon aw:desert_soldier_horse ~ ~+1 ~",
-            "/summon aw:desert_archer_horse ~-1 ~+1 ~+1",
-            "/summon aw:desert_general_horse ~+1 ~+1 ~"
-          ]
         }
-      }
     }
-  }
 }
