@@ -33,17 +33,17 @@ class Main(ClientSystem):
 
     #方便电脑测试
     def RightClickB(self,data):
-        print("ok")
+        # print("ok")
         Icomp = compFactory.CreateItem(self.mPlayerId)
         carriedData = Icomp.GetCarriedItem()
         if carriedData:
             if carriedData["newItemName"]=="aw:ice_wand" or carriedData["newItemName"]=="aw:fire_wand":
                 data["cancel"]=True
                 self.shoot_on(True)
-                print("right")
+                # print("right")
     def RightClickR(self,data):
         self.shoot_on(False)
-        print("right1")
+        # print("right1")
         
     def LeftClickB(self,data):
         Icomp = compFactory.CreateItem(self.mPlayerId)

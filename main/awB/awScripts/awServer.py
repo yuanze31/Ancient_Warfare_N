@@ -4,6 +4,8 @@ import random
 
 import mod.server.extraServerApi as serverApi
 
+from univFunction import randomName
+
 compFactory = serverApi.GetEngineCompFactory()
 ServerSystem = serverApi.GetServerSystemCls()
 
@@ -38,10 +40,12 @@ class awServerSystem(ServerSystem):
     def ListenEvent(self):
         self.ListenForEvent(self.namespace, self.system_name, "ServerChatEvent", self, self.onServerChat)
         self.ListenForEvent(self.namespace, self.system_name, "ServerSpawnMobEvent", self, self.onServerSpawnMob)
+        self.ListenForEvent(self.namespace, self.system_name, "AddEntityServerEvent", self, self.onServerAddEntity)
 
     def UnListenEvent(self):
         self.UnListenForEvent(self.namespace, self.system_name, "ServerChatEvent", self, self.onServerChat)
         self.UnListenForEvent(self.namespace, self.system_name, "ServerSpawnMobEvent", self, self.onServerSpawnMob)
+        self.UnListenForEvent(self.namespace, self.system_name, "AddEntityServerEvent", self, self.onServerAddEntity)
 
     def Destroy(self):
         self.UnListenEvent()
@@ -51,20 +55,21 @@ class awServerSystem(ServerSystem):
         self.displayConfig(args)
 
     def onServerSpawnMob(self, args):
-        print args
         self.isAWspawnSpawn(args)
-        self.isAWsoldierSpawn(args)
+
+    def onServerAddEntity(self, args):
+        self.renameAWsoldier(args)
 
     # 判断是否是aw:spawn生成
     def isAWspawnSpawn(self, args):
         entityid = args["entityId"]
         identifier = args["identifier"]
         if identifier == "aw:spawn":
-            print "awdebug:收到生成", "-identifier", identifier, "-entityid", entityid, "-allowspawn", self.allow_spawn
+            # print "awdebug:收到生成", "-identifier", identifier, "-entityid", entityid, "-allowspawn", self.allow_spawn
             x = args["x"]
             y = args["y"]
             z = args["z"]
-            print "x", x, "y", y, "z", z
+            # print "x", x, "y", y, "z", z
             # 生成实体
             self.onAWspawnSpawn(x, y, z)
             # 销毁aw:spawn实体
@@ -152,8 +157,8 @@ class awServerSystem(ServerSystem):
     def spawnConfig(self, msg):
         allow_spawn = self.getConfig("allow_spawn")
         camp_spawn = self.getConfig("camp_spawn")
-        print "allowspawn" + str(allow_spawn)
-        print "camp_spawn" + str(camp_spawn)
+        # print "allowspawn" + str(allow_spawn)
+        # print "camp_spawn" + str(camp_spawn)
         if msg == "awe":
             allow_spawn = 1
             self.setConfig("allow_spawn", allow_spawn)
@@ -196,7 +201,7 @@ class awServerSystem(ServerSystem):
                     sendmsg += "禁止" + self.ModcampCN[n] + "类型生成\n"
                 else:
                     sendmsg += self.ModcampCN[n] + "配置错误！\n"
-            print "awdebug:sendmsg = \n" + str(sendmsg)
+            # print "awdebug:sendmsg = \n" + str(sendmsg)
             args["cancel"] = True
             compFactory.CreateMsg(playerId).NotifyOneMessage(playerId, sendmsg, "§f")
 
@@ -213,17 +218,31 @@ class awServerSystem(ServerSystem):
         levelId = serverApi.GetLevelId()
         compFactory.CreateExtraData(levelId).SetExtraData(str(config_key), config_value)
 
-    def isAWsoldierSpawn(self, args):
-        identifier = args["realIdentifier"]
-        parts = identifier.split(':')
-        if len(parts) == 2:
-            part1 = parts[0]
-            part23 = parts[1].split('_', 1)
-            if len(part23) == 2:
-                part2, part3 = part23
-                if part1 in self.Modnamespace and part2 in self.Modcamp and part3 in self.Modtype:
-                    print(identifier + " 匹配成功!")
-                    pass
-                else:
-                    print(identifier + " 不匹配.")
-                    pass
+    def renameAWsoldier(self, args):
+        identifier = args["engineTypeStr"]
+        entityId = args["id"]
+        if compFactory.CreateName(entityId).GetName() == None:
+            # 切分命名空间
+            parts = identifier.split(":")
+            if len(parts) == 2:
+                part1 = parts[0]
+
+                # id判断
+                part23 = parts[1].split("_", 1)
+                if len(part23) == 2:
+                    part2, part3 = part23
+                    if part2 == "old":
+                        part34 = part3.split("_", 1)
+                        if len(part34) == 2:
+                            part3, part4 = part34
+                            if part1 in self.Modnamespace and part3 in self.Modcamp and part4 in self.Modtype:
+                                print(identifier + " 匹配成功!")
+                                compFactory.CreateName(entityId).SetName(randomName("male"))
+                            else:
+                                print(identifier + " 不匹配.")
+                    else:
+                        if part1 in self.Modnamespace and part2 in self.Modcamp and part3 in self.Modtype:
+                            print(identifier + " 匹配成功!")
+                            compFactory.CreateName(entityId).SetName(randomName("male"))
+                        else:
+                            print(identifier + " 不匹配.")
