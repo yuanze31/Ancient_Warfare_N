@@ -17,7 +17,7 @@ def randomName(gender="male"):
 
 
 def arraySort(array):
-    weight = {ch:idx for idx, ch in enumerate("0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz")}
+    weight = {ch: idx for idx, ch in enumerate("0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz")}
 
     def sort_key(name):
         return [weight[ch] for ch in name]

@@ -1,452 +1,72 @@
 {
-    "format_version": "1.12.0",
-    "minecraft:geometry": [
-        {
-            "description": {
-                "identifier": "geometry.lance",
-                "texture_width": 64,
-                "texture_height": 64,
-                "visible_bounds_width": 6,
-                "visible_bounds_height": 5,
-                "visible_bounds_offset": [
-                    0,
-                    2.5,
-                    0
-                ]
-            },
-            "bones": [
-                {
-                    "name": "root",
-                    "pivot": [
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "name": "waist",
-                    "parent": "root",
-                    "pivot": [
-                        0,
-                        24,
-                        0
-                    ]
-                },
-                {
-                    "name": "body",
-                    "parent": "waist",
-                    "pivot": [
-                        0,
-                        12,
-                        0
-                    ]
-                },
-                {
-                    "name": "rightArm",
-                    "parent": "body",
-                    "pivot": [
-                        -5,
-                        22,
-                        0
-                    ]
-                },
-                {
-                    "name": "rightItem",
-                    "parent": "rightArm",
-                    "pivot": [
-                        -5,
-                        15,
-                        0
-                    ]
-                },
-                {
-                    "name": "arm",
-                    "parent": "rightItem",
-                    "pivot": [
-                        -1,
-                        25,
-                        1
-                    ],
-                    "rotation": [
-                        90,
-                        0,
-                        90
-                    ]
-                },
-                {
-                    "name": "item",
-                    "parent": "arm",
-                    "pivot": [
-                        10,
-                        28.5,
-                        -3
-                    ],
-                    "cubes": [
-                        {
-                            "origin": [
-                                17.69239,
-                                12.63604,
-                                -4.5
-                            ],
-                            "size": [
-                                3,
-                                3,
-                                3
-                            ],
-                            "pivot": [
-                                10,
-                                20.5,
-                                -3
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                45
-                            ],
-                            "uv": [
-                                26,
-                                18
-                            ]
-                        },
-                        {
-                            "origin": [
-                                11.5,
-                                9,
-                                -3.5
-                            ],
-                            "size": [
-                                1,
-                                8,
-                                1
-                            ],
-                            "uv": [
-                                27,
-                                1
-                            ]
-                        },
-                        {
-                            "origin": [
-                                11.5,
-                                17,
-                                -3.5
-                            ],
-                            "size": [
-                                1,
-                                8,
-                                1
-                            ],
-                            "uv": [
-                                27,
-                                1
-                            ]
-                        },
-                        {
-                            "origin": [
-                                11.5,
-                                25,
-                                -3.5
-                            ],
-                            "size": [
-                                1,
-                                8,
-                                1
-                            ],
-                            "uv": [
-                                27,
-                                1
-                            ]
-                        },
-                        {
-                            "origin": [
-                                11.5,
-                                33,
-                                -3.5
-                            ],
-                            "size": [
-                                1,
-                                8,
-                                1
-                            ],
-                            "uv": [
-                                27,
-                                1
-                            ]
-                        },
-                        {
-                            "origin": [
-                                11.5,
-                                41,
-                                -3.5
-                            ],
-                            "size": [
-                                1,
-                                8,
-                                1
-                            ],
-                            "uv": [
-                                27,
-                                1
-                            ]
-                        },
-                        {
-                            "origin": [
-                                18.62084,
-                                45.01921,
-                                -4
-                            ],
-                            "size": [
-                                5,
-                                1,
-                                2
-                            ],
-                            "inflate": 0.01,
-                            "pivot": [
-                                10,
-                                23.5,
-                                -3
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                -17.5
-                            ],
-                            "uv": [
-                                26,
-                                13
-                            ]
-                        },
-                        {
-                            "origin": [
-                                0.19402,
-                                46.22203,
-                                -4
-                            ],
-                            "size": [
-                                5,
-                                1,
-                                2
-                            ],
-                            "inflate": 0.01,
-                            "pivot": [
-                                10,
-                                23.5,
-                                -3
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                17.5
-                            ],
-                            "uv": [
-                                26,
-                                10
-                            ]
-                        },
-                        {
-                            "origin": [
-                                19.62084,
-                                47.01921,
-                                -4
-                            ],
-                            "size": [
-                                4,
-                                1,
-                                2
-                            ],
-                            "inflate": 0.01,
-                            "pivot": [
-                                10,
-                                23.5,
-                                -3
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                -17.5
-                            ],
-                            "uv": [
-                                26,
-                                24
-                            ]
-                        },
-                        {
-                            "origin": [
-                                0.19402,
-                                48.22203,
-                                -4
-                            ],
-                            "size": [
-                                4,
-                                1,
-                                2
-                            ],
-                            "inflate": 0.01,
-                            "pivot": [
-                                10,
-                                23.5,
-                                -3
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                17.5
-                            ],
-                            "uv": [
-                                0,
-                                23
-                            ]
-                        },
-                        {
-                            "origin": [
-                                19.62084,
-                                45.51921,
-                                -4
-                            ],
-                            "size": [
-                                4,
-                                2,
-                                2
-                            ],
-                            "inflate": -0.25,
-                            "pivot": [
-                                10,
-                                23.5,
-                                -3
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                -17.5
-                            ],
-                            "uv": [
-                                0,
-                                15
-                            ]
-                        },
-                        {
-                            "origin": [
-                                0.19402,
-                                46.72203,
-                                -4
-                            ],
-                            "size": [
-                                4,
-                                2,
-                                2
-                            ],
-                            "inflate": -0.25,
-                            "pivot": [
-                                10,
-                                23.5,
-                                -3
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                17.5
-                            ],
-                            "uv": [
-                                0,
-                                19
-                            ]
-                        },
-                        {
-                            "origin": [
-                                10,
-                                50,
-                                -4
-                            ],
-                            "size": [
-                                4,
-                                14,
-                                2
-                            ],
-                            "inflate": 0.001,
-                            "uv": [
-                                14,
-                                6
-                            ]
-                        },
-                        {
-                            "origin": [
-                                9,
-                                50,
-                                -3.5
-                            ],
-                            "size": [
-                                6,
-                                14,
-                                1
-                            ],
-                            "uv": [
-                                0,
-                                0
-                            ]
-                        },
-                        {
-                            "origin": [
-                                4.96447,
-                                61.86396,
-                                -4
-                            ],
-                            "size": [
-                                3,
-                                3,
-                                2
-                            ],
-                            "inflate": -0.025,
-                            "pivot": [
-                                10,
-                                57,
-                                -2.5
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                45
-                            ],
-                            "uv": [
-                                34,
-                                3
-                            ]
-                        },
-                        {
-                            "origin": [
-                                2.96447,
-                                60.86396,
-                                -3.5
-                            ],
-                            "size": [
-                                5,
-                                5,
-                                1
-                            ],
-                            "inflate": -0.025,
-                            "pivot": [
-                                10,
-                                56,
-                                -2
-                            ],
-                            "rotation": [
-                                0,
-                                0,
-                                45
-                            ],
-                            "uv": [
-                                14,
-                                0
-                            ]
-                        }
-                    ],
-                    "locators": {
-                        "swoosh": [
-                            12,
-                            65,
-                            -3
-                        ]
-                    }
-                }
-            ]
-        }
-    ]
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.lance",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 2.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-5, 15, 0]
+				},
+				{
+					"name": "arm",
+					"parent": "rightItem",
+					"pivot": [-1, 25, 1],
+					"rotation": [90, 0, 90]
+				},
+				{
+					"name": "item",
+					"parent": "arm",
+					"pivot": [10, 28.5, -3],
+					"cubes": [
+						{"origin": [17.69239, 12.63604, -4.5], "size": [3, 3, 3], "inflate": -0.99, "pivot": [10, 20.5, -3], "rotation": [0, 0, 45], "uv": [26, 18]},
+						{"origin": [11.5, 9, -3.5], "size": [1, 8, 1], "uv": [27, 1]},
+						{"origin": [11.5, 17, -3.5], "size": [1, 8, 1], "uv": [27, 1]},
+						{"origin": [11.5, 25, -3.5], "size": [1, 8, 1], "uv": [27, 1]},
+						{"origin": [11.5, 33, -3.5], "size": [1, 8, 1], "uv": [27, 1]},
+						{"origin": [11.5, 41, -3.5], "size": [1, 8, 1], "uv": [27, 1]}
+					],
+					"locators": {
+						"swoosh": [12, 65, -3]
+					}
+				},
+				{
+					"name": "arrow",
+					"parent": "item",
+					"pivot": [10, 56, -2],
+					"cubes": [
+						{"origin": [10, 45.7, -4], "size": [4, 14, 2], "inflate": -0.51, "uv": [14, 6]},
+						{"origin": [4.96447, 57.064, -4], "size": [3, 3, 2], "inflate": -0.4, "pivot": [10, 52.2, -2.5], "rotation": [0, 0, 45], "uv": [34, 3]}
+					]
+				}
+			]
+		}
+	]
 }
