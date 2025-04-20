@@ -424,14 +424,6 @@
               },
               "max_dist": 32
             },
-            {
-              "filters": {
-                "subject": "other",
-                "test": "is_family",
-                "value": "viking"
-              },
-              "max_dist": 32
-            }
           ],
           "hurt_owner": true,
           "priority": 2
@@ -494,14 +486,6 @@
               },
               "max_dist": 8
             },
-            {
-              "filters": {
-                "subject": "other",
-                "test": "is_family",
-                "value": "viking"
-              },
-              "max_dist": 8
-            }
           ],
           "must_see": true,
           "priority": 3,
@@ -644,22 +628,6 @@
               "filters": {
                 "subject": "other",
                 "test": "is_family",
-                "value": "playerarmy"
-              },
-              "max_dist": 32
-            },
-            {
-              "filters": {
-                "subject": "other",
-                "test": "is_family",
-                "value": "playerarmy_old"
-              },
-              "max_dist": 32
-            },
-            {
-              "filters": {
-                "subject": "other",
-                "test": "is_family",
                 "value": "player"
               },
               "max_dist": 32
@@ -715,22 +683,6 @@
                 "subject": "other",
                 "test": "is_family",
                 "value": "monster"
-              },
-              "max_dist": 32
-            },
-            {
-              "filters": {
-                "subject": "other",
-                "test": "is_family",
-                "value": "playerarmy"
-              },
-              "max_dist": 32
-            },
-            {
-              "filters": {
-                "subject": "other",
-                "test": "is_family",
-                "value": "playerarmy_old"
               },
               "max_dist": 32
             },

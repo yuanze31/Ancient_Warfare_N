@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "aw:lance",
+            "identifier": "aw:iron_lance",
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"

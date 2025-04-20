@@ -1,0 +1,56 @@
+{
+    "format_version": "0.0.1",
+    "name": "awexample",
+    "description": "测试所有配置默认值的参数",
+    "permission_level": "game_directors",
+    "args": [
+        {
+            "name": "浮点数",
+            "type": "float",
+            "default": 123
+        },
+        {
+            "name": "整数",
+            "type": "int",
+            "default": 12
+        },
+        {
+            "name": "布尔值",
+            "type": "bool",
+            "default": true
+        },
+        {
+            "name": "字符串",
+            "type": "str",
+            "default": "hello"
+        },
+        {
+            "name": "目标",
+            "type": "target",
+            "default": "@s"
+        },
+        {
+            "name": "位置",
+            "type": "pos",
+            "default": [
+                2.5,
+                3.0,
+                4.4
+            ]
+        },
+        {
+            "name": "实体",
+            "type": "entity",
+            "default": {
+                "entityType": "minecraft:sheep"
+            }
+        },
+        {
+            "name": "物品",
+            "type": "item",
+            "default": {
+                "itemName": "minecraft:apple"
+            }
+        }
+    ]
+}

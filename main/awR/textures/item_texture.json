@@ -421,8 +421,23 @@
         "iron_set_all": {
             "textures": "textures/items/iron_set_all"
         },
-        "lance": {
-            "textures": "textures/items/lance"
+        "wooden_lance": {
+            "textures": "textures/items/wooden_lance"
+        },
+        "stone_lance": {
+            "textures": "textures/items/stone_lance"
+        },
+        "iron_lance": {
+            "textures": "textures/items/iron_lance"
+        },
+        "golden_lance": {
+            "textures": "textures/items/golden_lance"
+        },
+        "diamond_lance": {
+            "textures": "textures/items/diamond_lance"
+        },
+        "netherite_lance": {
+            "textures": "textures/items/netherite_lance"
         },
         "leather_set": {
             "textures": "textures/items/leather_set"
