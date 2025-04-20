@@ -64,16 +64,18 @@ class awServerSystem(ServerSystem):
     def isAWspawnSpawn(self, args):
         entityid = args["entityId"]
         identifier = args["identifier"]
+        allow_spawn = self.getConfig("allow_spawn")
         if identifier == "aw:spawn":
-            # print "awdebug:收到生成", "-identifier", identifier, "-entityid", entityid, "-allowspawn", self.allow_spawn
-            x = args["x"]
-            y = args["y"]
-            z = args["z"]
-            # print "x", x, "y", y, "z", z
-            # 生成实体
-            self.onAWspawnSpawn(x, y, z)
-            # 销毁aw:spawn实体
-            self.DestroyEntity(entityid)
+            if allow_spawn == True:
+                print "awdebug:收到生成aw:spawn"
+                x = args["x"]
+                y = args["y"]
+                z = args["z"]
+                # print "x", x, "y", y, "z", z
+                # 生成实体
+                self.onAWspawnSpawn(x, y, z)
+                # 销毁aw:spawn实体
+                self.DestroyEntity(entityid)
 
     # aw:spawn生成时，判断具体生成哪一阵营士兵
     def onAWspawnSpawn(self, x, y, z):
@@ -160,10 +162,10 @@ class awServerSystem(ServerSystem):
         # print "allowspawn" + str(allow_spawn)
         # print "camp_spawn" + str(camp_spawn)
         if msg == "awe":
-            allow_spawn = 1
+            allow_spawn = True
             self.setConfig("allow_spawn", allow_spawn)
         elif msg == "awd":
-            allow_spawn = 0
+            allow_spawn = False
             self.setConfig("allow_spawn", allow_spawn)
 
         msg_word = msg.split()
