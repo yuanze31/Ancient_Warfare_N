@@ -1,0 +1,7 @@
+{
+    "format_version": "0.0.1",
+    "name": "awdebug",
+    "description": "古代战争调试环境",
+    "permission_level": "admin",
+    "requires_cheats": true
+}

@@ -13,12 +13,10 @@ class AnimationServer(ServerSystem):
 
     def __init__(self, namespace, system_name):
         ServerSystem.__init__(self, namespace, system_name)
-        self.ListenForEvent('CustomSwordMod', 'AnimationClient',
-                            'AttackedPacket', self, self.attacked)
+        self.ListenForEvent('CustomSwordMod', 'AnimationClient', 'AttackedPacket', self, self.attacked)
         namespace = serverApi.GetEngineNamespace()
         system_name = serverApi.GetEngineSystemName()
-        self.ListenForEvent(namespace, system_name,
-                            'StartDestroyBlockServerEvent', self, self.attack_click_block)
+        self.ListenForEvent(namespace, system_name, 'StartDestroyBlockServerEvent', self, self.attack_click_block)
         self.player_attacked_cache = {}
         self.attack_type = ['start', 'will_hit', 'end']
 
@@ -27,28 +25,27 @@ class AnimationServer(ServerSystem):
         player_id = event['playerId']
         self.player_attacked_cache[player_id] = _type
         if _type == 'will_hit':
-            entities = compFactory.CreateGame(player_id).GetEntitiesAround(player_id, 6,
-                                                                           {
-                                                                                   'any_of':{
-                                                                                           'test':'is_family',
-                                                                                           'subject':'other',
-                                                                                           'operator':'not',
-                                                                                           'value':'instabuild'
-                                                                                           }
-                                                                                   })
+            entities = compFactory.CreateGame(player_id).GetEntitiesAround(player_id, 6, {
+                    'any_of': {
+                            'test': 'is_family',
+                            'subject': 'other',
+                            'operator': 'not',
+                            'value': 'instabuild'
+                            }
+                    })
             for entity in entities:
                 self.sector_attack(player_id, entity, 65.0, 6.0, 7, attacker_id=player_id)
         elif _type == 'start':
             players = compFactory.CreatePlayer(player_id).GetRelevantPlayer([player_id])
             self.NotifyToMultiClients(players, 'AttackSync', {
-                    'playerId':player_id,
-                    'value':1.0
+                    'playerId': player_id,
+                    'value': 1.0
                     })
         else:
             players = compFactory.CreatePlayer(player_id).GetRelevantPlayer([player_id])
             self.NotifyToMultiClients(players, 'AttackSync', {
-                    'playerId':player_id,
-                    'value':0.0
+                    'playerId': player_id,
+                    'value': 0.0
                     })
 
     def attack_click_block(self, event):
