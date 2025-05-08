@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "aw:diamond_lance",
+            "category": "awi"
+        },
+        "components": {
+            "minecraft:icon": "diamond_lance",
+            "minecraft:render_offsets": "tools"
+        }
+    }
+}
