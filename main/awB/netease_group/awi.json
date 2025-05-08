@@ -22,6 +22,18 @@
                 "aw:gold_command_baton",
                 "aw:diamond_command_baton"
             ]
+        },
+        {
+            "group_name": "itemGroup.name.lance",
+            "icon": "aw:diamond_lance",
+            "list": [
+                "aw:wooden_lance",
+                "aw:stone_lance",
+                "aw:iron_lance",
+                "aw:golden_lance",
+                "aw:diamond_lance",
+                "aw:netherite_lance"
+            ]
         }
     ]
 }

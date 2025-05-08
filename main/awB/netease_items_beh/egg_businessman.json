@@ -4,7 +4,7 @@
         "components": {
             "minecraft:max_stack_size": 64,
             "netease:egg": {
-                "entity": "aw:businessman"
+                "entity": "aw:egg_businessman"
             }
         },
         "description": {

@@ -79,12 +79,12 @@
                 "height": 0.1,
                 "width": 0.5
             },
-            "minecraft:damage_sensor": [
-                {
+            "minecraft:damage_sensor": {
+                "triggers": {
                     "cause": "all",
                     "deals_damage": false
                 }
-            ],
+            },
             "minecraft:health": {
                 "max": 10,
                 "min": 10,

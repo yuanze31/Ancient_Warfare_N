@@ -602,19 +602,19 @@
             },
             "1_aw:trap_shackles": {
                 "createTime": 1693453607.3689084,
-                "modifyTime": 1693453607.3689084
+                "modifyTime": 1746724500.36984
             },
             "1_aw:trap_sleep": {
                 "createTime": 1693453607.3689084,
-                "modifyTime": 1693453607.3689084
+                "modifyTime": 1746724494.6029725
             },
             "1_aw:trap_slow": {
                 "createTime": 1693453607.3669033,
-                "modifyTime": 1693453607.3669033
+                "modifyTime": 1746724489.2407813
             },
             "1_aw:trap_vertigo": {
                 "createTime": 1693453607.3679059,
-                "modifyTime": 1693453607.3679059
+                "modifyTime": 1746724466.8830497
             },
             "1_aw:viking_archer": {
                 "createTime": 1693453607.3679059,
@@ -703,6 +703,10 @@
             "2_aw:diamond_command_baton": {
                 "createTime": 1693453607.3719168,
                 "modifyTime": 1693453607.3719168
+            },
+            "2_aw:diamond_lance": {
+                "createTime": 1746724381.5348108,
+                "modifyTime": 1746724381.5348108
             },
             "2_aw:diamond_set": {
                 "createTime": 1693453607.3719168,
@@ -1180,6 +1184,10 @@
                 "createTime": 1693453607.37386,
                 "modifyTime": 1693453607.37386
             },
+            "2_aw:golden_lance": {
+                "createTime": 1746724381.5298195,
+                "modifyTime": 1746724381.5298195
+            },
             "2_aw:ice_wand": {
                 "createTime": 1728742840.6728873,
                 "modifyTime": 1728742840.6728873
@@ -1187,6 +1195,10 @@
             "2_aw:iron_command_baton": {
                 "createTime": 1693453607.3748486,
                 "modifyTime": 1693453607.3748486
+            },
+            "2_aw:iron_lance": {
+                "createTime": 1746724381.5298195,
+                "modifyTime": 1746724381.5298195
             },
             "2_aw:iron_set": {
                 "createTime": 1693453607.3729188,
@@ -1224,6 +1236,10 @@
                 "createTime": 1693453607.3748486,
                 "modifyTime": 1693453607.3748486
             },
+            "2_aw:netherite_lance": {
+                "createTime": 1746724381.5348108,
+                "modifyTime": 1746724381.5348108
+            },
             "2_aw:netherite_set": {
                 "createTime": 1693453607.3729188,
                 "modifyTime": 1693453607.3729188
@@ -1231,6 +1247,10 @@
             "2_aw:stone_command_baton": {
                 "createTime": 1693453607.37386,
                 "modifyTime": 1693453607.37386
+            },
+            "2_aw:stone_lance": {
+                "createTime": 1746724381.537819,
+                "modifyTime": 1746724381.537819
             },
             "2_aw:temptemp": {
                 "createTime": 1706322760.5600088,
@@ -1247,6 +1267,10 @@
             "2_aw:wooden_command_baton": {
                 "createTime": 1693453607.3719168,
                 "modifyTime": 1693453607.3719168
+            },
+            "2_aw:wooden_lance": {
+                "createTime": 1746724381.531803,
+                "modifyTime": 1746724381.531803
             },
             "32768_sound_definitions": {
                 "createTime": 1728742840.6916683,
@@ -1811,6 +1835,26 @@
             "32_entities/soldier_horse/soldier_horse_netherite_old": {
                 "createTime": 1695219407.0191958,
                 "modifyTime": 1695220202.9616296
+            },
+            "4194304_awconfig": {
+                "createTime": 1746724381.548848,
+                "modifyTime": 1746724381.548848
+            },
+            "4194304_awdebug": {
+                "createTime": 1746724381.548848,
+                "modifyTime": 1746724381.548848
+            },
+            "4194304_awexample": {
+                "createTime": 1746724381.548848,
+                "modifyTime": 1746724381.548848
+            },
+            "4194304_awname": {
+                "createTime": 1746724381.548848,
+                "modifyTime": 1746724381.548848
+            },
+            "4194304_awspawn": {
+                "createTime": 1746724381.548848,
+                "modifyTime": 1746724381.548848
             },
             "512_rwydh:tower_desert": {
                 "createTime": 1693453607.3798614,

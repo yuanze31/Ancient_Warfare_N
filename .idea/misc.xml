@@ -4,7 +4,7 @@
     <option name="pathToExecutable" value="C:\Python312\Scripts\black.exe" />
     <option name="sdkName" value="Python 2.7" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
   <component name="PythonCompatibilityInspectionAdvertiser">
     <option name="version" value="3" />
   </component>
