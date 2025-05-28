@@ -26,5 +26,29 @@ def arraySort(array):
     return json.dumps(sorted_array)
 
 
+def compare_versions(version1, version2):
+    """
+    1 表示第一个版本更新
+    -1 表示第二个版本更新
+    0 表示版本相同
+    """
+    # 将版本号分割为数字列表
+    v1 = list(map(int, version1.split('.')))
+    v2 = list(map(int, version2.split('.')))
+
+    # 确定最大长度并填充0
+    max_length = max(len(v1), len(v2))
+    v1 += [0] * (max_length - len(v1))
+    v2 += [0] * (max_length - len(v2))
+
+    # 逐位比较版本号
+    for a, b in zip(v1, v2):
+        if a > b:
+            return 1
+        elif a < b:
+            return -1
+    return 0
+
+
 if __name__ == "__main__":
     pass
