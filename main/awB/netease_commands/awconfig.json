@@ -10,7 +10,8 @@
             "options": [
                 "e",
                 "entity",
-                "name"
+                "name",
+                "ui"
             ]
         }
     ]
