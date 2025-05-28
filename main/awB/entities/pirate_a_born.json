@@ -1,0 +1,121 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "archer": {
+                "minecraft:transformation": {
+                    "into": "aw:pirate_archer<minecraft:entity_spawned>"
+                }
+            },
+            "archer2": {
+                "minecraft:transformation": {
+                    "into": "aw:pirate_archer_horse<minecraft:entity_spawned>"
+                }
+            },
+            "commander": {
+                "minecraft:transformation": {
+                    "into": "aw:pirate_commander<minecraft:entity_spawned>"
+                }
+            },
+            "general": {
+                "minecraft:transformation": {
+                    "into": "aw:pirate_general_horse<minecraft:entity_spawned>"
+                }
+            },
+            "soldier": {
+                "minecraft:transformation": {
+                    "into": "aw:pirate_soldier<minecraft:entity_spawned>"
+                }
+            },
+            "soldier2": {
+                "minecraft:transformation": {
+                    "into": "aw:pirate_soldier_horse<minecraft:entity_spawned>"
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:fall_damage": {
+                "value": 0
+            },
+            "minecraft:follow_range": {
+                "max": 100,
+                "value": 100
+            },
+            "minecraft:health": {
+                "max": 20,
+                "value": 20
+            },
+            "minecraft:physics": {},
+            "minecraft:type_family": {
+                "family": [
+                    "born"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "aw:pirate_born",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "runtime_identifier": "aw:born"
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "soldier"
+                            ]
+                        },
+                        "weight": 100
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "archer"
+                            ]
+                        },
+                        "weight": 75
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "commander"
+                            ]
+                        },
+                        "weight": 20
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "soldier2"
+                            ]
+                        },
+                        "weight": 5
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "archer2"
+                            ]
+                        },
+                        "weight": 5
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "general"
+                            ]
+                        },
+                        "weight": 5
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+		"controller.animation.player.third_person_attack_fixed" : {
+			"states" : {
+				"default": {
+					"transitions": [
+						{
+							"third_person_attack": "query.mod.sword_attack_time"
+						}
+					]
+				},
+				"third_person_attack": {
+					"animations": [
+						"third_arm_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.mod.sword_attack_time"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.sword.attack": {
+			"initial_state" : "default",
+			"states" : {
+				"default": {
+					"transitions" : [
+						{
+							"first_person" : "c.is_first_person"
+						},
+						{
+							"third_person": "!c.is_first_person"
+						}
+					]
+				},
+				"first_person": {
+					"transitions" : [
+						{
+							"default" : "!c.is_first_person"
+						},
+						{
+							"first_person_attack": "query.mod.sword_attack_time"
+						}
+					]
+				},
+				"third_person": {
+					"transitions" : [
+						{
+							"default" : "c.is_first_person"
+						},
+						{
+							"third_person_attack": "query.mod.sword_attack_time"
+						}
+					]
+				},
+				"third_person_attack": {
+					"animations": [
+						"third_attack_rotation_sword"
+					],
+					"transitions" : [
+						{
+							"default" : "c.is_first_person"
+						},
+						{
+							"third_person": "!query.mod.sword_attack_time"
+						}
+					]
+				},
+				"first_person_attack": {
+					"animations": [
+						"attack_rotation_sword"
+					],
+					"transitions" : [
+						{
+							"default" : "!c.is_first_person"
+						},
+						{
+							"first_person": "!query.mod.sword_attack_time"
+						}
+					]
+				}
+			}
+		}
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "netease:egg": {
+                "entity": "aw:egg_businessman"
+            }
+        },
+        "description": {
+            "category": "awother",
+            "custom_item_type": "egg",
+            "identifier": "aw:businessman",
+            "register_to_create_menu": true
+        }
+    }
+}

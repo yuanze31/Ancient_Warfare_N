@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aw:viking_archer_horse",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/viking/viking_archer_horse"
+      },
+      "geometry": {
+        "default": "geometry.viking_archer_horse"
+      },
+      "enable_attachables": true,
+      "scripts": {
+				"animate": [
+					"base",
+					"move",
+					"bow_and_arrow",
+					"sit"
+				],
+				"scale": "1"
+			},
+			"animations": {
+				"base": "animation.base.base",
+				"move": "animation.horse.move",
+				"bow_and_arrow": "animation.base.bow_and_arrow",
+				"sit": "animation.base.sit"
+			},
+      "render_controllers": [ "controller.render.zombie" ],
+      "spawn_egg": {
+        "texture": "viking_archer_horse"
+      }
+    }
+  }
+}

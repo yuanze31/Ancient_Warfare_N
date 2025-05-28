@@ -1,0 +1,55 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "bones": [
+                {
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                -4,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": {
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        16
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "name": "body",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ],
+            "description": {
+                "identifier": "geometry.lightning",
+                "texture_height": 16,
+                "texture_width": 16,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ],
+                "visible_bounds_width": 2
+            }
+        }
+    ]
+}

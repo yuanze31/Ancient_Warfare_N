@@ -1,0 +1,30 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "AW",
+        "min_engine_version": [
+            1,
+            10,
+            1
+        ],
+        "name": "AW",
+        "uuid": "141e76e1-0d08-4f69-95b8-4ef2f0321f5d",
+        "version": [
+            1,
+            10,
+            3
+        ]
+    },
+    "modules": [
+        {
+            "description": "AW",
+            "type": "resources",
+            "uuid": "896ab5ba-c219-43a2-93cb-8a10e147e777",
+            "version": [
+                1,
+                10,
+                1
+            ]
+        }
+    ]
+}

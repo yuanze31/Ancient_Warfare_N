@@ -1,0 +1,51 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "component_groups": {
+        },
+        "components": {
+            "minecraft:breathable": {
+                "suffocateTime": 0,
+                "totalSupply": 15
+            },
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:explode": {
+                "fuseLength": "5",
+                "power": 0.0
+            },
+            "minecraft:health": {
+                "max": 20,
+                "min": 20,
+                "value": 20
+            },
+            "minecraft:persistent": {
+            },
+            "minecraft:physics": {
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "spawn"
+                ]
+            }
+        },
+        "description": {
+            "identifier": "aw:spawn",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "runtime_identifier": "aw:spawn"
+        },
+        "events": {
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:iron_lance"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:iron_ingot"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:stick"
+            }
+        },
+        "pattern": [
+            "  A",
+            " B ",
+            "B  "
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "aw:iron_lance"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

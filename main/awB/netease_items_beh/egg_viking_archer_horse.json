@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "netease:egg": {
+                "entity": "aw:viking_archer_horse"
+            }
+        },
+        "description": {
+            "category": "awe",
+            "custom_item_type": "egg",
+            "identifier": "aw:egg_viking_archer_horse",
+            "register_to_create_menu": true
+        }
+    }
+}

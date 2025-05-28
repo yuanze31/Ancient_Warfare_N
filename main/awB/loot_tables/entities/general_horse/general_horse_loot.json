@@ -1,0 +1,67 @@
+{
+    "pools": [
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player_or_pets"
+                },
+                {
+                    "chance": 0.025,
+                    "condition": "random_chance_with_looting",
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "entries": [
+                {
+                    "name": "minecraft:diamond_sword",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player_or_pets"
+                },
+                {
+                    "chance": 0.5,
+                    "condition": "random_chance_with_looting",
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 3,
+                                "min": 2
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "aw:coin_iron",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 2,
+                                "min": 2
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "aw:coin_gold",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

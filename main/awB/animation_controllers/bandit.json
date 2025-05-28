@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.bandit_troops": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/summon aw:bandit_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:bandit_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:bandit_archer ~-1 ~+1 ~-1",
+                        "/summon aw:bandit_soldier_horse ~ ~+1 ~",
+                        "/summon aw:bandit_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:bandit_general_horse ~+1 ~+1 ~"
+                    ]
+                }
+            }
+        }
+    }
+}

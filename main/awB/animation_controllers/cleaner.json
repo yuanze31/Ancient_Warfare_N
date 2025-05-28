@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.cleaner": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/kill @e [type=arrow]"
+                    ]
+                }
+            }
+        }
+    }
+}

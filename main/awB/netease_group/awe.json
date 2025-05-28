@@ -1,0 +1,94 @@
+{
+    "groups": [
+        {
+            "group_name": "itemGroup.name.bandit",
+            "icon": "aw:egg_bandit_general",
+            "list": [
+                "aw:egg_bandit_archer",
+                "aw:egg_bandit_axeman",
+                "aw:egg_bandit_axeman_pro",
+                "aw:egg_bandit_soldier",
+                "aw:egg_bandit_general",
+                "aw:egg_bandit_lance",
+                "aw:egg_bandit_archer_horse",
+                "aw:egg_bandit_soldier_horse",
+                "aw:egg_bandit_general_horse"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.desert",
+            "icon": "aw:egg_desert_general",
+            "list": [
+                "aw:egg_desert_archer",
+                "aw:egg_desert_axeman",
+                "aw:egg_desert_axeman_pro",
+                "aw:egg_desert_soldier",
+                "aw:egg_desert_general",
+                "aw:egg_desert_lance",
+                "aw:egg_desert_archer_horse",
+                "aw:egg_desert_soldier_horse",
+                "aw:egg_desert_general_horse"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.native",
+            "icon": "aw:egg_native_general",
+            "list": [
+                "aw:egg_native_archer",
+                "aw:egg_native_axeman",
+                "aw:egg_native_axeman_pro",
+                "aw:egg_native_soldier",
+                "aw:egg_native_general",
+                "aw:egg_native_lance",
+                "aw:egg_native_archer_horse",
+                "aw:egg_native_soldier_horse",
+                "aw:egg_native_general_horse"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.pirate",
+            "icon": "aw:egg_pirate_general",
+            "list": [
+                "aw:egg_pirate_archer",
+                "aw:egg_pirate_axeman",
+                "aw:egg_pirate_axeman_pro",
+                "aw:egg_pirate_soldier",
+                "aw:egg_pirate_general",
+                "aw:egg_pirate_lance",
+                "aw:egg_pirate_archer_horse",
+                "aw:egg_pirate_soldier_horse",
+                "aw:egg_pirate_general_horse"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.player",
+            "icon": "aw:egg_player_general",
+            "list": [
+                "aw:egg_player_archer",
+                "aw:egg_player_axeman",
+                "aw:egg_player_axeman_pro",
+                "aw:egg_player_soldier",
+                "aw:egg_player_general",
+                "aw:egg_player_lance",
+                "aw:egg_player_archer_horse",
+                "aw:egg_player_soldier_horse",
+                "aw:egg_player_general_horse"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.viking",
+            "icon": "aw:egg_viking_general",
+            "list": [
+                "aw:egg_viking_archer",
+                "aw:egg_viking_axeman",
+                "aw:egg_viking_axeman_pro",
+                "aw:egg_viking_soldier",
+                "aw:egg_viking_general",
+                "aw:egg_viking_lance",
+                "aw:egg_viking_archer_horse",
+                "aw:egg_viking_soldier_horse",
+                "aw:egg_viking_general_horse"
+            ]
+        }
+    ]
+}

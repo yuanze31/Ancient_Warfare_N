@@ -1,0 +1,68 @@
+{
+    "dy_load_list": [
+
+    ],
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "bingdong": {
+            "min_distance": 100.0,
+            "sounds": [
+                {
+                    "name": "sounds/magic/bingdong",
+                    "stream": true,
+                    "volume": 0.3
+                }
+            ]
+        },
+        "bingfase": {
+            "min_distance": 100.0,
+            "sounds": [
+                {
+                    "name": "sounds/magic/bingfase",
+                    "stream": true,
+                    "volume": 0.3
+                }
+            ]
+        },
+        "bingsui": {
+            "min_distance": 100.0,
+            "sounds": [
+                {
+                    "name": "sounds/magic/bingsui",
+                    "stream": true,
+                    "volume": 0.3
+                }
+            ]
+        },
+        "dongjie": {
+            "min_distance": 100.0,
+            "sounds": [
+                {
+                    "name": "sounds/magic/dongjie",
+                    "stream": true,
+                    "volume": 0.3
+                }
+            ]
+        },
+        "firefase": {
+            "min_distance": 100.0,
+            "sounds": [
+                {
+                    "name": "sounds/magic/firefase",
+                    "stream": true,
+                    "volume": 0.3
+                }
+            ]
+        },
+        "firepense": {
+            "min_distance": 100.0,
+            "sounds": [
+                {
+                    "name": "sounds/magic/firepense",
+                    "stream": true,
+                    "volume": 0.3
+                }
+            ]
+        }
+    }
+}

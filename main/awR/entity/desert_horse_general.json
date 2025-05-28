@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aw:desert_general_horse",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/desert/desert_general_horse"
+      },
+      "geometry": {
+        "default": "geometry.desert_general_horse"
+      },
+      "enable_attachables": true,
+      "scripts": {
+				"animate": [
+					"base",
+					"move",
+					"attack",
+					"sit"
+				],
+				"scale": "1"
+			},
+			"animations": {
+				"base": "animation.base.base",
+				"move": "animation.horse.move",
+				"attack": "animation.base.attack",
+				"sit": "animation.base.sit"
+			},
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+        "texture": "desert_general_horse"
+      }
+    }
+  }
+}

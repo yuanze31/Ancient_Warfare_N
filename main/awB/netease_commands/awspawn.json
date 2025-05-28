@@ -1,0 +1,33 @@
+{
+    "format_version": "0.0.1",
+    "name": "awspawn",
+    "description": "控制古代战争生物的生成",
+    "permission_level": "admin",
+    "requires_cheats": true,
+    "args": [
+        {
+            "name": "允许全部生成",
+            "type": "bool",
+            "default": false
+        }
+    ],
+    "args1": [
+        {
+            "name": "士兵种类",
+            "type": "enum",
+            "options": [
+                "bandit",
+                "desert",
+                "native",
+                "pirate",
+                "player",
+                "viking"
+            ]
+        },
+        {
+            "name": "允许生成",
+            "type": "bool",
+            "default": true
+        }
+    ]
+}

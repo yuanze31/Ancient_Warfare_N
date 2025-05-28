@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "egg_player_general_horse"
+        },
+        "description": {
+            "category": "awe",
+            "identifier": "aw:egg_player_general_horse",
+            "register_to_create_menu": true
+        }
+    }
+}

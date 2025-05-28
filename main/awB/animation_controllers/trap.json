@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.trap_vertigo": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/effect @e[r=3] slowness 2 7 true",
+            "/effect @e[r=3] weakness 2 255 true",
+            "/effect @e[r=3] nausea 2 255 true",
+            "/effect @e[r=3] blindness 2 255 true"
+          ]
+        }
+      }
+    },
+    "controller.animation.trap_slow": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": ["/effect @e[r=3] slowness 3 2 true"]
+        }
+      }
+    },
+    "controller.animation.trap_shackles": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": ["/effect @e[r=3] slowness 3 7 true"]
+        }
+      }
+    },
+    "controller.animation.trap_sleep": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/effect @e[r=3] slowness 5 7 true",
+            "/effect @e[r=3] weakness 5 255 true",
+            "/effect @e[r=3] resistance 5 255 true"
+          ]
+        }
+      }
+    }
+  }
+}

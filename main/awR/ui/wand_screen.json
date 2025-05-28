@@ -1,0 +1,23 @@
+{
+   "wand_screen" : {
+      "controls" : [
+         {
+            "panel" : {
+               "controls" : [
+				  {
+                     "shoot@zt.shoot" : {} 
+                  },
+				  {
+                     "shoot2@zt.shoot2" : {} 
+                  }
+				  
+               ],
+               "layer" : 1,
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "zt2"
+}

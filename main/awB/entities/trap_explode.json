@@ -1,0 +1,150 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "explode": {
+                "minecraft:explode": {
+                    "breaks_blocks": false,
+                    "causesFire": false,
+                    "fuseLength": 0,
+                    "fuseLit": true,
+                    "power": 6
+                }
+            },
+            "minecraft:mob_effect": {
+                "effect_range": 0,
+                "effect_time": 2,
+                "entity_filter": {
+                    "any_of": [
+                        {
+                            "operator": "!=",
+                            "subject": "other",
+                            "test": "is_family",
+                            "value": "trap"
+                        }
+                    ]
+                },
+                "mob_effect": "slowness"
+            },
+            "roaring": {
+                "minecraft:behavior.knockback_roar": {
+                    "attack_time": 0,
+                    "cooldown_time": 15,
+                    "damage_filters": {
+                        "operator": "!=",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "trap"
+                    },
+                    "duration": 0,
+                    "knockback_damage": 10,
+                    "knockback_filters": {
+                        "operator": "!=",
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "trap"
+                    },
+                    "knockback_range": 6,
+                    "knockback_strength": 0,
+                    "on_roar_end": {
+                        "event": "exploding"
+                    },
+                    "priority": 1
+                }
+            }
+        },
+        "components": {
+            "minecraft:attack": {
+                "damage": 1
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "operator": "!=",
+                            "subject": "other",
+                            "test": "is_family",
+                            "value": "trap"
+                        },
+                        "max_dist": 10
+                    }
+                ],
+                "must_see": true,
+                "priority": 1
+            },
+            "minecraft:breathable": {
+                "breathes_water": true
+            },
+            "minecraft:collision_box": {
+                "height": 0.1,
+                "width": 0.5
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:health": {
+                "max": 10,
+                "min": 10,
+                "value": 10
+            },
+            "minecraft:nameable": {},
+            "minecraft:physics": {},
+            "minecraft:target_nearby_sensor": {
+                "inside_range": 3,
+                "must_see": true,
+                "on_inside_range": {
+                    "event": "roaring",
+                    "target": "self"
+                }
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "trap"
+                ]
+            }
+        },
+        "description": {
+            "animations": {
+                "explode": "controller.animation.trap_explode"
+            },
+            "identifier": "aw:trap_explode",
+            "is_experimental": false,
+            "is_spawnable": true,
+            "is_summonable": true,
+            "scripts": {
+                "animate": [
+                    {
+                        "explode": "query.is_roaring"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "exploding": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "explode"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "roaring": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "roaring"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

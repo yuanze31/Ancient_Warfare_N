@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_damage": 10000,
+            "netease:weapon": {
+                "attack_damage": 999,
+                "enchantment": 10,
+                "level": 3,
+                "speed": 5,
+                "type": "sword"
+            }
+        },
+        "description": {
+            "category": "awother",
+            "identifier": "aw:debug_sword",
+            "register_to_create_menu": true
+        }
+    }
+}

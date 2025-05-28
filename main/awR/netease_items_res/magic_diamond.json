@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "aw:magic_diamond"
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "aw:magic_diamond",
+            "register_to_create_menu": true
+        }
+    }
+}

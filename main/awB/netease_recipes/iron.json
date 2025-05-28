@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "aw:iron_set"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:iron_helmet"
+            },
+            {
+                "item": "minecraft:iron_chestplate"
+            },
+            {
+                "item": "minecraft:iron_leggings"
+            },
+            {
+                "item": "minecraft:iron_boots"
+            }
+        ],
+        "result": {
+            "item": "aw:iron_set",
+            "count": 1
+        }
+    }
+}

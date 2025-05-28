@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "aw:leather_set"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:leather_helmet"
+            },
+            {
+                "item": "minecraft:leather_chestplate"
+            },
+            {
+                "item": "minecraft:leather_leggings"
+            },
+            {
+                "item": "minecraft:leather_boots"
+            }
+        ],
+        "result": {
+            "item": "aw:leather_set",
+            "count": 1
+        }
+    }
+}

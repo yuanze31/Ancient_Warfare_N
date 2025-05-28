@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:stacked_by_data": true
+        },
+        "description": {
+            "category": "awi",
+            "identifier": "aw:iron_set",
+            "register_to_create_menu": true
+        }
+    }
+}

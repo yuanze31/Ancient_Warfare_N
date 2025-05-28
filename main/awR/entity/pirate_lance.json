@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "aw:pirate_lance",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/pirate/pirate_lance"
+            },
+            "geometry": {
+                "default": "geometry.pirate_lance"
+            },
+            "enable_attachables": true,
+            "scripts": {
+                "animate": [
+                    "base",
+                    "move",
+                    "attack",
+                    "sit"
+                ],
+                "scale": "1"
+            },
+            "animations": {
+                "base": "animation.lance_soldier.base",
+                "move": "animation.lance_soldier.move",
+                "attack": "animation.lance_soldier.attack",
+                "sit": "animation.lance_soldier.sit"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "texture": "pirate_egg",
+                "texture_index": 0
+            }
+        }
+    }
+}

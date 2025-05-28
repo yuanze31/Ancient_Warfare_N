@@ -1,0 +1,10 @@
+{
+    "format_version": "1.14.0",
+    "netease:structure_feature": {
+        "description": {
+            "identifier": "rwydh:tower_desert"
+        },
+        "places_structure": "tower:tower_desert",
+        "rotation": 0
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "aw:stone_lance",
+            "category": "awi"
+        },
+        "components": {
+            "minecraft:icon": "stone_lance",
+            "minecraft:render_offsets": "tools"
+        }
+    }
+}

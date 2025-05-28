@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.ice_wand": {
+			"textures": [
+				"Texture.ice_wand_model"
+			],
+			"geometry": "Geometry.ice_wand_model",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		},
+		"controller.render.fire_wand": {
+			"textures": [
+				"Texture.fire_wand_model"
+			],
+			"geometry": "Geometry.fire_wand_model",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player_troops": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/summon aw:player_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:player_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:player_archer ~-1 ~+1 ~-1",
+                        "/summon aw:player_soldier_horse ~ ~+1 ~",
+                        "/summon aw:player_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:player_general_horse ~+1 ~+1 ~"
+                    ]
+                }
+            }
+        }
+    }
+}

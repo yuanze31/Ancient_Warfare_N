@@ -1,0 +1,106 @@
+{
+    "configContent": {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "size": [
+            "100%+0px",
+            "100%c+0px"
+        ],
+        "layer": 1,
+        "controls": [
+            {
+                "linearLayout": {
+                    "type": "stack_panel",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "size": [
+                        "90%+0px",
+                        "100%c+10px"
+                    ],
+                    "layer": 1,
+                    "controls": [
+                        {
+                            "spawnAll@basicUIlib.basicSettingSwitch": {
+                                "$text": "全部阵营士兵生成",
+                                "size": [
+                                    "default",
+                                    30
+                                ]
+                            }
+                        },
+                        {
+                            "spawnBandit@basicUIlib.basicSettingSwitch": {
+                                "$text": "土匪阵营士兵生成",
+                                "layer": 149,
+                                "size": [
+                                    "default",
+                                    30
+                                ]
+                            }
+                        },
+                        {
+                            "spawnDesert@basicUIlib.basicSettingSwitch": {
+                                "$text": "沙漠阵营士兵生成",
+                                "layer": 297,
+                                "size": [
+                                    "default",
+                                    30
+                                ]
+                            }
+                        },
+                        {
+                            "spawnNative@basicUIlib.basicSettingSwitch": {
+                                "$text": "帝国阵营士兵生成",
+                                "layer": 445,
+                                "size": [
+                                    "default",
+                                    30
+                                ]
+                            }
+                        },
+                        {
+                            "spawnPirate@basicUIlib.basicSettingSwitch": {
+                                "$text": "海盗阵营士兵生成",
+                                "layer": 593,
+                                "size": [
+                                    "default",
+                                    30
+                                ]
+                            }
+                        },
+                        {
+                            "spawnPlayer@basicUIlib.basicSettingSwitch": {
+                                "$text": "初始阵营士兵生成",
+                                "layer": 741,
+                                "size": [
+                                    "default",
+                                    30
+                                ]
+                            }
+                        },
+                        {
+                            "spawnViking@basicUIlib.basicSettingSwitch": {
+                                "$text": "纳维亚海盗阵营士兵生成",
+                                "layer": 889,
+                                "size": [
+                                    "default",
+                                    30
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "main": {
+        "type": "screen",
+        "controls": [
+            {
+                "ConfigContent@configContent.configContent": {}
+            }
+        ]
+    },
+    "namespace": "configContent"
+}
