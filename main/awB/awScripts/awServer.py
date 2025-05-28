@@ -2,7 +2,9 @@
 import random
 
 from QuModLibs.Server import *
-from univFunction import randomName
+
+import modInfo
+from univFunction import compare_versions, randomName
 
 CF = serverApi.GetEngineCompFactory()
 
@@ -15,7 +17,8 @@ ModtypeCN = ["弓箭手", "游骑兵", "斧兵", "重斧兵", "首领", "铁骑"
 CONFIG_MAP = {
         "allow_spawn": "allow_spawn",
         "camp_spawn": "camp_spawn",
-        "soldier_name": "soldier_name"
+        "soldier_name": "soldier_name",
+        "last_start_mod_version": "last_start_mod_version"
         }
 
 
@@ -103,6 +106,7 @@ def AWdebug(args):
 
     command = args["command"]
     if command == "awdebug":
+        print args
         if args["origin"]["entityId"] == "-4294967295":
             if args["args"][0]["value"] == "":
                 args["return_msg_key"] = autoEnv()
@@ -315,21 +319,27 @@ def PlayerSummonEntity(args):
     renameAWsoldier(args)
 
 
+def popWhatsNewUI(versionNow, versionLast):
+    print "当前版本：" + versionNow + "\n上次版本：" + versionLast + "\n弹出What\'s news弹窗（TODO）"
+    # TODO: What's news 弹窗
+    setConfig("last_start_mod_version", versionNow)
+
+
 def DefaultConfig():
-    """
-    设置文件初始化
-    """
+    """使用默认值初始化缺失的配置项"""
     default_config = {
             "allow_spawn": False,
             "camp_spawn": [True, True, True, True, True, True],
-            "soldier_name": "male"
+            "soldier_name": "male",
+            "last_start_mod_version": "0.0.0"
             }
-    if getConfig("allow_spawn") is None:
-        setConfig("allow_spawn", default_config["allow_spawn"])
-    if getConfig("camp_spawn") is None:
-        setConfig("camp_spawn", default_config["camp_spawn"])
-    if getConfig("soldier_name") is None:
-        setConfig("soldier_name", default_config["soldier_name"])
+
+    # 遍历所有默认配置项
+    for key, value in default_config.items():
+        if getConfig(key) is None:
+            setConfig(key, value)
 
 
 DefaultConfig()
+if compare_versions(modInfo.MOD_VERSION, getConfig("last_start_mod_version")) == 1:
+    popWhatsNewUI(modInfo.MOD_VERSION, getConfig("last_start_mod_version"))
