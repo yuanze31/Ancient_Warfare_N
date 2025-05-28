@@ -1,0 +1,10 @@
+{
+    "format_version": "1.14.0",
+    "netease:structure_feature": {
+        "description": {
+            "identifier": "rwydh:tower_oak"
+        },
+        "places_structure": "tower:tower_oak",
+        "rotation": 0
+    }
+}

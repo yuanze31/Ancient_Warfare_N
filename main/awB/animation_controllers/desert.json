@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.desert_troops": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/summon aw:desert_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:desert_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:desert_archer ~-1 ~+1 ~-1",
+                        "/summon aw:desert_soldier_horse ~ ~+1 ~",
+                        "/summon aw:desert_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:desert_general_horse ~+1 ~+1 ~"
+                    ]
+                }
+            }
+        }
+    }
+}

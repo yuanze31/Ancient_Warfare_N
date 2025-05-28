@@ -1,0 +1,33 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:ice_wand"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "abc",
+            "bd ",
+            "c d"
+        ],
+        "key": {
+            "a": {
+                "item": "minecraft:lapis_lazuli"
+            },
+            "b": {
+                "item": "minecraft:glass"
+            },
+            "c": {
+                "item": "minecraft:gold_ingot"
+            },
+            "d": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "aw:ice_wand"
+        }
+    }
+}

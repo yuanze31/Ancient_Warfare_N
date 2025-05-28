@@ -1,0 +1,10 @@
+{
+    "ui_defs": [
+        "ui/basicUIlib.json",
+        "ui/configContent.json",
+        "ui/configUI.json",
+        "ui/wand_button.json",
+        "ui/wand_screen.json",
+        "ui/netease_editor_template_namespace.json"
+    ]
+}

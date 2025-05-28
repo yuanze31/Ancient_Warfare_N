@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "aw:gold_set"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:golden_helmet"
+            },
+            {
+                "item": "minecraft:golden_chestplate"
+            },
+            {
+                "item": "minecraft:golden_leggings"
+            },
+            {
+                "item": "minecraft:golden_boots"
+            }
+        ],
+        "result": {
+            "item": "aw:gold_set",
+            "count": 1
+        }
+    }
+}

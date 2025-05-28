@@ -1,0 +1,17 @@
+{
+    "format_version": "0.0.1",
+    "name": "awconfig",
+    "description": "显示古代战争的设置",
+    "permission_level": "any",
+    "args": [
+        {
+            "name": "设置类别",
+            "type": "enum",
+            "options": [
+                "e",
+                "entity",
+                "name"
+            ]
+        }
+    ]
+}

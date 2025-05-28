@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "zt:fire_b",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/fire_b"
+      },
+      "geometry": {
+        "default": "geometry.lightning"
+      },
+      "render_controllers": [ "controller.render.fireball" ],
+      "animations": {
+        "face_player": "animation.actor.billboard"
+      },
+      "scripts": {
+        "scale": "0.5",
+        "animate": [
+          "face_player"
+        ]
+      },
+      "spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 99
+			}
+    }
+  }
+} 

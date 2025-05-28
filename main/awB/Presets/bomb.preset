@@ -1,0 +1,61 @@
+{
+    "behaviorAttrs": {
+        "SetBlockControlAi": true,
+        "SetImmuneDamage": false,
+        "SetPersistence": false
+    },
+    "boxDataList": [],
+    "childParts": [
+        {
+            "bpType": "bombPart",
+            "changes": {},
+            "classType": "PartInstance",
+            "clientPartType": null,
+            "customVariables": [],
+            "directoryPath": "bomb",
+            "metaType": "bombPartMeta",
+            "objId": "40789833f41544098b253b22f2def5e1",
+            "partType": "bombPart"
+        }
+    ],
+    "childPresets": [],
+    "classType": "EntityPreset",
+    "dimension": 0,
+    "engineTypeStr": "aw:bomb",
+    "entityAttrs": {
+        "SetDamageValue": -1e-07,
+        "SetHealthValue": -1e-07,
+        "SetLavaSpeedValue": -1e-07,
+        "SetSpeedValue": -1e-07
+    },
+    "forceLoad": false,
+    "isValid": true,
+    "name": "bomb",
+    "notifyRemove": true,
+    "objId": "116a044822c94bb3a2852f1a56f4d3c7",
+    "oxygenAttrs": {
+        "SetAirSeconds": 15,
+        "SetRecoverTotalAirSupplyTime": 0.0
+    },
+    "physicsAttrs": {
+        "SetGravity": 0.0,
+        "SetPushable": true
+    },
+    "preLoad": false,
+    "presetId": "59b54d8b-9860-448d-bf8c-0fe2609c5a0c",
+    "presetType": "实体预设",
+    "previewEnable": true,
+    "renderAttrs": {
+        "SetNotRender": false
+    },
+    "singleton": false,
+    "stateAndItemAttrs": {
+        "AddEffect": [],
+        "SetItemInfo": []
+    },
+    "templateId": "",
+    "unique": false,
+    "updateRotationInterval": 0,
+    "updateScaleInterval": 0,
+    "updateTransformInterval": 2
+}

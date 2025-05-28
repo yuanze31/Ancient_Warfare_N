@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "egg_old_native_axeman_pro"
+        },
+        "description": {
+            "category": "Construction",
+            "identifier": "aw:egg_old_native_axeman_pro"
+        }
+    }
+}

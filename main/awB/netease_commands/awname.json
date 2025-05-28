@@ -1,0 +1,18 @@
+{
+    "format_version": "0.0.1",
+    "name": "awname",
+    "description": "控制玩家放置士兵的名称",
+    "permission_level": "admin",
+    "requires_cheats": true,
+    "args": [
+        {
+            "name": "士兵名称设置",
+            "type": "enum",
+            "options": [
+                "male",
+                "female",
+                "off"
+            ]
+        }
+    ]
+}

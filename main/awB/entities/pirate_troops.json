@@ -1,0 +1,45 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "components": {
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:damage_sensor": [
+                {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            ],
+            "minecraft:explode": {
+                "breaks_blocks": false,
+                "causesFire": false,
+                "fuseLength": 1,
+                "fuseLit": true,
+                "power": 0
+            },
+            "minecraft:fire_immune": true,
+            "minecraft:health": {
+                "max": 1,
+                "min": 1,
+                "value": 1
+            },
+            "minecraft:physics": {}
+        },
+        "description": {
+            "animations": {
+                "troops": "controller.animation.pirate_troops"
+            },
+            "identifier": "aw:pirate_troops",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true,
+            "scripts": {
+                "animate": [
+                    "troops"
+                ]
+            }
+        }
+    }
+}

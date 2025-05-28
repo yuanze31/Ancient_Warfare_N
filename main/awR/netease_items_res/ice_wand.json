@@ -1,0 +1,12 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "aw:ice_wand",
+            "category": "awi"
+        },
+        "components": {
+            "minecraft:icon": "ice_wand"
+        }
+    }
+}

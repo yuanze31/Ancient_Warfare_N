@@ -1,0 +1,124 @@
+{
+    "tiers": [
+        {
+            "total_exp_required": 0,
+            "trades": [
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_trap_vertigo",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_iron",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_trap_shackles",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_iron",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_trap_sleep",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_iron",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_trap_slow",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_iron",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gives": [
+                        {
+                            "item": "aw:egg_trap_explode",
+                            "quantity": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "max_uses": 8,
+                    "reward_exp": false,
+                    "trader_exp": 1,
+                    "wants": [
+                        {
+                            "item": "aw:coin_iron",
+                            "quantity": {
+                                "max": 2,
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

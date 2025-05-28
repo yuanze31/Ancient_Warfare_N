@@ -1,0 +1,83 @@
+{
+    "basicSettingSwitch": {
+        "type": "panel",
+        "$text": "Switch disc",
+        "size": [
+            "100%+0px",
+            "100%+0px"
+        ],
+        "layer": 1,
+        "controls": [
+            {
+                "linearLayout": {
+                    "type": "stack_panel",
+                    "size": [
+                        "100%+0px",
+                        "100%+0px"
+                    ],
+                    "layer": 1,
+                    "orientation": "horizontal",
+                    "controls": [
+                        {
+                            "switch@common_toggles.switch_toggle_collection": {
+                                "type": "panel",
+                                "$default_border_visible|default": false,
+                                "$default_texture": "textures/ui/toggle_off",
+                                "$hover_texture": "textures/ui/toggle_on",
+                                "$pressed_no_hover_texture": "textures/ui/toggle_on_hover",
+                                "$pressed_texture": "textures/ui/toggle_off_hover",
+                                "$toggle_name": "#netease_editor_template_namespace.toggle_name",
+                                "$toggle_state_binding_name": "#netease_editor_template_namespace.toggle_state",
+                                "size": [
+                                    "100%y+0px",
+                                    "100%+0px"
+                                ],
+                                "layer": 1,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection_details",
+                                        "binding_collection_name": "",
+                                        "binding_condition": "always_when_visible"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "centerTextView": {
+                                "type": "panel",
+                                "size": [
+                                    "100%c+30px",
+                                    "100%+0px"
+                                ],
+                                "layer": 73,
+                                "controls": [
+                                    {
+                                        "textView": {
+                                            "type": "label",
+                                            "$text|default": "",
+                                            "layer": 1,
+                                            "font_type": "unicode",
+                                            "line_padding": 1.0,
+                                            "localize": false,
+                                            "text": "$text",
+                                            "text_alignment": "center"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "main": {
+        "type": "screen",
+        "controls": [
+            {
+                "BasicSettingSwitch@basicUIlib.basicSettingSwitch": {}
+            }
+        ]
+    },
+    "namespace": "basicUIlib"
+}

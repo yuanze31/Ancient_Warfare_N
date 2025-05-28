@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "aw:netherite_set"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:netherite_helmet"
+            },
+            {
+                "item": "minecraft:netherite_chestplate"
+            },
+            {
+                "item": "minecraft:netherite_leggings"
+            },
+            {
+                "item": "minecraft:netherite_boots"
+            }
+        ],
+        "result": {
+            "item": "aw:netherite_set",
+            "count": 1
+        }
+    }
+}

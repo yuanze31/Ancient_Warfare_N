@@ -1,0 +1,30 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "aw:gold_command_baton"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:gold_ingot"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:stick"
+            }
+        },
+        "pattern": [
+            "A",
+            "B"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "aw:gold_command_baton"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}

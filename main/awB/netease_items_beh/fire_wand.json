@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "aw:fire_wand",
+            "register_to_create_menu": true,
+            "category": "awi"
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "netease:show_in_hand": {
+                "value": false
+            },
+            "minecraft:food": {
+                "nutrition": 0,
+                "saturation_modifier": "supernatural",
+                "cooldown_type": "chorusfruit",
+                "cooldown_time": 0,
+                "can_always_eat": true
+            },
+            "minecraft:use_duration": 99999
+        }
+    }
+}

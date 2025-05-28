@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "aw:iron_lance",
+            "category": "awi"
+        },
+        "components": {
+            "minecraft:icon": "iron_lance",
+            "minecraft:render_offsets": "tools"
+        }
+    }
+}

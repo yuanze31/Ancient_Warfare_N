@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aw:desert_soldier_horse",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/desert/desert_soldier_horse"
+      },
+      "geometry": {
+        "default": "geometry.desert_soldier_horse"
+      },
+      "enable_attachables": true,
+      "scripts": {
+				"animate": [
+					"base",
+					"move",
+					"attack",
+					"sit"
+				],
+				"scale": "1"
+			},
+			"animations": {
+				"base": "animation.base.base",
+				"move": "animation.horse.move",
+				"attack": "animation.base.attack",
+				"sit": "animation.base.sit"
+			},
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+        "texture": "desert_soldier_horse"
+      }
+    }
+  }
+}

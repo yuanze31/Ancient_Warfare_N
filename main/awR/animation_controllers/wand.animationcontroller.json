@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.wand.run": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": ["hold"],
+                    "transitions": [
+                        {
+                            "fire": "query.mod.fire"
+                        },
+						{
+                            "destroy": "query.mod.destroy"
+                        }
+                    ]
+                },
+                "fire": {
+                    "animations": [
+                        "fire"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.mod.fire"
+                        }
+                    ]
+                },
+                "destroy": {
+                    "animations": [
+                        "destroy"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.mod.destroy"
+                        }
+                    ]
+                }
+				
+            }
+        }
+    }
+}

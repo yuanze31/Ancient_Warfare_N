@@ -1,0 +1,522 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "aim": {
+            "textures": "textures/entity/aim"
+        },
+        "awother": {
+            "textures": "textures/item/awotheritem"
+        },
+        "bandit_archer_horse": {
+            "textures": "textures/items/bandit_archer_horse"
+        },
+        "bandit_general_horse": {
+            "textures": "textures/items/bandit_general_horse"
+        },
+        "bandit_soldier_horse": {
+            "textures": "textures/items/bandit_soldier_horse"
+        },
+        "bomb": {
+            "textures": "textures/items/bomb"
+        },
+        "bwc": {
+            "textures": "textures/items/bwc"
+        },
+        "chainmail_set": {
+            "textures": "textures/items/chainmail_set"
+        },
+        "chainmail_set_all": {
+            "textures": "textures/items/chainmail_set_all"
+        },
+        "coin_gold": {
+            "textures": "textures/items/coin_gold"
+        },
+        "coin_iron": {
+            "textures": "textures/items/coin_iron"
+        },
+        "debug_sword": {
+            "textures": "textures/items/bwc"
+        },
+        "desert_archer_horse": {
+            "textures": "textures/items/desert_archer_horse"
+        },
+        "desert_general_horse": {
+            "textures": "textures/items/desert_general_horse"
+        },
+        "desert_soldier_horse": {
+            "textures": "textures/items/desert_soldier_horse"
+        },
+        "diamond_command_baton": {
+            "textures": "textures/items/diamond_command_baton"
+        },
+        "diamond_set": {
+            "textures": "textures/items/diamond_set"
+        },
+        "diamond_set_all": {
+            "textures": "textures/items/diamond_set_all"
+        },
+        "egg_bandit_archer": {
+            "textures": "textures/items/bandit_archer"
+        },
+        "egg_bandit_archer_horse": {
+            "textures": "textures/items/bandit_archer_horse"
+        },
+        "egg_bandit_axeman": {
+            "textures": "textures/items/bandit_axeman"
+        },
+        "egg_bandit_axeman_pro": {
+            "textures": "textures/items/bandit_axeman_pro"
+        },
+        "egg_bandit_general": {
+            "textures": "textures/items/bandit_general"
+        },
+        "egg_bandit_general_horse": {
+            "textures": "textures/items/bandit_general_horse"
+        },
+        "egg_bandit_lance": {
+            "textures": "textures/items/bandit_lance"
+        },
+        "egg_bandit_soldier": {
+            "textures": "textures/items/bandit_soldier"
+        },
+        "egg_bandit_soldier_horse": {
+            "textures": "textures/items/bandit_soldier_horse"
+        },
+        "egg_building_tower": {
+            "textures": "textures/items/egg_building_tower"
+        },
+        "egg_desert_archer": {
+            "textures": "textures/items/desert_archer"
+        },
+        "egg_desert_archer_horse": {
+            "textures": "textures/items/desert_archer_horse"
+        },
+        "egg_desert_axeman": {
+            "textures": "textures/items/desert_axeman"
+        },
+        "egg_desert_axeman_pro": {
+            "textures": "textures/items/desert_axeman_pro"
+        },
+        "egg_desert_general": {
+            "textures": "textures/items/desert_general"
+        },
+        "egg_desert_general_horse": {
+            "textures": "textures/items/desert_general_horse"
+        },
+        "egg_desert_lance": {
+            "textures": "textures/items/desert_lance"
+        },
+        "egg_desert_soldier": {
+            "textures": "textures/items/desert_soldier"
+        },
+        "egg_desert_soldier_horse": {
+            "textures": "textures/items/desert_soldier_horse"
+        },
+        "egg_native_archer": {
+            "textures": "textures/items/native_archer"
+        },
+        "egg_native_archer_horse": {
+            "textures": "textures/items/native_archer_horse"
+        },
+        "egg_native_axeman": {
+            "textures": "textures/items/native_axeman"
+        },
+        "egg_native_axeman_pro": {
+            "textures": "textures/items/native_axeman_pro"
+        },
+        "egg_native_general": {
+            "textures": "textures/items/native_general"
+        },
+        "egg_native_general_horse": {
+            "textures": "textures/items/native_general_horse"
+        },
+        "egg_native_lance": {
+            "textures": "textures/items/native_lance"
+        },
+        "egg_native_soldier": {
+            "textures": "textures/items/native_soldier"
+        },
+        "egg_native_soldier_horse": {
+            "textures": "textures/items/native_soldier_horse"
+        },
+        "egg_old_bandit_archer": {
+            "textures": "textures/items/old_bandit_archer"
+        },
+        "egg_old_bandit_archer_horse": {
+            "textures": "textures/items/old_bandit_archer_horse"
+        },
+        "egg_old_bandit_axeman": {
+            "textures": "textures/items/old_bandit_axeman"
+        },
+        "egg_old_bandit_axeman_pro": {
+            "textures": "textures/items/old_bandit_axeman_pro"
+        },
+        "egg_old_bandit_general": {
+            "textures": "textures/items/old_bandit_general"
+        },
+        "egg_old_bandit_general_horse": {
+            "textures": "textures/items/old_bandit_general_horse"
+        },
+        "egg_old_bandit_lance": {
+            "textures": "textures/items/old_bandit_lance"
+        },
+        "egg_old_bandit_soldier": {
+            "textures": "textures/items/old_bandit_soldier"
+        },
+        "egg_old_bandit_soldier_horse": {
+            "textures": "textures/items/old_bandit_soldier_horse"
+        },
+        "egg_old_desert_archer": {
+            "textures": "textures/items/old_desert_archer"
+        },
+        "egg_old_desert_archer_horse": {
+            "textures": "textures/items/old_desert_archer_horse"
+        },
+        "egg_old_desert_axeman": {
+            "textures": "textures/items/old_desert_axeman"
+        },
+        "egg_old_desert_axeman_pro": {
+            "textures": "textures/items/old_desert_axeman_pro"
+        },
+        "egg_old_desert_general": {
+            "textures": "textures/items/old_desert_general"
+        },
+        "egg_old_desert_general_horse": {
+            "textures": "textures/items/old_desert_general_horse"
+        },
+        "egg_old_desert_lance": {
+            "textures": "textures/items/old_desert_lance"
+        },
+        "egg_old_desert_soldier": {
+            "textures": "textures/items/old_desert_soldier"
+        },
+        "egg_old_desert_soldier_horse": {
+            "textures": "textures/items/old_desert_soldier_horse"
+        },
+        "egg_old_native_archer": {
+            "textures": "textures/items/old_native_archer"
+        },
+        "egg_old_native_archer_horse": {
+            "textures": "textures/items/old_native_archer_horse"
+        },
+        "egg_old_native_axeman": {
+            "textures": "textures/items/old_native_axeman"
+        },
+        "egg_old_native_axeman_pro": {
+            "textures": "textures/items/old_native_axeman_pro"
+        },
+        "egg_old_native_general": {
+            "textures": "textures/items/old_native_general"
+        },
+        "egg_old_native_general_horse": {
+            "textures": "textures/items/old_native_general_horse"
+        },
+        "egg_old_native_lance": {
+            "textures": "textures/items/old_native_lance"
+        },
+        "egg_old_native_soldier": {
+            "textures": "textures/items/old_native_soldier"
+        },
+        "egg_old_native_soldier_horse": {
+            "textures": "textures/items/old_native_soldier_horse"
+        },
+        "egg_old_pirate_archer": {
+            "textures": "textures/items/old_pirate_archer"
+        },
+        "egg_old_pirate_archer_horse": {
+            "textures": "textures/items/old_pirate_archer_horse"
+        },
+        "egg_old_pirate_axeman": {
+            "textures": "textures/items/old_pirate_axeman"
+        },
+        "egg_old_pirate_axeman_pro": {
+            "textures": "textures/items/old_pirate_axeman_pro"
+        },
+        "egg_old_pirate_general": {
+            "textures": "textures/items/old_pirate_general"
+        },
+        "egg_old_pirate_general_horse": {
+            "textures": "textures/items/old_pirate_general_horse"
+        },
+        "egg_old_pirate_lance": {
+            "textures": "textures/items/old_pirate_lance"
+        },
+        "egg_old_pirate_soldier": {
+            "textures": "textures/items/old_pirate_soldier"
+        },
+        "egg_old_pirate_soldier_horse": {
+            "textures": "textures/items/old_pirate_soldier_horse"
+        },
+        "egg_old_player_archer": {
+            "textures": "textures/items/old_player_archer"
+        },
+        "egg_old_player_archer_horse": {
+            "textures": "textures/items/old_player_archer_horse"
+        },
+        "egg_old_player_axeman": {
+            "textures": "textures/items/old_player_axeman"
+        },
+        "egg_old_player_axeman_pro": {
+            "textures": "textures/items/old_player_axeman_pro"
+        },
+        "egg_old_player_general": {
+            "textures": "textures/items/old_player_general"
+        },
+        "egg_old_player_general_horse": {
+            "textures": "textures/items/old_player_general_horse"
+        },
+        "egg_old_player_lance": {
+            "textures": "textures/items/old_player_lance"
+        },
+        "egg_old_player_soldier": {
+            "textures": "textures/items/old_player_soldier"
+        },
+        "egg_old_player_soldier_horse": {
+            "textures": "textures/items/old_player_soldier_horse"
+        },
+        "egg_old_viking_archer": {
+            "textures": "textures/items/old_viking_archer"
+        },
+        "egg_old_viking_archer_horse": {
+            "textures": "textures/items/old_viking_archer_horse"
+        },
+        "egg_old_viking_axeman": {
+            "textures": "textures/items/old_viking_axeman"
+        },
+        "egg_old_viking_axeman_pro": {
+            "textures": "textures/items/old_viking_axeman_pro"
+        },
+        "egg_old_viking_general": {
+            "textures": "textures/items/old_viking_general"
+        },
+        "egg_old_viking_general_horse": {
+            "textures": "textures/items/old_viking_general_horse"
+        },
+        "egg_old_viking_lance": {
+            "textures": "textures/items/old_viking_lance"
+        },
+        "egg_old_viking_soldier": {
+            "textures": "textures/items/old_viking_soldier"
+        },
+        "egg_old_viking_soldier_horse": {
+            "textures": "textures/items/old_viking_soldier_horse"
+        },
+        "egg_pirate_archer": {
+            "textures": "textures/items/pirate_archer"
+        },
+        "egg_pirate_archer_horse": {
+            "textures": "textures/items/pirate_archer_horse"
+        },
+        "egg_pirate_axeman": {
+            "textures": "textures/items/pirate_axeman"
+        },
+        "egg_pirate_axeman_pro": {
+            "textures": "textures/items/pirate_axeman_pro"
+        },
+        "egg_pirate_general": {
+            "textures": "textures/items/pirate_general"
+        },
+        "egg_pirate_general_horse": {
+            "textures": "textures/items/pirate_general_horse"
+        },
+        "egg_pirate_lance": {
+            "textures": "textures/items/pirate_lance"
+        },
+        "egg_pirate_soldier": {
+            "textures": "textures/items/pirate_soldier"
+        },
+        "egg_pirate_soldier_horse": {
+            "textures": "textures/items/pirate_soldier_horse"
+        },
+        "egg_player_archer": {
+            "textures": "textures/items/player_archer"
+        },
+        "egg_player_archer_horse": {
+            "textures": "textures/items/player_archer_horse"
+        },
+        "egg_player_axeman": {
+            "textures": "textures/items/player_axeman"
+        },
+        "egg_player_axeman_pro": {
+            "textures": "textures/items/player_axeman_pro"
+        },
+        "egg_player_general": {
+            "textures": "textures/items/player_general"
+        },
+        "egg_player_general_horse": {
+            "textures": "textures/items/player_general_horse"
+        },
+        "egg_player_lance": {
+            "textures": "textures/items/player_lance"
+        },
+        "egg_player_soldier": {
+            "textures": "textures/items/player_soldier"
+        },
+        "egg_player_soldier_horse": {
+            "textures": "textures/items/player_soldier_horse"
+        },
+        "egg_trap_explode": {
+            "textures": "textures/items/trap_explode"
+        },
+        "egg_trap_shackles": {
+            "textures": "textures/items/trap_shackles"
+        },
+        "egg_trap_sleep": {
+            "textures": "textures/items/trap_sleep"
+        },
+        "egg_trap_slow": {
+            "textures": "textures/items/trap_slow"
+        },
+        "egg_trap_vertigo": {
+            "textures": "textures/items/trap_vertigo"
+        },
+        "egg_viking_archer": {
+            "textures": "textures/items/viking_archer"
+        },
+        "egg_viking_archer_horse": {
+            "textures": "textures/items/viking_archer_horse"
+        },
+        "egg_viking_axeman": {
+            "textures": "textures/items/viking_axeman"
+        },
+        "egg_viking_axeman_pro": {
+            "textures": "textures/items/viking_axeman_pro"
+        },
+        "egg_viking_general": {
+            "textures": "textures/items/viking_general"
+        },
+        "egg_viking_general_horse": {
+            "textures": "textures/items/viking_general_horse"
+        },
+        "egg_viking_lance": {
+            "textures": "textures/items/viking_lance"
+        },
+        "egg_viking_soldier": {
+            "textures": "textures/items/viking_soldier"
+        },
+        "egg_viking_soldier_horse": {
+            "textures": "textures/items/viking_soldier_horse"
+        },
+        "fire_wand": {
+            "textures": "textures/items/fire_wand"
+        },
+        "gold_command_baton": {
+            "textures": "textures/items/gold_command_baton"
+        },
+        "gold_set": {
+            "textures": "textures/items/gold_set"
+        },
+        "gold_set_all": {
+            "textures": "textures/items/gold_set_all"
+        },
+        "ice_wand": {
+            "textures": "textures/items/ice_wand"
+        },
+        "iron_command_baton": {
+            "textures": "textures/items/iron_command_baton"
+        },
+        "iron_set": {
+            "textures": "textures/items/iron_set"
+        },
+        "iron_set_all": {
+            "textures": "textures/items/iron_set_all"
+        },
+        "wooden_lance": {
+            "textures": "textures/items/wooden_lance"
+        },
+        "stone_lance": {
+            "textures": "textures/items/stone_lance"
+        },
+        "iron_lance": {
+            "textures": "textures/items/iron_lance"
+        },
+        "golden_lance": {
+            "textures": "textures/items/golden_lance"
+        },
+        "diamond_lance": {
+            "textures": "textures/items/diamond_lance"
+        },
+        "netherite_lance": {
+            "textures": "textures/items/netherite_lance"
+        },
+        "leather_set": {
+            "textures": "textures/items/leather_set"
+        },
+        "leather_set_all": {
+            "textures": "textures/items/leather_set_all"
+        },
+        "magic_chainmail": {
+            "textures": "textures/items/chainmail_set"
+        },
+        "magic_diamond": {
+            "textures": "textures/items/diamond_set"
+        },
+        "magic_golden": {
+            "textures": "textures/items/gold_set"
+        },
+        "magic_iron": {
+            "textures": "textures/items/iron_set"
+        },
+        "magic_leather": {
+            "textures": "textures/items/leather_set"
+        },
+        "magic_netherite": {
+            "textures": "textures/items/netherite_set"
+        },
+        "native_archer_horse": {
+            "textures": "textures/items/native_archer_horse"
+        },
+        "native_general_horse": {
+            "textures": "textures/items/native_general_horse"
+        },
+        "native_soldier_horse": {
+            "textures": "textures/items/native_soldier_horse"
+        },
+        "netherite_set": {
+            "textures": "textures/items/netherite_set"
+        },
+        "netherite_set_all": {
+            "textures": "textures/items/netherite_set_all"
+        },
+        "pirate_archer_horse": {
+            "textures": "textures/items/pirate_archer_horse"
+        },
+        "pirate_general_horse": {
+            "textures": "textures/items/pirate_general_horse"
+        },
+        "pirate_soldier_horse": {
+            "textures": "textures/items/pirate_soldier_horse"
+        },
+        "player_archer_horse": {
+            "textures": "textures/items/player_archer_horse"
+        },
+        "player_general_horse": {
+            "textures": "textures/items/player_general_horse"
+        },
+        "player_soldier_horse": {
+            "textures": "textures/items/player_soldier_horse"
+        },
+        "stone_command_baton": {
+            "textures": "textures/items/stone_command_baton"
+        },
+        "to_new_skin": {
+            "textures": "textures/items/to_new_skin"
+        },
+        "to_old_skin": {
+            "textures": "textures/items/to_old_skin"
+        },
+        "viking_archer_horse": {
+            "textures": "textures/items/viking_archer_horse"
+        },
+        "viking_general_horse": {
+            "textures": "textures/items/viking_general_horse"
+        },
+        "viking_soldier_horse": {
+            "textures": "textures/items/viking_soldier_horse"
+        },
+        "wooden_command_baton": {
+            "textures": "textures/items/wooden_command_baton"
+        }
+    },
+    "texture_name": "atlas.items"
+}

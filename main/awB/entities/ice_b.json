@@ -1,0 +1,42 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "zt:ice_b",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:snowball"
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.3,
+                "height": 0.3
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 8
+                    },
+                    "remove_on_hit": {}
+                },
+                "destroy_on_hurt": true,
+                "gravity": 0.0,
+                "knockback": true,
+                "offset": [
+                    0.0,
+                    0.3,
+                    0.0
+                ],
+                "power": 1.6,
+                "inertia": 2,
+                "liquid_inertia": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            }
+        }
+    }
+}

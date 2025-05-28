@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "aw:chainmail_set"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:chainmail_helmet"
+            },
+            {
+                "item": "minecraft:chainmail_chestplate"
+            },
+            {
+                "item": "minecraft:chainmail_leggings"
+            },
+            {
+                "item": "minecraft:chainmail_boots"
+            }
+        ],
+        "result": {
+            "item": "aw:chainmail_set",
+            "count": 1
+        }
+    }
+}

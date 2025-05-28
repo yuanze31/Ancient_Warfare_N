@@ -1,0 +1,262 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "trap": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/trap.json"
+                }
+            },
+            "bandit": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/bandit.json"
+                }
+            },
+            "desert": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/desert.json"
+                }
+            },
+            "native": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/native.json"
+                }
+            },
+            "pirate": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/trap.json"
+                }
+            },
+            "player": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/player.json"
+                }
+            },
+            "viking": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/viking.json"
+                }
+            },
+            "old_bandit": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/old_bandit.json"
+                }
+            },
+            "old_desert": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/old_desert.json"
+                }
+            },
+            "old_native": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/old_native.json"
+                }
+            },
+            "old_pirate": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/old_pirate.json"
+                }
+            },
+            "old_player": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/old_player.json"
+                }
+            },
+            "old_viking": {
+                "minecraft:economy_trade_table": {
+                    "display_name": "神秘商人",
+                    "new_screen": true,
+                    "table": "trading/old_viking.json"
+                }
+            }
+        },
+        "components": {
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 8,
+                "priority": 6
+            },
+            "minecraft:behavior.look_at_trading_player": {
+                "probability": 1
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 6
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 5,
+                "speed_multiplier": 1
+            },
+            "minecraft:breathable": {
+                "breathesWater": true,
+                "suffocateTime": 0,
+                "totalSupply": 15
+            },
+            "minecraft:can_climb": {},
+            "minecraft:collision_box": {
+                "height": 2,
+                "width": 0.8
+            },
+            "minecraft:fall_damage": {
+                "value": 0
+            },
+            "minecraft:health": {
+                "max": 20,
+                "value": 20
+            },
+            "minecraft:jump.static": {},
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:nameable": {},
+            "minecraft:navigation.walk": {
+                "avoid_sun": false,
+                "avoid_water": true,
+                "is_amphibious": true
+            },
+            "minecraft:physics": {},
+            "minecraft:scale": {
+                "value": 1
+            }
+        },
+        "description": {
+            "identifier": "aw:businessman",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "trap"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "bandit"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "desert"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "native"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "pirate"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "player"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "viking"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "old_bandit"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "old_desert"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "old_native"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "old_pirate"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "old_player"
+                            ]
+                        },
+                        "weight": 1
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "old_viking"
+                            ]
+                        },
+                        "weight": 1
+                    }
+                ]
+            }
+        }
+    }
+}

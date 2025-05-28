@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10",
+	"minecraft:item": {
+		"components": {
+			"minecraft:icon": "coin_gold"
+		},
+		"description": {
+			"category": "awi",
+			"identifier": "aw:coin_gold",
+			"register_to_create_menu": true
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.viking_troops": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/summon aw:viking_soldier ~+1 ~+1 ~+1",
+                        "/summon aw:viking_soldier ~+1 ~+1 ~-1",
+                        "/summon aw:viking_archer ~-1 ~+1 ~-1",
+                        "/summon aw:viking_soldier_horse ~ ~+1 ~",
+                        "/summon aw:viking_archer_horse ~-1 ~+1 ~+1",
+                        "/summon aw:viking_general_horse ~+1 ~+1 ~"
+                    ]
+                }
+            }
+        }
+    }
+}
