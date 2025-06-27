@@ -3,5 +3,7 @@ from QuModLibs.QuMod import *
 
 MOD = EasyMod()
 MOD.Server("awServer")
-MOD.Client("awCilentUiConfig")
+MOD.Server("awServerLance")
 MOD.Client("awClient")
+MOD.Client("awCilentLance")
+MOD.Client("awCilentUiConfig")
