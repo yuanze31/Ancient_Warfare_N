@@ -8,17 +8,19 @@
                     "underground": 1
                 },
                 "minecraft:spawns_on_surface": {
+
                 },
                 "minecraft:spawns_underground": {
+
                 },
                 "minecraft:weight": {
-                    "default": 3
+                    "default": 5
                 }
             }
         ],
         "description": {
             "identifier": "aw:spawn",
-            "population_control": "monster"
+            "population_control": "animal"
         }
     }
 }
