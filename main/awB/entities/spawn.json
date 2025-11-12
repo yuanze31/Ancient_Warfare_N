@@ -9,8 +9,8 @@
                 "totalSupply": 15
             },
             "minecraft:collision_box": {
-                "height": 0,
-                "width": 0
+                "height": 0.1,
+                "width": 0.1
             },
             "minecraft:damage_sensor": {
                 "triggers": [
@@ -20,7 +20,8 @@
                 ]
             },
             "minecraft:explode": {
-                "fuseLength": "5",
+                "fuseLength": 5.0,
+                "fuseLit": true,
                 "power": 0.0
             },
             "minecraft:health": {
