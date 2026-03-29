@@ -317,6 +317,15 @@ def PlayerSummonEntity(args):
     renameAWsoldier(args)
 
 
+@Listen(Events.ProjectileDoHitEffectEvent)
+def BombArrow(args):
+    id = args["id"]
+    pos = (args["x"], args["y"], args["z"])
+    name = CF.CreateEngineType(id).GetEngineTypeStr()
+    if name == "aw:bomb":
+        CF.CreateExplosion(levelId).CreateExplosion(tuple(pos), 4, False, True, id, args["srcId"])
+
+
 def popWhatsNewUI(versionNow, versionLast):
     print "当前版本：" + versionNow + "\n上次版本：" + versionLast + "\n弹出What\'s news弹窗（TODO）"
     # TODO: What's news 弹窗
