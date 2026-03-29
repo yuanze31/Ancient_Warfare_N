@@ -11,21 +11,6 @@
                     "power": 6
                 }
             },
-            "minecraft:mob_effect": {
-                "effect_range": 0,
-                "effect_time": 2,
-                "entity_filter": {
-                    "any_of": [
-                        {
-                            "operator": "!=",
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "trap"
-                        }
-                    ]
-                },
-                "mob_effect": "slowness"
-            },
             "roaring": {
                 "minecraft:behavior.knockback_roar": {
                     "attack_time": 0,
@@ -107,9 +92,6 @@
             }
         },
         "description": {
-            "animations": {
-                "explode": "controller.animation.trap_explode"
-            },
             "identifier": "aw:trap_explode",
             "is_experimental": false,
             "is_spawnable": true,
