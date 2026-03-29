@@ -9,21 +9,23 @@
                     "value": "animal"
                 },
                 "minecraft:density_limit": {
-                    "surface": 1,
-                    "underground": 1
+                    "surface": 2,
+                    "underground": 2
                 },
                 "minecraft:spawns_on_surface": {
+
                 },
                 "minecraft:spawns_underground": {
+
                 },
                 "minecraft:weight": {
-                    "default": 5
+                    "default": 3
                 }
             }
         ],
         "description": {
             "identifier": "aw:cleaner",
-            "population_control": "animal"
+            "population_control": "monster"
         }
     }
 }
