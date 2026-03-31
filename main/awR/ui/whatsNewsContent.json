@@ -1,0 +1,95 @@
+{
+    "main": {
+        "type": "screen",
+        "controls": [
+            {
+                "mainpanel@whatsNewsContent.whatsNewsContent": {}
+            }
+        ]
+    },
+    "namespace": "whatsNewsContent",
+    "whatsNewsContent": {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "size": [
+            "100%+0px",
+            "100%c+0px"
+        ],
+        "layer": 1,
+        "controls": [
+            {
+                "linearLayout": {
+                    "type": "stack_panel",
+                    "size": [
+                        "95%+0px",
+                        "100%c+10px"
+                    ],
+                    "layer": 1,
+                    "controls": [
+                        {
+                            "1-4-2": {
+                                "type": "label",
+                                "layer": 1,
+                                "font_size": "large",
+                                "font_type": "unicode",
+                                "localize": false,
+                                "shadow": true,
+                                "text": "1.4.2"
+                            }
+                        },
+                        {
+                            "1-4-2-Content": {
+                                "type": "label",
+                                "layer": 2,
+                                "font_type": "unicode",
+                                "localize": false,
+                                "text": "FEAT\n定时清理箭矢\n更新内容弹窗\nFIX\n骑兵右脚异常材质修复"
+                            }
+                        },
+                        {
+                            "1-4-1": {
+                                "type": "label",
+                                "layer": 3,
+                                "font_size": "large",
+                                "font_type": "unicode",
+                                "localize": false,
+                                "shadow": true,
+                                "text": "\n1.4.1"
+                            }
+                        },
+                        {
+                            "1-4-1-Content": {
+                                "type": "label",
+                                "layer": 4,
+                                "font_type": "unicode",
+                                "localize": false,
+                                "text": "FEAT\n适配新版《我的世界》API"
+                            }
+                        },
+                        {
+                            "1-4-0": {
+                                "type": "label",
+                                "layer": 5,
+                                "font_size": "large",
+                                "font_type": "unicode",
+                                "localize": false,
+                                "shadow": true,
+                                "text": "\n1.4.0"
+                            }
+                        },
+                        {
+                            "1-4-0-Content": {
+                                "type": "label",
+                                "layer": 6,
+                                "font_type": "unicode",
+                                "localize": false,
+                                "text": "FEAT\n增加设置页面（使用/awconfig ui打开）"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

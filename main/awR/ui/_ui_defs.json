@@ -5,6 +5,8 @@
         "ui/configUI.json",
         "ui/wand_button.json",
         "ui/wand_screen.json",
+        "ui/whatsNews.json",
+        "ui/whatsNewsContent.json",
         "ui/netease_editor_template_namespace.json"
     ]
 }

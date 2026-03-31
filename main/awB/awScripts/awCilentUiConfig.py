@@ -3,6 +3,8 @@
 from QuModLibs.Client import *
 from QuModLibs.UI import ScreenNodeWrapper
 
+import modInfo
+
 CF = clientApi.GetEngineCompFactory()
 
 ViewBinder = clientApi.GetViewBinderCls()
@@ -82,12 +84,42 @@ class configUI(ScreenNodeWrapper):
             hideGameUI(False)
 
 
+@ScreenNodeWrapper.autoRegister("whatsNews.main")
+class whatsNews(ScreenNodeWrapper):
+    def __init__(self, namespace, name, param):
+        ScreenNodeWrapper.__init__(self, namespace, name, param)
+        # print("界面对象构造完毕，此时还未完成绘制，不得操作控件")
+        pass
+
+    def Create(self):
+        ScreenNodeWrapper.Create(self)
+
+        # print("UI绘制完毕，此时可以操作控件对象")
+        @self.bindButtonClickHandler("/mainPanel/bg/OK")
+        def onSaveButtonClick():
+            self.removeClsUI()
+            hideGameUI(False)
+
+
 @AllowCall
 def createConfigUI():
     configUI.createUI("", {
             "isHud": 0
             })
     hideGameUI(True)
+
+
+def createWhatsNewsUI(isNewVersion):
+    if isNewVersion:
+        whatsNews.createUI("", {
+                "isHud": 0
+                })
+        hideGameUI(True)
+
+
+@Listen(Events.UiInitFinished)
+def tryPopupWhatsNews(args):
+    Request("getLastLoginVersion", (playerId, modInfo.MOD_VERSION), {}, createWhatsNewsUI)
 
 
 def hideGameUI(disable=True):
