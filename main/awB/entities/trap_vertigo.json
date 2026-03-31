@@ -9,22 +9,22 @@
                     "fuseLength": 0,
                     "fuseLit": true,
                     "power": 0
-                }
-            },
-            "minecraft:mob_effect": {
-                "effect_range": 0,
-                "effect_time": 2,
-                "entity_filter": {
-                    "any_of": [
-                        {
-                            "operator": "!=",
-                            "subject": "other",
-                            "test": "is_family",
-                            "value": "trap"
-                        }
-                    ]
                 },
-                "mob_effect": "slowness"
+                "minecraft:mob_effect": {
+                    "effect_range": 0,
+                    "effect_time": 2,
+                    "entity_filter": {
+                        "any_of": [
+                            {
+                                "operator": "!=",
+                                "subject": "other",
+                                "test": "is_family",
+                                "value": "trap"
+                            }
+                        ]
+                    },
+                    "mob_effect": "slowness"
+                }
             },
             "roaring": {
                 "minecraft:behavior.knockback_roar": {

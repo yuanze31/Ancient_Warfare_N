@@ -3,7 +3,6 @@ import random
 
 from QuModLibs.Server import *
 
-import modInfo
 from univFunction import compare_versions, randomName
 
 CF = serverApi.GetEngineCompFactory()
@@ -14,24 +13,13 @@ ModcampCN = ["土匪", "沙漠", "帝国", "海盗", "新星", "纳维亚海盗"
 Modtype = ["archer", "archer_horse", "axeman", "axeman_pro", "general", "general_horse", "lance", "soldier", "soldier_horse"]
 ModtypeCN = ["弓箭手", "游骑兵", "斧兵", "重斧兵", "首领", "铁骑", "矛兵", "战士", "骑兵"]
 
-CONFIG_MAP = {
-        "allow_spawn": "allow_spawn",
-        "camp_spawn": "camp_spawn",
-        "soldier_name": "soldier_name",
-        "last_start_mod_version": "last_start_mod_version"
-        }
+
+def getConfig(config_key, id=levelId):
+    return CF.CreateExtraData(id).GetExtraData(config_key)
 
 
-def getConfig(config_key):
-    level_id = serverApi.GetLevelId()
-    # 根据映射表查找对应的ExtraData键名
-    extra_data_key = CONFIG_MAP.get(config_key)
-    return CF.CreateExtraData(level_id).GetExtraData(extra_data_key)
-
-
-def setConfig(config_key, config_value):
-    levelId = serverApi.GetLevelId()
-    CF.CreateExtraData(levelId).SetExtraData(str(config_key), config_value)
+def setConfig(config_key, config_value, id=levelId):
+    CF.CreateExtraData(id).SetExtraData(str(config_key), config_value)
 
 
 @AllowCall
@@ -57,6 +45,18 @@ def cilentConfigUISave(playerId, newConfigDict={}):
         setConfig("camp_spawn", new_camp_spawn)
         setConfig("soldier_name", new_soldier_name)
         cilentRequestConfig()
+
+
+@AllowCall
+def getLastLoginVersion(playerId, NowVersion):
+    LastLoginVersion = getConfig("LastLoginVersion", id=playerId)
+    setConfig("LastLoginVersion", NowVersion, playerId)
+    print "玩家：" + playerId + " 当前版本：" + NowVersion + " 上次版本：" + str(LastLoginVersion)
+    if LastLoginVersion is None:
+        return True
+    elif compare_versions(NowVersion, LastLoginVersion) == 1:
+        return True
+    return False
 
 
 @Listen(Events.CustomCommandTriggerServerEvent)
@@ -106,7 +106,6 @@ def AWdebug(args):
 
     command = args["command"]
     if command == "awdebug":
-        print args
         if args["origin"]["entityId"] == "-4294967295":
             if args["args"][0]["value"] == "":
                 args["return_msg_key"] = autoEnv()
@@ -114,6 +113,8 @@ def AWdebug(args):
                 playerId = args["origin"]["entityId"]
                 Call(playerId, "createConfigUI")
                 args["return_msg_key"] = None
+            elif args["args"][0]["value"] == "whatsnews":
+                setConfig("LastLoginVersion", "1.0.0", "-4294967295")
         else:
             args["return_msg_key"] = None
 
@@ -317,10 +318,13 @@ def PlayerSummonEntity(args):
     renameAWsoldier(args)
 
 
-def popWhatsNewUI(versionNow, versionLast):
-    print "当前版本：" + versionNow + "\n上次版本：" + versionLast + "\n弹出What\'s news弹窗（TODO）"
-    # TODO: What's news 弹窗
-    setConfig("last_start_mod_version", versionNow)
+@Listen(Events.ProjectileDoHitEffectEvent)
+def BombArrow(args):
+    id = args["id"]
+    pos = (args["x"], args["y"], args["z"])
+    name = CF.CreateEngineType(id).GetEngineTypeStr()
+    if name == "aw:bomb":
+        CF.CreateExplosion(levelId).CreateExplosion(tuple(pos), 4, False, True, id, args["srcId"])
 
 
 def DefaultConfig():
@@ -328,8 +332,7 @@ def DefaultConfig():
     default_config = {
             "allow_spawn": False,
             "camp_spawn": [True, True, True, True, True, True],
-            "soldier_name": "male",
-            "last_start_mod_version": "0.0.0"
+            "soldier_name": "male"
             }
 
     # 遍历所有默认配置项
@@ -339,5 +342,3 @@ def DefaultConfig():
 
 
 DefaultConfig()
-if compare_versions(modInfo.MOD_VERSION, getConfig("last_start_mod_version")) == 1:
-    popWhatsNewUI(modInfo.MOD_VERSION, getConfig("last_start_mod_version"))
