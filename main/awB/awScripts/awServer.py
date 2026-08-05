@@ -208,9 +208,8 @@ def OnAWSpawnSpawn(args):
     def isAWspawnSpawn(args):
         entityid = args["entityId"]
         identifier = args["identifier"]
-        allow_spawn = getConfig("allow_spawn")
         if identifier == "aw:spawn":
-            if allow_spawn:
+            if getConfig("allow_spawn"):
                 x = args["x"]
                 y = args["y"]
                 z = args["z"]
@@ -241,11 +240,14 @@ def OnAWSpawnSpawn(args):
 @Listen(Events.AddEntityServerEvent)
 def PlayerSummonEntity(args):
     def renameAWsoldier(args):
-        if getConfig("soldier_name") != "off":
-            identifier = args["engineTypeStr"]
-            entityId = args["id"]
-            if CF.CreateName(entityId).GetName() is None and parseAWIdentifier(identifier):
-                CF.CreateName(entityId).SetName(randomName(getConfig("soldier_name")))
+        identifier = args["engineTypeStr"]
+        if parseAWIdentifier(identifier):
+            soldier_name = getConfig("soldier_name")
+            if soldier_name != "off":
+                entityId = args["id"]
+                nameComp = CF.CreateName(entityId)
+                if nameComp.GetName() is None:
+                    nameComp.SetName(randomName(soldier_name))
 
     renameAWsoldier(args)
 
