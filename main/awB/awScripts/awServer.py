@@ -1,17 +1,9 @@
 # -*- coding: utf-8 -*-
-import random
-
 from QuModLibs.Server import *
 
-from univFunction import compare_versions, randomName
+from univFunction import compare_versions, randomName, parseAWIdentifier, getCampIndex, getCampCN, buildAWIdentifier, AW_CAMPS, AW_CAMPS_CN
 
 CF = serverApi.GetEngineCompFactory()
-
-Modnamespace = ["aw"]
-Modcamp = ["bandit", "desert", "native", "pirate", "player", "viking"]
-ModcampCN = ["土匪", "沙漠", "帝国", "海盗", "新星", "纳维亚海盗"]
-Modtype = ["archer", "archer_horse", "axeman", "axeman_pro", "general", "general_horse", "lance", "soldier", "soldier_horse"]
-ModtypeCN = ["弓箭手", "游骑兵", "斧兵", "重斧兵", "首领", "铁骑", "矛兵", "战士", "骑兵"]
 
 
 def getConfig(config_key, id=levelId):
@@ -133,11 +125,11 @@ def EntityConfig(args):
         elif variant == 1:
             troop, allow = [item['value'] for item in args]
             camp_spawn = getConfig("camp_spawn")
-            for i in range(len(Modcamp)):
-                if Modcamp[i] == troop:
-                    camp_spawn[i] = allow
-                    setConfig("camp_spawn", camp_spawn)
-                    return ModcampCN[i] + "阵营" + (" §a允许 §r生成" if allow else " §c禁止 §r生成")
+            idx = getCampIndex(troop)
+            if idx is not None:
+                camp_spawn[idx] = allow
+                setConfig("camp_spawn", camp_spawn)
+                return getCampCN(troop) + "阵营" + (" §a允许 §r生成" if allow else " §c禁止 §r生成")
 
         return "§4未知错误 错误代码:awspawn"
 
@@ -180,11 +172,11 @@ def DispConfig(args):
         camp_spawn = ""
         for i in range(len(camp_spawn_config)):
             if camp_spawn_config[i]:
-                camp_spawn += "§r" + ModcampCN[i] + "阵营 §a允许 §r生成\n"
+                camp_spawn += "§r" + AW_CAMPS_CN[i] + "阵营 §a允许 §r生成\n"
             elif not camp_spawn_config[i]:
-                camp_spawn += "§r" + ModcampCN[i] + "阵营 §c禁止 §r生成\n"
+                camp_spawn += "§r" + AW_CAMPS_CN[i] + "阵营 §c禁止 §r生成\n"
             else:
-                camp_spawn += "§4" + ModcampCN[i] + "阵营 配置 错误\n"
+                camp_spawn += "§4" + AW_CAMPS_CN[i] + "阵营 配置 错误\n"
 
         return "§l=古代战争生物设置=\n" + "§r===================\n" + all_spawn + "§r-------------------\n" + camp_spawn
 
@@ -228,63 +220,20 @@ def OnAWSpawnSpawn(args):
                 DestroyEntity(entityid)
 
     def onAWspawnSpawn(x, y, z):
-        def spawnBandit(camp_spawn):
-            if camp_spawn[0] == 1:
-                System.CreateEngineEntityByTypeStr("aw:bandit_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:bandit_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:bandit_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:bandit_soldier_horse", (x, y + 1, z), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:bandit_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:bandit_general_horse", (x + 1, y + 1, z), (0, 0), 0)
-
-        def spawnDesert(camp_spawn):
-            if camp_spawn[1] == 1:
-                System.CreateEngineEntityByTypeStr("aw:desert_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:desert_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:desert_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:desert_soldier_horse", (x, y + 1, z), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:desert_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:desert_general_horse", (x + 1, y + 1, z), (0, 0), 0)
-
-        def spawnNative(camp_spawn):
-            if camp_spawn[2] == 1:
-                System.CreateEngineEntityByTypeStr("aw:native_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:native_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:native_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:native_soldier_horse", (x, y + 1, z), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:native_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:native_general_horse", (x + 1, y + 1, z), (0, 0), 0)
-
-        def spawnPirate(camp_spawn):
-            if camp_spawn[3] == 1:
-                System.CreateEngineEntityByTypeStr("aw:pirate_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:pirate_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:pirate_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:pirate_soldier_horse", (x, y + 1, z), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:pirate_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:pirate_general_horse", (x + 1, y + 1, z), (0, 0), 0)
-
-        def spawnPlayer(camp_spawn):
-            if camp_spawn[4] == 1:
-                System.CreateEngineEntityByTypeStr("aw:player_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:player_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:player_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:player_soldier_horse", (x, y + 1, z), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:player_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:player_general_horse", (x + 1, y + 1, z), (0, 0), 0)
-
-        def spawnViking(camp_spawn):
-            if camp_spawn[5] == 1:
-                System.CreateEngineEntityByTypeStr("aw:viking_soldier", (x + 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:viking_soldier", (x + 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:viking_archer", (x - 1, y + 1, z - 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:viking_soldier_horse", (x, y + 1, z), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:viking_archer_horse", (x - 1, y + 1, z + 1), (0, 0), 0)
-                System.CreateEngineEntityByTypeStr("aw:viking_general_horse", (x + 1, y + 1, z), (0, 0), 0)
-
         camp_spawn = getConfig("camp_spawn")
-        spawn_func = [spawnBandit(camp_spawn), spawnDesert(camp_spawn), spawnNative(camp_spawn), spawnPirate(camp_spawn), spawnPlayer(camp_spawn), spawnViking(camp_spawn)]
-        return spawn_func[random.randint(0, 5)]
+        # 兵种与生成坐标偏移的映射
+        spawn_types = [
+                ("soldier", (x + 1, y + 1, z + 1)),
+                ("soldier", (x + 1, y + 1, z - 1)),
+                ("archer", (x - 1, y + 1, z - 1)),
+                ("soldier_horse", (x, y + 1, z)),
+                ("archer_horse", (x - 1, y + 1, z + 1)),
+                ("general_horse", (x + 1, y + 1, z)),
+                ]
+        for i, camp in enumerate(AW_CAMPS):
+            if camp_spawn[i] == 1:
+                for etype, pos in spawn_types:
+                    System.CreateEngineEntityByTypeStr(buildAWIdentifier(camp, etype), pos, (0, 0), 0)
 
     isAWspawnSpawn(args)
 
@@ -295,25 +244,8 @@ def PlayerSummonEntity(args):
         if getConfig("soldier_name") != "off":
             identifier = args["engineTypeStr"]
             entityId = args["id"]
-            if CF.CreateName(entityId).GetName() is None:
-                # 切分命名空间
-                parts = identifier.split(":")
-                if len(parts) == 2:
-                    part1 = parts[0]
-
-                    # id判断
-                    part23 = parts[1].split("_", 1)
-                    if len(part23) == 2:
-                        part2, part3 = part23
-                        if part2 == "old":
-                            part34 = part3.split("_", 1)
-                            if len(part34) == 2:
-                                part3, part4 = part34
-                                if part1 in Modnamespace and part3 in Modcamp and part4 in Modtype:
-                                    CF.CreateName(entityId).SetName(randomName(getConfig("soldier_name")))
-                        else:
-                            if part1 in Modnamespace and part2 in Modcamp and part3 in Modtype:
-                                CF.CreateName(entityId).SetName(randomName(getConfig("soldier_name")))
+            if CF.CreateName(entityId).GetName() is None and parseAWIdentifier(identifier):
+                CF.CreateName(entityId).SetName(randomName(getConfig("soldier_name")))
 
     renameAWsoldier(args)
 
